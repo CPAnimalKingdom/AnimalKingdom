@@ -31,3 +31,9 @@ Optional
 - [ ] User can enable Child Lock mode to restrict access the certain features and settings
 - [ ] User can create new user accounts (only required for content creation)
 - [ ] User purchase additional animal bundles (categories or groups) as in-app purchase
+
+## Sketch and Design
+
+<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/10%20-%20Design%20Demo.gif' title='Initial Design' width='' alt='Initial Design' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).

@@ -6,7 +6,8 @@ Animal Kingdom is an iOS app that allows its user to explore the animal kingdom,
 
 Required:
 - [ ] iPhone
-Optional:
+
+Optional
 - [ ] iPad
 - [ ] Apple TV
 

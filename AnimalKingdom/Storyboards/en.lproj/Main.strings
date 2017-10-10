@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Video"; ObjectID = "1YX-g6-2fl"; */
+"1YX-g6-2fl.normalTitle" = "Video";
+
+/* Class = "UIButton"; normalTitle = "Adventurer"; ObjectID = "8RD-Gh-Wkd"; */
+"8RD-Gh-Wkd.normalTitle" = "Adventurer";
+
+/* Class = "UIButton"; normalTitle = "Group"; ObjectID = "Euk-08-fVX"; */
+"Euk-08-fVX.normalTitle" = "Group";
+
+/* Class = "UILabel"; text = "Video"; ObjectID = "Lr1-0L-UUF"; */
+"Lr1-0L-UUF.text" = "Video";
+
+/* Class = "UILabel"; text = "Creator"; ObjectID = "T3n-AZ-yrT"; */
+"T3n-AZ-yrT.text" = "Creator";
+
+/* Class = "UIButton"; normalTitle = "Creator"; ObjectID = "U9L-vv-s5U"; */
+"U9L-vv-s5U.normalTitle" = "Creator";
+
+/* Class = "UIButton"; normalTitle = "Animal"; ObjectID = "WrL-LY-VRI"; */
+"WrL-LY-VRI.normalTitle" = "Animal";
+
+/* Class = "UIButton"; normalTitle = "Adventurer"; ObjectID = "cKC-kP-KID"; */
+"cKC-kP-KID.normalTitle" = "Adventurer";
+
+/* Class = "UIButton"; normalTitle = "Explorer"; ObjectID = "gDL-8B-bIO"; */
+"gDL-8B-bIO.normalTitle" = "Explorer";
+
+/* Class = "UIButton"; normalTitle = "AR"; ObjectID = "gTc-Nf-6DQ"; */
+"gTc-Nf-6DQ.normalTitle" = "AR";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ife-MU-A1W"; */
+"ife-MU-A1W.title" = "Item";
+
+/* Class = "UILabel"; text = "AR"; ObjectID = "mFj-Gr-74K"; */
+"mFj-Gr-74K.text" = "AR";
+
+/* Class = "UILabel"; text = "Animal Details"; ObjectID = "sgO-K6-rK2"; */
+"sgO-K6-rK2.text" = "Animal Details";
+
+/* Class = "UILabel"; text = "AR"; ObjectID = "vWx-tF-R3p"; */
+"vWx-tF-R3p.text" = "AR";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "yXS-t8-Lri"; */
+"yXS-t8-Lri.title" = "Settings";

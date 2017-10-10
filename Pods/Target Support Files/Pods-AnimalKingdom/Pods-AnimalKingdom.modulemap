@@ -1,0 +1,6 @@
+framework module Pods_AnimalKingdom {
+  umbrella header "Pods-AnimalKingdom-umbrella.h"
+
+  export *
+  module * { export * }
+}

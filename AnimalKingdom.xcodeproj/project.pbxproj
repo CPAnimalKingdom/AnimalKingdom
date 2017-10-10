@@ -99,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				37A033BE1F8C868600C4AA86 /* AppDelegate.swift */,
-				37A033CA1F8C868600C4AA86 /* Info.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
 				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
+				37A033CA1F8C868600C4AA86 /* Info.plist */,
 			);
 			path = AnimalKingdom;
 			sourceTree = "<group>";

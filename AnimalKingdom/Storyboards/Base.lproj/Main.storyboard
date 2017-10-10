@@ -125,10 +125,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuT-An-jzM">
+                                        <rect key="frame" x="172" y="352" width="30" height="30"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="onDismiss:" destination="PZd-F6-vVK" eventType="touchUpInside" id="uy6-kc-AFu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85725891334475468" green="0.7751175706987945" blue="0.92806154819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="EI0-HE-3yu" firstAttribute="centerY" secondItem="T1E-Mx-bY7" secondAttribute="centerY" id="1wD-vE-EKe"/>
+                                    <constraint firstItem="XuT-An-jzM" firstAttribute="centerX" secondItem="T1E-Mx-bY7" secondAttribute="centerX" id="DDb-V8-7mk"/>
+                                    <constraint firstItem="XuT-An-jzM" firstAttribute="top" secondItem="EI0-HE-3yu" secondAttribute="bottom" constant="8" id="jut-0u-H6q"/>
                                     <constraint firstItem="EI0-HE-3yu" firstAttribute="centerX" secondItem="T1E-Mx-bY7" secondAttribute="centerX" id="scW-OE-r0Q"/>
                                 </constraints>
                             </view>
@@ -145,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEj-R2-E83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.399999999999999" y="-696.7016491754124"/>
+            <point key="canvasLocation" x="862" y="-919"/>
         </scene>
         <!--Adventurer View Controller-->
         <scene sceneID="3eK-Py-2h8">
@@ -161,6 +170,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKC-kP-KID">
                                         <rect key="frame" x="150" y="286" width="76" height="30"/>
                                         <state key="normal" title="Adventurer"/>
+                                        <connections>
+                                            <segue destination="o0n-mO-tJk" kind="show" id="AYZ-of-yYy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.51271618379714845" green="0.83558885116716752" blue="0.92806154819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Rr-8kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263" y="-697"/>
+            <point key="canvasLocation" x="1714" y="-802"/>
         </scene>
         <!--Group Explorer View Controller-->
         <scene sceneID="TMQ-3Q-Khw">
@@ -227,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5D-pM-Deh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263.2" y="31.934032983508249"/>
+            <point key="canvasLocation" x="1218" y="82"/>
         </scene>
         <!--Animal Explorer View Controller-->
         <scene sceneID="Gmd-V2-F4d">
@@ -267,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwt-qq-fp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188" y="31.934032983508249"/>
+            <point key="canvasLocation" x="2111" y="81"/>
         </scene>
         <!--Creator View Controller-->
         <scene sceneID="LvG-Dd-h4g">
@@ -324,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Oe-Ky-0Mj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3092" y="32.833583208395808"/>
+            <point key="canvasLocation" x="3015" y="82"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="z0V-FM-e9s">
@@ -363,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wD9-pH-rUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4044" y="34.632683658170919"/>
+            <point key="canvasLocation" x="3910" y="82"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="p6W-Ov-Pv3">
@@ -409,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKd-M1-58t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4044" y="805"/>
+            <point key="canvasLocation" x="3910" y="854"/>
         </scene>
         <!--Creator View Controller-->
         <scene sceneID="sFt-Xk-NWn">
@@ -469,4 +481,7 @@
             <point key="canvasLocation" x="-617" y="35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AYZ-of-yYy"/>
+    </inferredMetricsTieBreakers>
 </document>

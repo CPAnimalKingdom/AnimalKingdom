@@ -20,6 +20,13 @@
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C51F8C868600C4AA86 /* Assets.xcassets */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
+		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
+		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
+		37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918F1F8DB09900E88D98 /* Details.storyboard */; };
+		37FB91921F8DB10700E88D98 /* Explorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91911F8DB10700E88D98 /* Explorer.storyboard */; };
+		37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91931F8DB12F00E88D98 /* Adventurer.storyboard */; };
+		37FB91961F8DB15400E88D98 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91951F8DB15400E88D98 /* Settings.storyboard */; };
+		37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91971F8DB18E00E88D98 /* Creator.storyboard */; };
 		BD924C3F4C854ECB228ECFDA /* Pods_AnimalKingdom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +47,13 @@
 		37A033C51F8C868600C4AA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37A033C81F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A033CA1F8C868600C4AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
+		37FB918D1F8DB06900E88D98 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
+		37FB918F1F8DB09900E88D98 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		37FB91911F8DB10700E88D98 /* Explorer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explorer.storyboard; sourceTree = "<group>"; };
+		37FB91931F8DB12F00E88D98 /* Adventurer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Adventurer.storyboard; sourceTree = "<group>"; };
+		37FB91951F8DB15400E88D98 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		37FB91971F8DB18E00E88D98 /* Creator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creator.storyboard; sourceTree = "<group>"; };
 		58E0EA78625CDF64E660F67D /* Pods-AnimalKingdom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.release.xcconfig"; sourceTree = "<group>"; };
 		8915A505B759EEF71284BC5F /* Pods-AnimalKingdom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +89,13 @@
 			children = (
 				37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */,
 				37A033C21F8C868600C4AA86 /* Main.storyboard */,
+				37FB91911F8DB10700E88D98 /* Explorer.storyboard */,
+				37FB91931F8DB12F00E88D98 /* Adventurer.storyboard */,
+				37FB918F1F8DB09900E88D98 /* Details.storyboard */,
+				37FB918B1F8DB01600E88D98 /* Video.storyboard */,
+				37FB918D1F8DB06900E88D98 /* AR.storyboard */,
+				37FB91971F8DB18E00E88D98 /* Creator.storyboard */,
+				37FB91951F8DB15400E88D98 /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -214,8 +235,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
+				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
 				37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */,
+				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
+				37FB91921F8DB10700E88D98 /* Explorer.storyboard in Resources */,
+				37FB91961F8DB15400E88D98 /* Settings.storyboard in Resources */,
+				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
+				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

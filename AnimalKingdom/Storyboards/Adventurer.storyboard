@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vbh-fu-4hX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adventurer View Controller-->
+        <scene sceneID="3eK-Py-2h8">
+            <objects>
+                <viewController id="vbh-fu-4hX" customClass="AdventurerViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eA8-ol-OxW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctr-v0-ddM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKC-kP-KID">
+                                        <rect key="frame" x="150" y="308" width="76" height="30"/>
+                                        <state key="normal" title="Adventurer"/>
+                                        <connections>
+                                            <segue destination="lrC-26-U1c" kind="show" id="AYZ-of-yYy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51271618379714845" green="0.83558885116716752" blue="0.92806154819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cKC-kP-KID" firstAttribute="centerY" secondItem="ctr-v0-ddM" secondAttribute="centerY" id="IdI-ri-yOs"/>
+                                    <constraint firstItem="cKC-kP-KID" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="To3-Z3-R0o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ctr-v0-ddM" firstAttribute="top" secondItem="43S-88-TQs" secondAttribute="top" id="82r-Et-SXG"/>
+                            <constraint firstItem="ctr-v0-ddM" firstAttribute="bottom" secondItem="43S-88-TQs" secondAttribute="bottom" id="9U8-e9-u8J"/>
+                            <constraint firstItem="ctr-v0-ddM" firstAttribute="trailing" secondItem="43S-88-TQs" secondAttribute="trailing" id="CIY-q6-lbK"/>
+                            <constraint firstItem="ctr-v0-ddM" firstAttribute="leading" secondItem="43S-88-TQs" secondAttribute="leading" id="fLr-Jz-BHc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="43S-88-TQs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Rr-8kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="-802"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="Tc1-Wb-DoO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Details" id="lrC-26-U1c" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Swl-IW-mVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="-803"/>
+        </scene>
+    </scenes>
+</document>

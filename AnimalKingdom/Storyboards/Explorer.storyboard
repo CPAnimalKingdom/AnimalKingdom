@@ -17,42 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uL0-Mr-GNE">
-                                <rect key="frame" x="140" y="333" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-48-Nib">
+                                <rect key="frame" x="8" y="20" width="359" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4a-TJ-AZj">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euk-08-fVX">
-                                        <rect key="frame" x="166" y="308" width="43" height="30"/>
-                                        <state key="normal" title="Group"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupTableViewCell" rowHeight="96" id="0mT-Vl-HnF" customClass="GroupTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0mT-Vl-HnF" id="h9q-sw-cTB">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="95.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niN-Oj-lpb">
+                                                    <rect key="frame" x="158" y="37" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="niN-Oj-lpb" firstAttribute="centerY" secondItem="h9q-sw-cTB" secondAttribute="centerY" id="Td1-Zl-9FX"/>
+                                                <constraint firstItem="niN-Oj-lpb" firstAttribute="centerX" secondItem="h9q-sw-cTB" secondAttribute="centerX" id="gv5-KA-emM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="AKx-Tu-PYE" kind="show" id="gr3-0D-O9g"/>
+                                            <outlet property="groupNameTextLabel" destination="niN-Oj-lpb" id="e0v-Cf-AmS"/>
                                         </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.84424397976538046" green="0.92806154819999997" blue="0.52957441591063192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Euk-08-fVX" firstAttribute="centerY" secondItem="s4a-TJ-AZj" secondAttribute="centerY" id="p68-W6-e6E"/>
-                                    <constraint firstItem="Euk-08-fVX" firstAttribute="centerX" secondItem="s4a-TJ-AZj" secondAttribute="centerX" id="pRA-eD-i1d"/>
-                                </constraints>
-                            </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="s4a-TJ-AZj" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" id="HnV-5s-9j9"/>
-                            <constraint firstItem="s4a-TJ-AZj" firstAttribute="top" secondItem="nfx-81-sFu" secondAttribute="top" id="ZG1-GD-xFf"/>
-                            <constraint firstItem="s4a-TJ-AZj" firstAttribute="trailing" secondItem="nfx-81-sFu" secondAttribute="trailing" id="csf-8V-q8b"/>
-                            <constraint firstItem="s4a-TJ-AZj" firstAttribute="bottom" secondItem="nfx-81-sFu" secondAttribute="bottom" id="mPS-un-X5P"/>
+                            <constraint firstItem="RMp-48-Nib" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" constant="8" id="G0P-PX-e8g"/>
+                            <constraint firstItem="nfx-81-sFu" firstAttribute="trailing" secondItem="RMp-48-Nib" secondAttribute="trailing" constant="8" id="frK-aJ-MjJ"/>
+                            <constraint firstItem="RMp-48-Nib" firstAttribute="top" secondItem="nfx-81-sFu" secondAttribute="top" id="ohz-lo-gvw"/>
+                            <constraint firstItem="RMp-48-Nib" firstAttribute="bottom" secondItem="nfx-81-sFu" secondAttribute="bottom" id="tap-rO-O3E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nfx-81-sFu"/>
                     </view>
+                    <connections>
+                        <outlet property="groupTableView" destination="RMp-48-Nib" id="gq6-5N-SJt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5D-pM-Deh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="82"/>
+            <point key="canvasLocation" x="1216.8" y="81.409295352323838"/>
         </scene>
         <!--Animal Explorer View Controller-->
         <scene sceneID="Gmd-V2-F4d">

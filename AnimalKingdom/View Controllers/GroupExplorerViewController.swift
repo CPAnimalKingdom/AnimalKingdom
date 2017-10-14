@@ -8,11 +8,13 @@
 
 import UIKit
 
-class GroupExplorerViewController: UIViewController {
+class GroupExplorerViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var groupTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        groupTableView.delegate = self
+        groupTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +22,18 @@ class GroupExplorerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Datasource.data.bundleData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = groupTableView.dequeueReusableCell(withIdentifier: "GroupTableViewCell", for: indexPath) as! GroupTableViewCell
+        cell.groupNameTextLabel.text = "\(Datasource.data.bundleData[indexPath.row]["name"] ?? "Error: Group name did not load")"
+        return cell
+    }
+    
     
 
     /*

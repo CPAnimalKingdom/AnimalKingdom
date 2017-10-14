@@ -12,6 +12,7 @@
 		37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F371F920CFB00F55A30 /* LogoutViewController.swift */; };
 		37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029F391F920D9200F55A30 /* Logout.storyboard */; };
 		37029F3D1F92120300F55A30 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F3C1F92120300F55A30 /* Datasource.swift */; };
+		37029F3F1F92B37A00F55A30 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F3E1F92B37A00F55A30 /* GroupTableViewCell.swift */; };
 		370B99A11F8C912100BFFEA6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A01F8C912100BFFEA6 /* HomeViewController.swift */; };
 		370B99A31F8C920200BFFEA6 /* GroupExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A21F8C920200BFFEA6 /* GroupExplorerViewController.swift */; };
 		370B99A51F8C921000BFFEA6 /* AnimalExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */; };
@@ -45,6 +46,7 @@
 		37029F371F920CFB00F55A30 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		37029F391F920D9200F55A30 /* Logout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logout.storyboard; sourceTree = "<group>"; };
 		37029F3C1F92120300F55A30 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		37029F3E1F92B37A00F55A30 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupTableViewCell.swift; path = AnimalKingdom/Views/GroupTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		370B99A01F8C912100BFFEA6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		370B99A21F8C920200BFFEA6 /* GroupExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupExplorerViewController.swift; sourceTree = "<group>"; };
 		370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalExplorerViewController.swift; sourceTree = "<group>"; };
@@ -104,11 +106,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		370B999C1F8C90A100BFFEA6 /* VIews */ = {
+		370B999C1F8C90A100BFFEA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37029F3E1F92B37A00F55A30 /* GroupTableViewCell.swift */,
 			);
-			path = VIews;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		370B999D1F8C90AE00BFFEA6 /* Storyboards */ = {
@@ -179,7 +182,7 @@
 				37029F3B1F92116200F55A30 /* Data */,
 				370B999B1F8C909400BFFEA6 /* Models */,
 				370B999E1F8C90BA00BFFEA6 /* View Controllers */,
-				370B999C1F8C90A100BFFEA6 /* VIews */,
+				370B999C1F8C90A100BFFEA6 /* Views */,
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
 				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37029F361F920CE400F55A30 /* LoginViewController.swift in Sources */,
+				37029F3F1F92B37A00F55A30 /* GroupTableViewCell.swift in Sources */,
 				37460A9E1F91AB6A0098171A /* Animal.swift in Sources */,
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* Bundle.swift in Sources */,

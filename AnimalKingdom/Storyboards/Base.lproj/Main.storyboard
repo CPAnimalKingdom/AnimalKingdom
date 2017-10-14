@@ -126,30 +126,6 @@
             </objects>
             <point key="canvasLocation" x="-617" y="35"/>
         </scene>
-        <!--Video-->
-        <scene sceneID="sEk-uH-sVy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Video" id="KBj-Ur-fhI" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YDw-DQ-W91" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="905" y="187"/>
-        </scene>
-        <!--AR-->
-        <scene sceneID="Tck-66-XhY">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AR" id="vUr-fg-1VN" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeA-Fv-hAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="891" y="234"/>
-        </scene>
-        <!--Details-->
-        <scene sceneID="Tc1-Wb-DoO">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Details" id="lrC-26-U1c" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Swl-IW-mVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="910" y="143"/>
-        </scene>
         <!--Explorer-->
         <scene sceneID="CJC-PM-fO4">
             <objects>

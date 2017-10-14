@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37029F341F920C3800F55A30 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029F331F920C3800F55A30 /* Login.storyboard */; };
+		37029F361F920CE400F55A30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F351F920CE400F55A30 /* LoginViewController.swift */; };
+		37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F371F920CFB00F55A30 /* LogoutViewController.swift */; };
+		37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029F391F920D9200F55A30 /* Logout.storyboard */; };
 		370B99A11F8C912100BFFEA6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A01F8C912100BFFEA6 /* HomeViewController.swift */; };
 		370B99A31F8C920200BFFEA6 /* GroupExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A21F8C920200BFFEA6 /* GroupExplorerViewController.swift */; };
 		370B99A51F8C921000BFFEA6 /* AnimalExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */; };
@@ -35,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalKingdom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37029F331F920C3800F55A30 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		37029F351F920CE400F55A30 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		37029F371F920CFB00F55A30 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		37029F391F920D9200F55A30 /* Logout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logout.storyboard; sourceTree = "<group>"; };
 		370B99A01F8C912100BFFEA6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		370B99A21F8C920200BFFEA6 /* GroupExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupExplorerViewController.swift; sourceTree = "<group>"; };
 		370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalExplorerViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,8 @@
 				37FB918D1F8DB06900E88D98 /* AR.storyboard */,
 				37FB91971F8DB18E00E88D98 /* Creator.storyboard */,
 				37FB91951F8DB15400E88D98 /* Settings.storyboard */,
+				37029F331F920C3800F55A30 /* Login.storyboard */,
+				37029F391F920D9200F55A30 /* Logout.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 				370B99AC1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift */,
 				370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */,
 				370B99B01F8C960F00BFFEA6 /* ARViewController.swift */,
+				37029F351F920CE400F55A30 /* LoginViewController.swift */,
+				37029F371F920CFB00F55A30 /* LogoutViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -246,6 +258,7 @@
 			files = (
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
 				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
+				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
 				37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */,
 				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
@@ -254,6 +267,7 @@
 				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
+				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37029F361F920CE400F55A30 /* LoginViewController.swift in Sources */,
 				37460A9E1F91AB6A0098171A /* Animal.swift in Sources */,
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* Bundle.swift in Sources */,
@@ -330,6 +345,7 @@
 				370B99A51F8C921000BFFEA6 /* AnimalExplorerViewController.swift in Sources */,
 				370B99AB1F8C95B600BFFEA6 /* CreatorViewController.swift in Sources */,
 				370B99A91F8C958400BFFEA6 /* SettingsViewController.swift in Sources */,
+				37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */,
 				370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

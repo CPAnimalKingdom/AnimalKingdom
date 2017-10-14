@@ -16,6 +16,9 @@
 		370B99AD1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AC1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift */; };
 		370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */; };
 		370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99B01F8C960F00BFFEA6 /* ARViewController.swift */; };
+		3735419C1F91C0E300BEE34F /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419B1F91C0E300BEE34F /* Bundle.swift */; };
+		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
+		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
 		37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A033BE1F8C868600C4AA86 /* AppDelegate.swift */; };
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C51F8C868600C4AA86 /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		370B99AC1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsViewController.swift; sourceTree = "<group>"; };
 		370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		370B99B01F8C960F00BFFEA6 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		3735419B1F91C0E300BEE34F /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		37A033BB1F8C868600C4AA86 /* AnimalKingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalKingdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A033BE1F8C868600C4AA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A033C31F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 		370B999B1F8C909400BFFEA6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3735419B1F91C0E300BEE34F /* Bundle.swift */,
+				37460A9D1F91AB6A0098171A /* Animal.swift */,
+				3735419D1F91C38100BEE34F /* Settings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,6 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37460A9E1F91AB6A0098171A /* Animal.swift in Sources */,
+				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
+				3735419C1F91C0E300BEE34F /* Bundle.swift in Sources */,
 				37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */,
 				370B99AD1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift in Sources */,
 				370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */,

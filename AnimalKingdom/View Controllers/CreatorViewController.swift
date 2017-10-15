@@ -11,7 +11,12 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
 
-class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate {
+class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
+
+    let imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +27,47 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.readPermissions = ["public_profile"]
         loginButton.center = self.view.center
         self.view.addSubview(loginButton)
+
+        imagePicker.delegate = self
+
+        if (Auth.auth().currentUser != nil) {
+            // If there is a logged in Firebase user
+            // TODO: What if Firebase user and FB user go out of sync e.g. password reset on FB
+            self.addUploadButton()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    func addUploadButton() {
+        self.uploadButton!.isHidden = false
+        self.imageView!.isHidden = false
+    }
+
+    func removeUploadButton () {
+        self.uploadButton!.isHidden = true
+        self.imageView!.isHidden = true
+    }
+
+    @IBAction func uploadButtonTapped(_ sender: Any) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+
+        present(imagePicker, animated: true, completion: nil)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = pickedImage
+            imageView.isHidden = false
+        }
+
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -54,6 +93,7 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
             // User is signed in
             // Do stuff
+            self.addUploadButton()
         }
     }
 
@@ -61,6 +101,7 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate {
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
+            self.removeUploadButton()
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class CreatorViewController: UIViewController {
 
@@ -14,6 +16,14 @@ class CreatorViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if (FBSDKAccessToken.current() != nil) {
+            // Do stuff post-login here
+        } else {
+            let loginButton = FBSDKLoginButton()
+            loginButton.readPermissions = ["public_profile"]
+            loginButton.center = self.view.center
+            self.view.addSubview(loginButton)
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -6,5 +6,10 @@ target 'AnimalKingdom' do
   use_frameworks!
 
   # Pods for AnimalKingdom
-    pod 'AFNetworking'
+  pod 'AFNetworking'
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
+  pod 'Firebase/Auth'
 end

@@ -1,17 +1,22 @@
 //
-//  HomeViewController.swift
+//  DetailsViewController.swift
 //  AnimalKingdom
 //
-//  Created by Dan on 10/9/17.
+//  Created by Dan on 10/14/17.
 //  Copyright © 2017 Dan. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class DetailsViewController: UIViewController {
 
+    @IBOutlet var commonNameTextLabel: UILabel!
+    var animal: Animal!
     override func viewDidLoad() {
         super.viewDidLoad()
+        commonNameTextLabel.text = animal.commonName as String
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

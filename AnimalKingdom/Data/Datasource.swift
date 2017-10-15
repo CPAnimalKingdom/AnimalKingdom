@@ -21,7 +21,7 @@ class Datasource: NSObject {
         self.bundleData =
         [
         [
-        "name": "Group 1",
+        "name": "Bundle 1",
         "image": "imageString",
         "animals":
         [
@@ -91,12 +91,12 @@ class Datasource: NSObject {
         "enabled": true
         ],
         [
-        "name": "Group 2",
+        "name": "Bundle 2",
         "image": "imageString",
         "animals":
         [
         [
-        "commonName": "Dog",
+        "commonName": "Cow",
         "scientificName": "Dogis Draculla",
         "type": "Canine",
         "diet": "Everthing",
@@ -127,7 +127,7 @@ class Datasource: NSObject {
         ]
         ],
         [
-        "commonName": "Cat",
+        "commonName": "Goat",
         "scientificName": "Dogis Draculla",
         "type": "Canine",
         "diet": "Everthing",
@@ -163,9 +163,5 @@ class Datasource: NSObject {
         ]
         
     }
-    func getData()
-    {
-        let appBundle: [Bundle] = Bundle.bundleArray(dictionaries: bundleData)
-        print(appBundle)
-    }
+    
 }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class GroupTableViewCell: UITableViewCell {
+class BundleTableViewCell: UITableViewCell {
     
-    @IBOutlet var groupNameTextLabel: UILabel!
+    @IBOutlet var bundleNameTextLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

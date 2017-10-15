@@ -33,7 +33,7 @@ class Animal: NSObject {
         self.size = dictionary["size"] as! NSString
         self.weight = dictionary["weight"] as! NSString
         self.mainPhoto = dictionary["mainPhoto"] as! NSString
-        self.thumbnailPhoto = dictionary["thumbnail"] as! NSString
+        self.thumbnailPhoto = dictionary["thumbnailPhoto"] as! NSString
         self.relativeSize = dictionary["relativeSize"] as! NSString
         self.about = dictionary["about"] as! NSDictionary
         self.facts = dictionary["facts"] as! [NSString]

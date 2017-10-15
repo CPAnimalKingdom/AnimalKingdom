@@ -9,21 +9,19 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
 
-class CreatorViewController: UIViewController {
+class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if (FBSDKAccessToken.current() != nil) {
-            // Do stuff post-login here
-        } else {
-            let loginButton = FBSDKLoginButton()
-            loginButton.readPermissions = ["public_profile"]
-            loginButton.center = self.view.center
-            self.view.addSubview(loginButton)
-        }
+        let loginButton = FBSDKLoginButton()
+        loginButton.delegate = self
+        loginButton.readPermissions = ["public_profile"]
+        loginButton.center = self.view.center
+        self.view.addSubview(loginButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,4 +40,29 @@ class CreatorViewController: UIViewController {
     }
     */
 
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                // Firebase Authentication error
+                print(error.localizedDescription)
+                return
+            }
+            // User is signed in
+            // Do stuff
+        }
+    }
+
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
 }

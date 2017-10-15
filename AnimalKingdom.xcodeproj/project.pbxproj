@@ -38,6 +38,7 @@
 		37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91931F8DB12F00E88D98 /* Adventurer.storyboard */; };
 		37FB91961F8DB15400E88D98 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91951F8DB15400E88D98 /* Settings.storyboard */; };
 		37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91971F8DB18E00E88D98 /* Creator.storyboard */; };
+		766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */; };
 		BD924C3F4C854ECB228ECFDA /* Pods_AnimalKingdom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		37FB91951F8DB15400E88D98 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		37FB91971F8DB18E00E88D98 /* Creator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creator.storyboard; sourceTree = "<group>"; };
 		58E0EA78625CDF64E660F67D /* Pods-AnimalKingdom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.release.xcconfig"; sourceTree = "<group>"; };
+		766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8915A505B759EEF71284BC5F /* Pods-AnimalKingdom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
 				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
+				766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */,
 				37A033CA1F8C868600C4AA86 /* Info.plist */,
 			);
 			path = AnimalKingdom;
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */,
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
 				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,

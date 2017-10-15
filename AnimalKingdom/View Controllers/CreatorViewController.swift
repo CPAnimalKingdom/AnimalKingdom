@@ -10,6 +10,8 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import FirebaseStorage
+import MBProgressHUD
 
 class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -17,6 +19,7 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
     @IBOutlet weak var imageView: UIImageView!
 
     let imagePicker = UIImagePickerController()
+    let storageRef = Storage.storage().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +67,27 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
             imageView.contentMode = .scaleAspectFit
             imageView.image = pickedImage
             imageView.isHidden = false
+
+            let uuid = UUID().uuidString
+            let imageRef = storageRef.child("images/\(uuid).jpg")
+
+            // Display HUD right before the request is made
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+
+            // Upload the file to the path "images/{UUID}.jpg"
+            let data = UIImageJPEGRepresentation(pickedImage, 0.8)!
+            let metadata = StorageMetadata()
+            metadata.contentType = "image/jpg"
+            let _uploadTask = imageRef.putData(data, metadata: metadata) { (metadata, error) in
+                guard let metadata = metadata else {
+                    // Uh-oh, an error occurred!
+                    return
+                }
+                // Metadata contains file metadata such as size, content-type, and download URL.
+                let downloadURL = metadata.downloadURL
+                print(downloadURL)
+                MBProgressHUD.hide(for: self.view, animated: true)
+            }
         }
 
         dismiss(animated: true, completion: nil)

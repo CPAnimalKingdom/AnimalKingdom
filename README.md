@@ -32,3 +32,18 @@ Optional
 - [ ] User can create new user accounts (only required for content creation)
 - [ ] User purchase additional animal bundles (categories or groups) as in-app purchase
 
+---
+
+[x] SPRINT 1
+
+Aabeeya:
+[x] Integrate Firebase Auth
+[x] User login through facebook
+
+Nader:
+[x] Find 3d model in the correct format
+[x] Create early version of AR module using Unity
+
+Dan:
+[x] App general layout and navigation between modules
+[x] Create initial source json dataset

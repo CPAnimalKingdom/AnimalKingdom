@@ -43,13 +43,14 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
             let _ = request?.start(completionHandler: { (connection, result, error) in
                 guard let userInfo = result as? [String: Any] else { return } //handle the error
 
-                let userName = userInfo["name"]!;
+                let userName = userInfo["name"] as! String;
 
                 //The url is nested 3 layers deep into the result so it's pretty messy
-                let pictureUrl = ((userInfo["picture"] as? [String: Any])?["data"] as? [String: Any])?["url"] as! String
+                let pictureUrlString = ((userInfo["picture"] as? [String: Any])?["data"] as? [String: Any])?["url"] as! String
+                let uid = Auth.auth().currentUser!.uid
 
-                print(userName)
-                print(pictureUrl)
+                let user = User(id: uid, name: userName, profileImageUrl: pictureUrlString)
+                user.save()
             })
         }
     }

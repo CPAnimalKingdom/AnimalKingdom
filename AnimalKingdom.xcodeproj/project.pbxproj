@@ -38,6 +38,9 @@
 		37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91931F8DB12F00E88D98 /* Adventurer.storyboard */; };
 		37FB91961F8DB15400E88D98 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91951F8DB15400E88D98 /* Settings.storyboard */; };
 		37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB91971F8DB18E00E88D98 /* Creator.storyboard */; };
+		760C5E621F94400600E64444 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E611F94400600E64444 /* LocalCollection.swift */; };
+		760C5E641F94404100E64444 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E631F94404100E64444 /* User.swift */; };
+		760C5E661F94405400E64444 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E651F94405400E64444 /* Post.swift */; };
 		766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */; };
 		BD924C3F4C854ECB228ECFDA /* Pods_AnimalKingdom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +81,9 @@
 		37FB91951F8DB15400E88D98 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		37FB91971F8DB18E00E88D98 /* Creator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creator.storyboard; sourceTree = "<group>"; };
 		58E0EA78625CDF64E660F67D /* Pods-AnimalKingdom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.release.xcconfig"; sourceTree = "<group>"; };
+		760C5E611F94400600E64444 /* LocalCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
+		760C5E631F94404100E64444 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		760C5E651F94405400E64444 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8915A505B759EEF71284BC5F /* Pods-AnimalKingdom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +114,9 @@
 				3735419B1F91C0E300BEE34F /* Bundle.swift */,
 				37460A9D1F91AB6A0098171A /* Animal.swift */,
 				3735419D1F91C38100BEE34F /* Settings.swift */,
+				760C5E611F94400600E64444 /* LocalCollection.swift */,
+				760C5E631F94404100E64444 /* User.swift */,
+				760C5E651F94405400E64444 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -387,8 +396,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37029F361F920CE400F55A30 /* LoginViewController.swift in Sources */,
+				760C5E661F94405400E64444 /* Post.swift in Sources */,
 				37029F3F1F92B37A00F55A30 /* BundleTableViewCell.swift in Sources */,
 				37460A9E1F91AB6A0098171A /* Animal.swift in Sources */,
+				760C5E621F94400600E64444 /* LocalCollection.swift in Sources */,
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* Bundle.swift in Sources */,
 				37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */,
@@ -405,6 +416,7 @@
 				37029F411F92CE6300F55A30 /* AnimalTableViewCell.swift in Sources */,
 				37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */,
 				370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */,
+				760C5E641F94404100E64444 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

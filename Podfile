@@ -11,7 +11,9 @@ target 'AnimalKingdom' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKShareKit'
   pod 'FBSDKLoginKit'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
   pod 'MBProgressHUD'
 end

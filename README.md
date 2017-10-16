@@ -51,8 +51,8 @@ Dan:
 - [x] Create initial source json dataset
 
 <img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/ar.gif' title='AR' width='' alt='AR' />
-<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/ar.gif' title='Firebase Walkthrough' width='' alt='Firebase' />
-<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/ar.gif' title='Flow' width='' alt='Flow' />
+<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/firebase.gif' title='Firebase Walkthrough' width='' alt='Firebase' />
+<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/flow.gif' title='Flow' width='' alt='Flow' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

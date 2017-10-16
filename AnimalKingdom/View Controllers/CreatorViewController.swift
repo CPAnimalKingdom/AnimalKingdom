@@ -18,6 +18,10 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
 
+    @IBOutlet weak var profileImage: UIImageView!
+
+    @IBOutlet weak var profileName: UILabel!
+
     let imagePicker = UIImagePickerController()
     let storageRef = Storage.storage().reference()
 
@@ -36,7 +40,7 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         if (Auth.auth().currentUser != nil) {
             // If there is a logged in Firebase user
             // TODO: What if Firebase user and FB user go out of sync e.g. password reset on FB
-            self.addUploadButton()
+            self.setupLoggedinView()
 
             // Attempt to get user name and profile picture URL
             let request = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, picture.type(large)"])
@@ -51,6 +55,14 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
 
                 let user = User(id: uid, name: userName, profileImageUrl: pictureUrlString)
                 user.save()
+                self.profileName.text = userName
+
+
+                if let url = NSURL(string: pictureUrlString) {
+                    if let data = NSData(contentsOf: url as URL) {
+                        self.profileImage.image = UIImage(data: data as Data)
+                    }
+                }
             })
         }
     }
@@ -60,14 +72,18 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         // Dispose of any resources that can be recreated.
     }
 
-    func addUploadButton() {
+    func setupLoggedinView() {
         self.uploadButton!.isHidden = false
         self.imageView!.isHidden = false
+        self.profileName!.isHidden = false
+        self.profileImage!.isHidden = false
     }
 
-    func removeUploadButton () {
+    func removeLoggedinView () {
         self.uploadButton!.isHidden = true
         self.imageView!.isHidden = true
+        self.profileName!.isHidden = true
+        self.profileImage!.isHidden = true
     }
 
     @IBAction func uploadButtonTapped(_ sender: Any) {
@@ -132,7 +148,7 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
             }
             // User is signed in
             // Do stuff
-            self.addUploadButton()
+            self.setupLoggedinView()
         }
     }
 
@@ -140,7 +156,7 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
-            self.removeUploadButton()
+            self.removeLoggedinView()
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }

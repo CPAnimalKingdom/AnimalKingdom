@@ -37,7 +37,18 @@
                                         </connections>
                                     </button>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIj-Oz-gSo">
-                                        <rect key="frame" x="24" y="19" width="326" height="271"/>
+                                        <rect key="frame" x="64" y="102" width="259" height="169"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAp-Mn-bEc">
+                                        <rect key="frame" x="240" y="20" width="127" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khn-if-ZCr">
+                                        <rect key="frame" x="202" y="20" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -62,6 +73,8 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ZIj-Oz-gSo" id="cDH-41-v8P"/>
+                        <outlet property="profileImage" destination="khn-if-ZCr" id="4zF-bC-g50"/>
+                        <outlet property="profileName" destination="nAp-Mn-bEc" id="JwH-9w-9ah"/>
                         <outlet property="uploadButton" destination="tda-w6-o7V" id="p1b-Yg-rN9"/>
                     </connections>
                 </viewController>

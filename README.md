@@ -47,3 +47,5 @@ Nader:
 Dan:
 - [x] App general layout and navigation between modules
 - [x] Create initial source json dataset
+
+<img src='https://i.imgur.com/7FNPJmQ.gif' title='AR Walkthrough' width='' alt='Video Walkthrough' />

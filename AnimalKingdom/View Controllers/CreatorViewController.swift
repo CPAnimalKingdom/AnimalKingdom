@@ -37,6 +37,20 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
             // If there is a logged in Firebase user
             // TODO: What if Firebase user and FB user go out of sync e.g. password reset on FB
             self.addUploadButton()
+
+            // Attempt to get user name and profile picture URL
+            let request = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, picture.type(large)"])
+            let _ = request?.start(completionHandler: { (connection, result, error) in
+                guard let userInfo = result as? [String: Any] else { return } //handle the error
+
+                let userName = userInfo["name"]!;
+
+                //The url is nested 3 layers deep into the result so it's pretty messy
+                let pictureUrl = ((userInfo["picture"] as? [String: Any])?["data"] as? [String: Any])?["url"] as! String
+
+                print(userName)
+                print(pictureUrl)
+            })
         }
     }
 

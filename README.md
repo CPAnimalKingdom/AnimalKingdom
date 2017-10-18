@@ -32,6 +32,8 @@ Optional
 - [ ] User can create new user accounts (only required for content creation)
 - [ ] User purchase additional animal bundles (categories or groups) as in-app purchase
 
+<img src='https://github.com/CPAnimalKingdom/AnimalKingdom/raw/master/Wireframe-and-design/10%20-%20Design%20Demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ---
 
 - [x] SPRINT 1
@@ -48,4 +50,9 @@ Dan:
 - [x] App general layout and navigation between modules
 - [x] Create initial source json dataset
 
-<img src='https://i.imgur.com/7FNPJmQ.gif' title='AR Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/ar.gif' title='AR' width='' alt='AR' />
+<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/firebase.gif' title='Firebase Walkthrough' width='' alt='Firebase' />
+<img src='https://raw.githubusercontent.com/CPAnimalKingdom/AnimalKingdom/master/Wireframe-and-design/Sprint_1/flow.gif' title='Flow' width='' alt='Flow' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4MY-hg-iEK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,46 +14,29 @@
             <objects>
                 <viewController id="4MY-hg-iEK" customClass="ARViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7p-7q-4dE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-Gr-74K">
-                                <rect key="frame" x="176" y="323" width="22" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pn-WI-uTE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-tF-R3p">
-                                        <rect key="frame" x="176.5" y="291" width="22" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.92806154819999997" green="0.63907824021525139" blue="0.50153467947208619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="vWx-tF-R3p" firstAttribute="centerY" secondItem="2pn-WI-uTE" secondAttribute="centerY" id="9lB-uy-IFK"/>
-                                    <constraint firstItem="vWx-tF-R3p" firstAttribute="centerX" secondItem="2pn-WI-uTE" secondAttribute="centerX" id="dzT-1c-6Bj"/>
-                                </constraints>
-                            </view>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="571-wf-oaC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2pn-WI-uTE" firstAttribute="bottom" secondItem="7kg-Nk-jPc" secondAttribute="bottom" id="0fI-BF-Hg6"/>
-                            <constraint firstItem="2pn-WI-uTE" firstAttribute="trailing" secondItem="7kg-Nk-jPc" secondAttribute="trailing" id="XCk-Jt-jLo"/>
-                            <constraint firstItem="2pn-WI-uTE" firstAttribute="leading" secondItem="7kg-Nk-jPc" secondAttribute="leading" id="kbA-lU-js6"/>
-                            <constraint firstItem="2pn-WI-uTE" firstAttribute="top" secondItem="7kg-Nk-jPc" secondAttribute="top" id="pQ3-61-Q6n"/>
+                            <constraint firstItem="571-wf-oaC" firstAttribute="top" secondItem="j7p-7q-4dE" secondAttribute="top" id="5an-gq-y4P"/>
+                            <constraint firstItem="571-wf-oaC" firstAttribute="trailing" secondItem="7kg-Nk-jPc" secondAttribute="trailing" id="6nC-bt-iFB"/>
+                            <constraint firstItem="571-wf-oaC" firstAttribute="leading" secondItem="7kg-Nk-jPc" secondAttribute="leading" id="DOZ-zv-7m4"/>
+                            <constraint firstItem="571-wf-oaC" firstAttribute="bottom" secondItem="7kg-Nk-jPc" secondAttribute="bottom" id="F48-uM-XxI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7kg-Nk-jPc"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="571-wf-oaC" id="j4e-m1-NMq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKd-M1-58t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3910" y="854"/>
+            <point key="canvasLocation" x="3909.5999999999999" y="853.22338830584715"/>
         </scene>
     </scenes>
 </document>

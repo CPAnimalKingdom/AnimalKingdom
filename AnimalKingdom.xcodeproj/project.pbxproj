@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121BB3021F99DCD400685654 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 121BB3011F99DAF400685654 /* tron_grid.png */; };
 		12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B26CD01F9723AA00B3D73D /* art.scnassets */; };
+		12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26CD21F99C35B00B3D73D /* ARPlane.swift */; };
 		37029F341F920C3800F55A30 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029F331F920C3800F55A30 /* Login.storyboard */; };
 		37029F361F920CE400F55A30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F351F920CE400F55A30 /* LoginViewController.swift */; };
 		37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F371F920CFB00F55A30 /* LogoutViewController.swift */; };
@@ -47,7 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121BB3011F99DAF400685654 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron_grid.png; path = /Users/Nader/Dev/XcodeProjects/CodePath/AnimalKingdom/AnimalKingdom/tron_grid.png; sourceTree = "<absolute>"; };
 		12B26CD01F9723AA00B3D73D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		12B26CD21F99C35B00B3D73D /* ARPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlane.swift; sourceTree = "<group>"; };
 		2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalKingdom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37029F331F920C3800F55A30 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		37029F351F920CE400F55A30 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				760C5E611F94400600E64444 /* LocalCollection.swift */,
 				760C5E631F94404100E64444 /* User.swift */,
 				760C5E651F94405400E64444 /* Post.swift */,
+				12B26CD21F99C35B00B3D73D /* ARPlane.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				370B999C1F8C90A100BFFEA6 /* Views */,
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
+				121BB3011F99DAF400685654 /* tron_grid.png */,
 				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
 				12B26CD01F9723AA00B3D73D /* art.scnassets */,
 				766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */,
@@ -305,6 +311,7 @@
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,
+				121BB3021F99DCD400685654 /* tron_grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +427,7 @@
 				37029F411F92CE6300F55A30 /* AnimalTableViewCell.swift in Sources */,
 				37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */,
 				370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */,
+				12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */,
 				760C5E641F94404100E64444 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,11 +567,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EJTT2N9E3L;
+				DEVELOPMENT_TEAM = 8ACVWC32HP;
 				INFOPLIST_FILE = AnimalKingdom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdomNAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,11 +584,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EJTT2N9E3L;
+				DEVELOPMENT_TEAM = 8ACVWC32HP;
 				INFOPLIST_FILE = AnimalKingdom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdomNAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

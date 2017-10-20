@@ -33,51 +33,37 @@ class DetailsTableViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animal.detailsArray.count
+        return animal.details.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let key = animal.details[indexPath.row].allKeys[0] as! NSString
 
-        let key = animal.detailsArray[indexPath.row].allKeys[0] as! NSString
         if key == "mainPhoto" {
             let cell = Bundle.main.loadNibNamed("DetailsHeaderImageTableViewCell", owner: self, options: nil)?.first as! DetailsHeaderImageTableViewCell
             cell.animalImageImageView.image = UIImage(named: "african-elephant-main.jpg")
-            print("Key is \(key)")
             return cell
-        } else if key == "name" {
+        } else if key == "displayName" {
             let cell = Bundle.main.loadNibNamed("DetailsTitleTableViewCell", owner: self, options: nil)?.first as! DetailsTitleTableViewCell
-            cell.animalNameTextLabel.text = (animal.name["name"] as! String)
-            return cell
-        } else if key == "actions" {
-            let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
-            return cell
-        } else if key == "commonName" || key == "scientificName" ||  key == "type" || key == "diet" || key == "groupName" || key == "lifeSpan" || key == "size" || key == "weight"
-        {
-            let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
-
+            cell.animalNameTextLabel.text = animal.details[1]["displayName"] as? String
             return cell
         } else {
             let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
+            print(key)
             return cell
         }
         
     }
     
-    
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let key = animal.detailsArray[indexPath.row].allKeys[0] as! NSString
+        let key = animal.details[indexPath.row].allKeys[0] as! NSString
         if key == "mainPhoto" {
-            return (tableView.frame.width/5) * 3
-        } else if key == "name" {
-            return (tableView.frame.width/6)
-        } else if key == "actions" {
-            return (tableView.frame.width/6)
-        } else if key == "commonName" || key == "scientificName" ||  key == "type" || key == "diet" || key == "groupName" || key == "lifeSpan" || key == "size" || key == "weight" {
-            return (tableView.frame.width/6)
+            return (tableView.frame.width / 5 ) * 3
+        } else if key == "displayName" {
+            return (tableView.frame.width / 6 )
         } else {
-            return 0
+            return 50
         }
     }
     

@@ -26,36 +26,21 @@ class Datasource: NSObject {
                     "animals":
                         [
                             [
-                                "name":
+                                "details":
                                     [
-                                        "name": "Giraffe"
-                                ],
-                                "mainPhoto":
-                                    [
-                                        "mainPhoto": "african-elephant-main.jpg"
-                                ],
-                                "thumbnailPhoto":
-                                    [
-                                        "thumbnailPhoto": "african-elephant-main.jpg"
-                                ],
-                                "actions":
-                                    [
-                                        "actions": "xxx"
-                                ],
-                                "relativeSize":
-                                    [
-                                        "relativeSize": "relSizeImageUrl"
-                                ],
-                                "card":
-                                    [
-                                        "commonName": "Giraffe",
-                                        "scientificName": "Dogis Draculla",
-                                        "type": "Canine",
-                                        "diet": "Everthing",
-                                        "groupName": "Gang",
-                                        "lifeSpan": "15 years",
-                                        "size": "Heck if I know",
-                                        "weight": "Pass",
+                                        ["mainPhoto": "african-elephant-main.jpg"],
+                                        ["displayName": "THE AFRICAN ELEPHANT"],
+                                        ["actions": "xxx"],
+                                        ["commonName": "African Elephant"],
+                                        ["scientificName": "Dogis Draculla"],
+                                        ["type": "Canine"],
+                                        ["diet": "Everthing"],
+                                        ["groupName": "Gang"],
+                                        ["lifeSpan": "15 years"],
+                                        ["size": "Heck if I know"],
+                                        ["weight": "Pass"],
+                                        ["relativeSize": "african-elephant-main.jpg"]
+
                                 ],
                                 "about":
                                     [

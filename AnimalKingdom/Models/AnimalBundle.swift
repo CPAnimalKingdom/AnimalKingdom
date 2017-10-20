@@ -17,7 +17,7 @@ class AnimalBundle: NSObject {
         self.name = dictionary["name"] as! NSString
         self.image = dictionary["image"] as! NSString
         self.animals = dictionary["animals"] as! [Animal]
-        self.enabled = dictionary["enables"] as! Bool
+        self.enabled = dictionary["enabled"] as! Bool
     }
     
     class func animalBundleArray(dictionaries: [NSDictionary]) -> [AnimalBundle] {

@@ -9,34 +9,26 @@
 import UIKit
 
 class Animal: NSObject {
-    var commonName: NSString
-    var scientificName: NSString
-    var type: NSString
-    var diet: NSString
-    var groupName: NSString
-    var lifeSpan: NSString
-    var size: NSString
-    var weight: NSString
-    var mainPhoto: NSString
-    var thumbnailPhoto: NSString
-    var relativeSize: NSString
+    var name: NSDictionary
+    var card: NSDictionary
     var about: NSDictionary
-    var facts: [NSString]
+    var actions: NSDictionary
+    //var facts: [NSString]
+    var mainPhoto: NSDictionary
+    //var thumbnailPhoto: NSDictionary
+    var relativeSize: NSDictionary
+    var detailsArray: [NSDictionary]
 
     init(dictionary: NSDictionary) {
-        self.commonName = dictionary["commonName"] as! NSString
-        self.scientificName = dictionary["scientificName"] as! NSString
-        self.type = dictionary["type"] as! NSString
-        self.diet = dictionary["diet"]  as! NSString
-        self.groupName = dictionary["groupName"] as! NSString
-        self.lifeSpan = dictionary["lifeSpan"] as! NSString
-        self.size = dictionary["size"] as! NSString
-        self.weight = dictionary["weight"] as! NSString
-        self.mainPhoto = dictionary["mainPhoto"] as! NSString
-        self.thumbnailPhoto = dictionary["thumbnailPhoto"] as! NSString
-        self.relativeSize = dictionary["relativeSize"] as! NSString
+        self.mainPhoto = dictionary["mainPhoto"] as! NSDictionary
+        self.name = dictionary["name"] as! NSDictionary
+        self.actions = dictionary["actions"] as! NSDictionary
+        self.card = dictionary["card"] as! NSDictionary
+        //self.thumbnailPhoto = dictionary["thumbnailPhoto"] as! NSDictionary
+        self.relativeSize = dictionary["relativeSize"] as! NSDictionary
         self.about = dictionary["about"] as! NSDictionary
-        self.facts = dictionary["facts"] as! [NSString]
+        //self.facts = dictionary["facts"] as! [NSString]
+        self.detailsArray = [self.mainPhoto, self.name, self.actions, self.card]
     }
     
     class func animalArray(dictionaries: [NSDictionary]) -> [Animal] {
@@ -48,5 +40,6 @@ class Animal: NSObject {
         }
         return animals
     }
-
+    
 }
+

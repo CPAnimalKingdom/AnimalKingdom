@@ -9,7 +9,7 @@
 import UIKit
 
 class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var bundle: NSDictionary!
     var animals: [Animal]!
     
@@ -20,7 +20,7 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         animalTableView.dataSource = self
         animals = Animal.animalArray(dictionaries: bundle["animals"]! as! [NSDictionary])
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -32,16 +32,16 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = animalTableView.dequeueReusableCell(withIdentifier: "AnimalTableViewCell", for: indexPath) as! AnimalTableViewCell
-        cell.animalNameTextLabel.text = "\(animals[indexPath.row].commonName)"
+        cell.animalNameTextLabel.text = "\(animals[indexPath.row].card["commonName"] ?? "Error")"
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
@@ -49,8 +49,9 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         let animal: Animal = animals[indexPath!.row]
         
         // Pass the selected object to the new view controller.
-        let detailsExplorerViewController = segue.destination as! DetailsViewController
-        detailsExplorerViewController.animal = animal
+        let detailsViewController = segue.destination as! DetailsTableViewController
+        detailsViewController.animal = animal
     }
-
+    
 }
+

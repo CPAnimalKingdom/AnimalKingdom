@@ -1,77 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o0n-mO-tJk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qjQ-w2-tJa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Details View Controller-->
-        <scene sceneID="LvG-Dd-h4g">
+        <!--Details Table View Controller-->
+        <scene sceneID="M1j-d0-kff">
             <objects>
-                <viewController id="o0n-mO-tJk" customClass="DetailsViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QZj-bN-qDP">
+                <tableViewController id="qjQ-w2-tJa" customClass="DetailsTableViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u2v-9C-7XG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YX-g6-2fl">
-                                <rect key="frame" x="167" y="368" width="40" height="30"/>
-                                <state key="normal" title="Video"/>
-                                <connections>
-                                    <segue destination="KBj-Ur-fhI" kind="show" id="tgt-fb-am2"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-f0-2Rn">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-Nf-6DQ">
-                                <rect key="frame" x="172" y="399" width="30" height="30"/>
-                                <state key="normal" title="AR"/>
-                                <connections>
-                                    <segue destination="vUr-fg-1VN" kind="show" id="Kpu-u8-62U"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="730-f0-2Rn" firstAttribute="centerY" secondItem="QZj-bN-qDP" secondAttribute="centerY" id="8JO-33-pwj"/>
-                            <constraint firstItem="gTc-Nf-6DQ" firstAttribute="top" secondItem="1YX-g6-2fl" secondAttribute="bottom" constant="1" id="Gmb-vb-klZ"/>
-                            <constraint firstItem="1YX-g6-2fl" firstAttribute="centerX" secondItem="QZj-bN-qDP" secondAttribute="centerX" id="egb-Qs-40M"/>
-                            <constraint firstItem="1YX-g6-2fl" firstAttribute="top" secondItem="730-f0-2Rn" secondAttribute="bottom" constant="24" id="her-RF-uXq"/>
-                            <constraint firstItem="730-f0-2Rn" firstAttribute="centerX" secondItem="QZj-bN-qDP" secondAttribute="centerX" id="xmw-21-MJI"/>
-                            <constraint firstItem="gTc-Nf-6DQ" firstAttribute="centerX" secondItem="QZj-bN-qDP" secondAttribute="centerX" id="zdY-A1-LdF"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="45x-kt-kWr"/>
-                    </view>
-                    <connections>
-                        <outlet property="commonNameTextLabel" destination="730-f0-2Rn" id="CXh-dX-wyh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Oe-Ky-0Mj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HKU-qF-Kgq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HKU-qF-Kgq" id="X5i-b5-Jgq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qjQ-w2-tJa" id="YSk-KT-McW"/>
+                            <outlet property="delegate" destination="qjQ-w2-tJa" id="1TK-Ut-Czp"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWJ-Ik-HJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013.5999999999999" y="81.409295352323838"/>
-        </scene>
-        <!--Video-->
-        <scene sceneID="sEk-uH-sVy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Video" id="KBj-Ur-fhI" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YDw-DQ-W91" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3636" y="58"/>
-        </scene>
-        <!--AR-->
-        <scene sceneID="Tck-66-XhY">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AR" id="vUr-fg-1VN" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeA-Fv-hAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3622" y="105"/>
+            <point key="canvasLocation" x="3465" y="-485"/>
         </scene>
     </scenes>
 </document>

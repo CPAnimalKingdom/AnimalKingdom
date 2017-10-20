@@ -23,17 +23,23 @@
 		370B99A71F8C927800BFFEA6 /* AdventurerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A61F8C927800BFFEA6 /* AdventurerViewController.swift */; };
 		370B99A91F8C958400BFFEA6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99A81F8C958400BFFEA6 /* SettingsViewController.swift */; };
 		370B99AB1F8C95B600BFFEA6 /* CreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AA1F8C95B600BFFEA6 /* CreatorViewController.swift */; };
-		370B99AD1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AC1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift */; };
 		370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */; };
 		370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99B01F8C960F00BFFEA6 /* ARViewController.swift */; };
 		3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419B1F91C0E300BEE34F /* AnimalBundle.swift */; };
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
+		379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */; };
+		379B2C8E1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */; };
+		379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */; };
+		379B2C921F9982E000060D3B /* DetailsTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C901F9982E000060D3B /* DetailsTitleTableViewCell.swift */; };
+		379B2C931F9982E000060D3B /* DetailsTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C911F9982E000060D3B /* DetailsTitleTableViewCell.xib */; };
+		379B2C981F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C961F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift */; };
+		379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C971F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib */; };
+		379B2CA31F999DE300060D3B /* african-elephant-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 379B2CA21F999DE300060D3B /* african-elephant-main.jpg */; };
 		37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A033BE1F8C868600C4AA86 /* AppDelegate.swift */; };
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C51F8C868600C4AA86 /* Assets.xcassets */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
-		37F6A6121F92FD3F00811427 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6A6111F92FD3F00811427 /* DetailsViewController.swift */; };
 		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
 		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
 		37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918F1F8DB09900E88D98 /* Details.storyboard */; };
@@ -66,19 +72,25 @@
 		370B99A61F8C927800BFFEA6 /* AdventurerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventurerViewController.swift; sourceTree = "<group>"; };
 		370B99A81F8C958400BFFEA6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		370B99AA1F8C95B600BFFEA6 /* CreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorViewController.swift; sourceTree = "<group>"; };
-		370B99AC1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsViewController.swift; sourceTree = "<group>"; };
 		370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		370B99B01F8C960F00BFFEA6 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		3735419B1F91C0E300BEE34F /* AnimalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBundle.swift; sourceTree = "<group>"; };
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderImageTableViewCell.swift; sourceTree = "<group>"; };
+		379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsHeaderImageTableViewCell.xib; sourceTree = "<group>"; };
+		379B2C901F9982E000060D3B /* DetailsTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTitleTableViewCell.swift; sourceTree = "<group>"; };
+		379B2C911F9982E000060D3B /* DetailsTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTitleTableViewCell.xib; sourceTree = "<group>"; };
+		379B2C961F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsActionsPanelTableViewCell.swift; sourceTree = "<group>"; };
+		379B2C971F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsActionsPanelTableViewCell.xib; sourceTree = "<group>"; };
+		379B2CA21F999DE300060D3B /* african-elephant-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "african-elephant-main.jpg"; path = "../../../../../Downloads/african-elephant-main.jpg"; sourceTree = "<group>"; };
 		37A033BB1F8C868600C4AA86 /* AnimalKingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalKingdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A033BE1F8C868600C4AA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A033C31F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37A033C51F8C868600C4AA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37A033C81F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A033CA1F8C868600C4AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37F6A6111F92FD3F00811427 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		37FB918D1F8DB06900E88D98 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		37FB918F1F8DB09900E88D98 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
@@ -133,6 +145,12 @@
 			children = (
 				37029F3E1F92B37A00F55A30 /* BundleTableViewCell.swift */,
 				37029F401F92CE6300F55A30 /* AnimalTableViewCell.swift */,
+				379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */,
+				379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */,
+				379B2C901F9982E000060D3B /* DetailsTitleTableViewCell.swift */,
+				379B2C911F9982E000060D3B /* DetailsTitleTableViewCell.xib */,
+				379B2C961F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift */,
+				379B2C971F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,18 +176,17 @@
 		370B999E1F8C90BA00BFFEA6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				37F6A6111F92FD3F00811427 /* DetailsViewController.swift */,
 				370B99A01F8C912100BFFEA6 /* HomeViewController.swift */,
 				370B99A21F8C920200BFFEA6 /* BundleExplorerViewController.swift */,
 				370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */,
 				370B99A61F8C927800BFFEA6 /* AdventurerViewController.swift */,
 				370B99A81F8C958400BFFEA6 /* SettingsViewController.swift */,
 				370B99AA1F8C95B600BFFEA6 /* CreatorViewController.swift */,
-				370B99AC1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift */,
 				370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */,
 				370B99B01F8C960F00BFFEA6 /* ARViewController.swift */,
 				37029F351F920CE400F55A30 /* LoginViewController.swift */,
 				37029F371F920CFB00F55A30 /* LogoutViewController.swift */,
+				379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -181,6 +198,33 @@
 			);
 			path = Other;
 			sourceTree = "<group>";
+		};
+		379B2C9C1F999CA200060D3B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				379B2C9F1F999D2E00060D3B /* Animal */,
+				379B2C9E1F999D1600060D3B /* Bundles */,
+			);
+			name = Images;
+			path = /Users/dan/Developer/AnimalKingdom/AnimalKingdom/Images;
+			sourceTree = "<absolute>";
+		};
+		379B2C9E1F999D1600060D3B /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Bundles;
+			path = /Users/dan/Developer/AnimalKingdom/AnimalKingdom/Images/Bundles;
+			sourceTree = "<absolute>";
+		};
+		379B2C9F1F999D2E00060D3B /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				379B2CA21F999DE300060D3B /* african-elephant-main.jpg */,
+			);
+			name = Animal;
+			path = /Users/dan/Developer/AnimalKingdom/AnimalKingdom/Images/Animal;
+			sourceTree = "<absolute>";
 		};
 		37A033B21F8C868600C4AA86 = {
 			isa = PBXGroup;
@@ -208,6 +252,7 @@
 				370B999E1F8C90BA00BFFEA6 /* View Controllers */,
 				370B999C1F8C90A100BFFEA6 /* Views */,
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
+				379B2C9C1F999CA200060D3B /* Images */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
 				121BB3011F99DAF400685654 /* tron_grid.png */,
 				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
@@ -299,15 +344,19 @@
 			files = (
 				766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */,
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
+				379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */,
 				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
 				12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
 				37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */,
 				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
+				379B2CA31F999DE300060D3B /* african-elephant-main.jpg in Resources */,
+				379B2C931F9982E000060D3B /* DetailsTitleTableViewCell.xib in Resources */,
 				37FB91921F8DB10700E88D98 /* Explorer.storyboard in Resources */,
 				37FB91961F8DB15400E88D98 /* Settings.storyboard in Resources */,
 				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
+				379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,
@@ -413,21 +462,23 @@
 				760C5E621F94400600E64444 /* LocalCollection.swift in Sources */,
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */,
+				379B2C921F9982E000060D3B /* DetailsTitleTableViewCell.swift in Sources */,
 				37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */,
-				370B99AD1F8C95DC00BFFEA6 /* AnimalDetailsViewController.swift in Sources */,
 				37029F3D1F92120300F55A30 /* Datasource.swift in Sources */,
+				379B2C8E1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift in Sources */,
+				379B2C981F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift in Sources */,
 				370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */,
 				370B99A11F8C912100BFFEA6 /* HomeViewController.swift in Sources */,
 				370B99A71F8C927800BFFEA6 /* AdventurerViewController.swift in Sources */,
 				370B99A31F8C920200BFFEA6 /* BundleExplorerViewController.swift in Sources */,
 				370B99A51F8C921000BFFEA6 /* AnimalExplorerViewController.swift in Sources */,
-				37F6A6121F92FD3F00811427 /* DetailsViewController.swift in Sources */,
 				370B99AB1F8C95B600BFFEA6 /* CreatorViewController.swift in Sources */,
 				370B99A91F8C958400BFFEA6 /* SettingsViewController.swift in Sources */,
 				37029F411F92CE6300F55A30 /* AnimalTableViewCell.swift in Sources */,
 				37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */,
 				370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */,
 				12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */,
+				379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */,
 				760C5E641F94404100E64444 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

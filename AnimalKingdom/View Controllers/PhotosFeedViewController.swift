@@ -21,6 +21,8 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
         // Do any additional setup after loading the view.
         feedTableView.dataSource = self
         feedTableView.delegate = self
+        self.feedTableView.rowHeight = 500;
+
 
         let collection = Firestore.firestore().collection("posts")
         localCollection = LocalCollection(query: collection) { [unowned self] (changes) in
@@ -41,8 +43,8 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
             }
             self.feedTableView.insertRows(at: indexPaths, with: .automatic)
         }
+        self.feedTableView.reloadData()
     }
-
     deinit {
         localCollection.stopListening()
     }
@@ -69,8 +71,9 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
     */
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell  = feedTableView.dequeueReusableCell(withIdentifier: "PhotoFeedCell", for: indexPath)
+        let cell  = feedTableView.dequeueReusableCell(withIdentifier: "PhotoFeedCell", for: indexPath) as! PhotoFeedCell
         let post = localCollection[indexPath.row]
+        cell.populate(post: post)
         print(post)
         return cell
     }

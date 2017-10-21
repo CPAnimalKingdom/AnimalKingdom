@@ -10,6 +10,23 @@ import UIKit
 
 class PhotoFeedCell: UITableViewCell {
 
+    @IBOutlet weak var animalImage: UIImageView!
+
+    @IBOutlet weak var imageCaption: UILabel!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var imageDateTimeStamp: UILabel!
+    @IBOutlet weak var locationTag: UILabel!
+
+    func populate(post: Post) {
+        imageCaption.text = post.imageCaption
+        username.text = post.userName
+
+        if let imageURL = NSURL(string: post.photoUrl) {
+            if let data = NSData(contentsOf: imageURL as URL) {
+                animalImage.image = UIImage(data: data as Data)
+            }
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

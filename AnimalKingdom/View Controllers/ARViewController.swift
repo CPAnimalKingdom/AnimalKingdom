@@ -14,27 +14,49 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     var animations = [String: CAAnimation]()
-    var idle:Bool = true
+    var planes = [UUID: ARPlane]()
+    var idle: Bool = true
+
+
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         sceneView.delegate = self
         sceneView.showsStatistics = true
+//        sceneView.autoenablesDefaultLighting = true
+        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
 
-        let scene = SCNScene()
-        sceneView.scene = scene
-
+        setupScene()
         loadAnimations()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        // Create a session configuration
+        setupSession()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        sceneView.session.pause()
+    }
+
+    // MARK: Helpers
+
+    func setupScene() {
+        let scene = SCNScene()
+        sceneView.scene = scene
+
+    }
+
+    func setupSession() {
         let configuration = ARWorldTrackingConfiguration()
 
-        // Run the view's session
+        configuration.planeDetection = .horizontal
+
         sceneView.session.run(configuration)
     }
 
@@ -67,6 +89,18 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
     }
 
+    func playAnimation(key: String) {
+        // Add the animation to start playing it right away
+        sceneView.scene.rootNode.addAnimation(animations[key]!, forKey: key)
+    }
+
+    func stopAnimation(key: String) {
+        // Stop the animation with a smooth transition
+        sceneView.scene.rootNode.removeAnimation(forKey: key, blendOutDuration: CGFloat(0.5))
+    }
+
+    // MARK: GestureRecognizer
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let location = touches.first!.location(in: sceneView)
 
@@ -87,18 +121,26 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
     }
 
-    func playAnimation(key: String) {
-        // Add the animation to start playing it right away
-        sceneView.scene.rootNode.addAnimation(animations[key]!, forKey: key)
-    }
-
-    func stopAnimation(key: String) {
-        // Stop the animation with a smooth transition
-        sceneView.scene.rootNode.removeAnimation(forKey: key, blendOutDuration: CGFloat(0.5))
-    }
-
-
     // MARK: - ARSCNViewDelegate
+
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        if anchor.isKind(of: ARPlaneAnchor.self) {
+            let plane = ARPlane.init(anchor: anchor as! ARPlaneAnchor)
+            planes[anchor.identifier] = plane
+            node.addChildNode(plane)
+        }
+    }
+
+    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        if let plane = planes[anchor.identifier] {
+            plane.update(anchor: anchor as! ARPlaneAnchor)
+        }
+    }
+
+    func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
+        // TODO: not working right now
+        planes.removeValue(forKey: anchor.identifier)
+    }
 
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user

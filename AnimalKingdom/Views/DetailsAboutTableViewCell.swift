@@ -1,5 +1,5 @@
 //
-//  DetailsCardTableViewCell.swift
+//  DetailsAboutTableViewCell.swift
 //  AnimalKingdom
 //
 //  Created by Dan on 12/31/16.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class DetailsCardTableViewCell: UITableViewCell {
+class DetailsAboutTableViewCell: UITableViewCell {
 
-    @IBOutlet var detailsCardItem: UILabel!
+    @IBOutlet var detailsAboutTitleTextLabel: UILabel!
+    @IBOutlet var detailsAboutTextTextLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

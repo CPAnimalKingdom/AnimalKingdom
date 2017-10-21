@@ -39,21 +39,29 @@ class DetailsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let key = animal.details[indexPath.row].allKeys[0] as! NSString
+        let value =  animal.details[indexPath.row]
 
         if key == "mainPhoto" {
             let cell = Bundle.main.loadNibNamed("DetailsHeaderImageTableViewCell", owner: self, options: nil)?.first as! DetailsHeaderImageTableViewCell
-            cell.animalImageImageView.image = UIImage(named: "african-elephant-main.jpg")
+            cell.animalImageImageView.image = UIImage(named: (value[key] as? String)!)
             return cell
         } else if key == "displayName" {
             let cell = Bundle.main.loadNibNamed("DetailsTitleTableViewCell", owner: self, options: nil)?.first as! DetailsTitleTableViewCell
-            cell.animalNameTextLabel.text = animal.details[1]["displayName"] as? String
+            cell.animalNameTextLabel.text = value[key] as? String
+            return cell
+        } else if key == "actions" {
+            let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
+            return cell
+        } else if key == "COMMON NAME" || key == "SCIENTIFIC NAME" || key == "TYPE" || key == "DIET" || key == "GROUP NAME" || key == "AVERAGE LIFESPAN" || key == "SIZE" || key == "WEIGHT" {
+            let cell = Bundle.main.loadNibNamed("DetailsCardTableViewCell", owner: self, options: nil)?.first as! DetailsCardTableViewCell
+            cell.detailsCardItem.text = "\(key): \(value[key] ?? "ERR")"
             return cell
         } else {
-            let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
-            print(key)
+            let cell = Bundle.main.loadNibNamed("DetailsAboutTableViewCell", owner: self, options: nil)?.first as! DetailsAboutTableViewCell
+            cell.detailsAboutTitleTextLabel.text = "\(key)"
+            cell.detailsAboutTextTextLabel.text = "\(value[key] ?? "ERR")"
             return cell
         }
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,8 +70,14 @@ class DetailsTableViewController: UITableViewController {
             return (tableView.frame.width / 5 ) * 3
         } else if key == "displayName" {
             return (tableView.frame.width / 6 )
+        } else if key == "actions" {
+            return (tableView.frame.width / 6 )
+        } else if key == "COMMON NAME" || key == "SCIENTIFIC NAME" || key == "TYPE" || key == "DIET" || key == "GROUP NAME" || key == "AVERAGE LIFESPAN" || key == "SIZE" || key == "WEIGHT" {
+            return (tableView.frame.width / 12 )
+        } else if key == "Section 1" {
+            return 100
         } else {
-            return 50
+            return 20
         }
     }
     

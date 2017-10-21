@@ -21,7 +21,7 @@ class Datasource: NSObject {
         self.bundleData =
             [
                 [
-                    "name": "Bundle 1 Name",
+                    "name": "Africa Savannas",
                     "image": "imageString",
                     "animals":
                         [
@@ -31,31 +31,16 @@ class Datasource: NSObject {
                                         ["mainPhoto": "african-elephant-main.jpg"],
                                         ["displayName": "THE AFRICAN ELEPHANT"],
                                         ["actions": "xxx"],
-                                        ["commonName": "African Elephant"],
-                                        ["scientificName": "Dogis Draculla"],
-                                        ["type": "Canine"],
-                                        ["diet": "Everthing"],
-                                        ["groupName": "Gang"],
-                                        ["lifeSpan": "15 years"],
-                                        ["size": "Heck if I know"],
-                                        ["weight": "Pass"],
-                                        ["relativeSize": "african-elephant-main.jpg"]
-
-                                ],
-                                "about":
-                                    [
-                                        "Section 1":
-                                            [
-                                                "blablabla1",
-                                                "blablabla2",
-                                                "blablabla3"
-                                        ],
-                                        "Section 2":
-                                            [
-                                                "plepleple1",
-                                                "plepleple2",
-                                                "plepleple3"
-                                        ]
+                                        ["COMMON NAME": "African Elephant"],
+                                        ["SCIENTIFIC NAME": "Loxodonta Africana"],
+                                        ["TYPE": "Mammals"],
+                                        ["DIET": "Herbivores"],
+                                        ["GROUP NAME": "Herd"],
+                                        ["AVERAGE LIFESPAN": "Up to 70 years"],
+                                        ["SIZE": "Height at the shoulder, 8.2 to 13 ft"],
+                                        ["WEIGHT": "2.5 to 7 tons"],
+                                        ["RELATIVE SIZE TO A 6-FT HUMAN": "african-elephant-main.jpg"],
+                                        ["Section 1": "blablabla blablabla1blablabla1 blablabla1 blablabla1 blablabla1blablabla1blablabla1 blablabla1 blablabla1"]
                                 ],
                                 "facts":
                                     [

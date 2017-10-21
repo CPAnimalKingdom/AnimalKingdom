@@ -32,7 +32,7 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = animalTableView.dequeueReusableCell(withIdentifier: "AnimalTableViewCell", for: indexPath) as! AnimalTableViewCell
-        cell.animalNameTextLabel.text = "\(animals[indexPath.row].details[3]["commonName"]  ?? "ERR")"
+        cell.animalNameTextLabel.text = "\(animals[indexPath.row].details[3]["COMMON NAME"]  ?? "ERR")"
         return cell
     }
     

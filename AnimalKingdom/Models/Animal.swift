@@ -10,13 +10,11 @@ import UIKit
 
 class Animal: NSObject {
     var details: [NSDictionary]
-    var about: NSDictionary
     //var facts: [NSString]
     //var thumbnailPhoto: NSDictionary
 
     init(dictionary: NSDictionary) {
         self.details = dictionary["details"] as! [NSDictionary]
-        self.about = dictionary["about"] as! NSDictionary
         //self.thumbnailPhoto = dictionary["thumbnailPhoto"] as! NSDictionary
         //self.facts = dictionary["facts"] as! [NSString]
     }

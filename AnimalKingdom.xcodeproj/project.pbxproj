@@ -55,6 +55,8 @@
 		760C5E641F94404100E64444 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E631F94404100E64444 /* User.swift */; };
 		760C5E661F94405400E64444 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E651F94405400E64444 /* Post.swift */; };
 		766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */; };
+		7699DFB41F99D4A30017DAD6 /* PhotosFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */; };
+		7699DFB81F9B079A0017DAD6 /* PhotoFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699DFB71F9B079A0017DAD6 /* PhotoFeedCell.swift */; };
 		BD924C3F4C854ECB228ECFDA /* Pods_AnimalKingdom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		760C5E631F94404100E64444 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		760C5E651F94405400E64444 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFeedViewController.swift; sourceTree = "<group>"; };
+		7699DFB71F9B079A0017DAD6 /* PhotoFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedCell.swift; sourceTree = "<group>"; };
 		8915A505B759EEF71284BC5F /* Pods-AnimalKingdom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalKingdom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalKingdom/Pods-AnimalKingdom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				37029F3E1F92B37A00F55A30 /* BundleTableViewCell.swift */,
+				7699DFB71F9B079A0017DAD6 /* PhotoFeedCell.swift */,
 				37029F401F92CE6300F55A30 /* AnimalTableViewCell.swift */,
 				379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */,
 				379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */,
@@ -188,6 +193,7 @@
 		370B999E1F8C90BA00BFFEA6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */,
 				370B99A01F8C912100BFFEA6 /* HomeViewController.swift */,
 				370B99A21F8C920200BFFEA6 /* BundleExplorerViewController.swift */,
 				370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */,
@@ -493,10 +499,12 @@
 				379B2C981F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift in Sources */,
 				370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */,
 				370B99A11F8C912100BFFEA6 /* HomeViewController.swift in Sources */,
+				7699DFB81F9B079A0017DAD6 /* PhotoFeedCell.swift in Sources */,
 				370B99A71F8C927800BFFEA6 /* AdventurerViewController.swift in Sources */,
 				370B99A31F8C920200BFFEA6 /* BundleExplorerViewController.swift in Sources */,
 				370B99A51F8C921000BFFEA6 /* AnimalExplorerViewController.swift in Sources */,
 				370B99AB1F8C95B600BFFEA6 /* CreatorViewController.swift in Sources */,
+				7699DFB41F99D4A30017DAD6 /* PhotosFeedViewController.swift in Sources */,
 				370B99A91F8C958400BFFEA6 /* SettingsViewController.swift in Sources */,
 				37029F411F92CE6300F55A30 /* AnimalTableViewCell.swift in Sources */,
 				37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */,

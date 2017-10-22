@@ -37,7 +37,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 indexPaths.append(indexPath)
             }
             //self.colllectionView.insertRows(at: indexPaths, with: .automatic)
-            self.colllectionView.insertItems(at: indexPaths)
+            //self.colllectionView.insertItems(at: indexPaths)
+            self.colllectionView.reloadData()
         }
         self.colllectionView.reloadData()
     }
@@ -55,17 +56,21 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if (segue.identifier == "postDetailsSegue") {
+            let vc = segue.destination as! UINavigationController
+            let postDetailsVC = vc.childViewControllers[0] as! PostDetailsViewController
+            let postIndex = colllectionView.indexPathsForSelectedItems![0].row
+            postDetailsVC.post = localCollection[postIndex]
+        }
     }
-    */
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return localCollection.count
     }

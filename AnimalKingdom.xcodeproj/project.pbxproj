@@ -57,6 +57,7 @@
 		760C5E641F94404100E64444 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E631F94404100E64444 /* User.swift */; };
 		760C5E661F94405400E64444 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E651F94405400E64444 /* Post.swift */; };
 		766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */; };
+		768BA3B91F9D30320008977E /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768BA3B81F9D30320008977E /* PostDetailsViewController.swift */; };
 		769956811F9C86C7008DCEF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769956801F9C86C7008DCEF0 /* ProfileViewController.swift */; };
 		769956831F9C8829008DCEF0 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769956821F9C8829008DCEF0 /* ProfileCollectionViewCell.swift */; };
 		7699DFB41F99D4A30017DAD6 /* PhotosFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */; };
@@ -120,6 +121,7 @@
 		760C5E631F94404100E64444 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		760C5E651F94405400E64444 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		768BA3B81F9D30320008977E /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostDetailsViewController.swift; path = "AnimalKingdom/View Controllers/PostDetailsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		769956801F9C86C7008DCEF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		769956821F9C8829008DCEF0 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFeedViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */,
+				768BA3B81F9D30320008977E /* PostDetailsViewController.swift */,
 				769956801F9C86C7008DCEF0 /* ProfileViewController.swift */,
 				370B99A01F8C912100BFFEA6 /* HomeViewController.swift */,
 				370B99A21F8C920200BFFEA6 /* BundleExplorerViewController.swift */,
@@ -520,6 +523,7 @@
 				769956831F9C8829008DCEF0 /* ProfileCollectionViewCell.swift in Sources */,
 				370B99A71F8C927800BFFEA6 /* AdventurerViewController.swift in Sources */,
 				76A8963B1F9C6F9A001A8192 /* TabViewController.swift in Sources */,
+				768BA3B91F9D30320008977E /* PostDetailsViewController.swift in Sources */,
 				370B99A31F8C920200BFFEA6 /* BundleExplorerViewController.swift in Sources */,
 				370B99A51F8C921000BFFEA6 /* AnimalExplorerViewController.swift in Sources */,
 				370B99AB1F8C95B600BFFEA6 /* CreatorViewController.swift in Sources */,

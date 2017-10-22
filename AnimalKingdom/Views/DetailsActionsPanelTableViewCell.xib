@@ -41,10 +41,6 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <connections>
-                <outlet property="ShowARButton" destination="jSq-1b-5Nr" id="OCD-Km-Von"/>
-                <outlet property="ShowCreatorButton" destination="ORD-s7-RyV" id="C5b-Vy-jM2"/>
-            </connections>
         </tableViewCell>
     </objects>
 </document>

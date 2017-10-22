@@ -27,14 +27,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="179.5" height="44"/>
                                             <state key="normal" title="AR"/>
                                             <connections>
-                                                <segue destination="bQr-7F-LEe" kind="showDetail" id="sS2-6f-Gm6"/>
+                                                <segue destination="bQr-7F-LEe" kind="show" id="Uui-e1-2r2"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ap-49-ilr">
                                             <rect key="frame" x="179.5" y="0.0" width="179.5" height="44"/>
                                             <state key="normal" title="Creator"/>
                                             <connections>
-                                                <segue destination="lay-nC-Axk" kind="show" id="zxP-iQ-0q9"/>
+                                                <segue destination="lay-nC-Axk" kind="show" id="SEw-ui-lf1"/>
                                             </connections>
                                         </button>
                                     </subviews>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121BB3021F99DCD400685654 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 121BB3011F99DAF400685654 /* tron_grid.png */; };
 		12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B26CD01F9723AA00B3D73D /* art.scnassets */; };
 		12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26CD21F99C35B00B3D73D /* ARPlane.swift */; };
 		37029F341F920C3800F55A30 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029F331F920C3800F55A30 /* Login.storyboard */; };
@@ -26,6 +25,7 @@
 		370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */; };
 		370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99B01F8C960F00BFFEA6 /* ARViewController.swift */; };
 		372087B01F9BF21C000D1DA2 /* african-elephant-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 372087AF1F9BF21C000D1DA2 /* african-elephant-main.jpg */; };
+		372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 372087B11F9C19D6000D1DA2 /* tron_grid.png */; };
 		3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419B1F91C0E300BEE34F /* AnimalBundle.swift */; };
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
@@ -59,7 +59,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		121BB3011F99DAF400685654 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron_grid.png; path = /Users/Nader/Dev/XcodeProjects/CodePath/AnimalKingdom/AnimalKingdom/tron_grid.png; sourceTree = "<absolute>"; };
 		12B26CD01F9723AA00B3D73D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		12B26CD21F99C35B00B3D73D /* ARPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlane.swift; sourceTree = "<group>"; };
 		2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalKingdom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +78,7 @@
 		370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		370B99B01F8C960F00BFFEA6 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		372087AF1F9BF21C000D1DA2 /* african-elephant-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "african-elephant-main.jpg"; sourceTree = "<group>"; };
+		372087B11F9C19D6000D1DA2 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tron_grid.png; sourceTree = "<group>"; };
 		3735419B1F91C0E300BEE34F /* AnimalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBundle.swift; sourceTree = "<group>"; };
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -274,11 +274,11 @@
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
 				379B2C9C1F999CA200060D3B /* Images */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
-				121BB3011F99DAF400685654 /* tron_grid.png */,
 				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
 				12B26CD01F9723AA00B3D73D /* art.scnassets */,
 				766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */,
 				37A033CA1F8C868600C4AA86 /* Info.plist */,
+				372087B11F9C19D6000D1DA2 /* tron_grid.png */,
 			);
 			path = AnimalKingdom;
 			sourceTree = "<group>";
@@ -379,10 +379,10 @@
 				376611541E188620009DC840 /* DetailsAboutTableViewCell.xib in Resources */,
 				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
 				379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */,
+				372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,
-				121BB3021F99DCD400685654 /* tron_grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

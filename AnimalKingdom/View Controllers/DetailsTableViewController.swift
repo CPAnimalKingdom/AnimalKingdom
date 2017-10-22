@@ -51,6 +51,7 @@ class DetailsTableViewController: UITableViewController {
             return cell
         } else if key == "actions" {
             let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
+            
             return cell
         } else if key == "COMMON NAME" || key == "SCIENTIFIC NAME" || key == "TYPE" || key == "DIET" || key == "GROUP NAME" || key == "AVERAGE LIFESPAN" || key == "SIZE" || key == "WEIGHT" {
             let cell = Bundle.main.loadNibNamed("DetailsCardTableViewCell", owner: self, options: nil)?.first as! DetailsCardTableViewCell
@@ -81,6 +82,14 @@ class DetailsTableViewController: UITableViewController {
         }
     }
     
+    func ShowAR() {
+        print("AR worked")
+    }
+
+    @objc func ShowCreator() {
+        print("Creator worked")
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

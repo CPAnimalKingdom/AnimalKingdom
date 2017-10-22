@@ -21,17 +21,13 @@
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KOX-1C-n1J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe1-Ev-3Ec">
-                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="44"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORD-s7-RyV">
-                                <rect key="frame" x="106.5" y="0.0" width="107" height="44"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                                <state key="normal" title="Creator"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSq-1b-5Nr">
-                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="44"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="160" y="0.0" width="160" height="44"/>
+                                <state key="normal" title="AR"/>
                             </button>
                         </subviews>
                     </stackView>
@@ -45,6 +41,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ShowARButton" destination="jSq-1b-5Nr" id="OCD-Km-Von"/>
+                <outlet property="ShowCreatorButton" destination="ORD-s7-RyV" id="C5b-Vy-jM2"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

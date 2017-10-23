@@ -26,22 +26,7 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
 
         let collection = Firestore.firestore().collection("posts")
         localCollection = LocalCollection(query: collection) { [unowned self] (changes) in
-            if self.localCollection.count == 0 {
-                // self.feedTableView.backgroundView = self.backgroundView
-                return
-            } else {
-                self.feedTableView.backgroundView = nil
-            }
-            var indexPaths: [IndexPath] = []
-
-            // Only care about additions in this block, updating existing reviews probably not important
-            // as there's no way to edit reviews.
-            for addition in changes.filter({ $0.type == .added }) {
-                let index = self.localCollection.index(of: addition.document)!
-                let indexPath = IndexPath(row: index, section: 0)
-                indexPaths.append(indexPath)
-            }
-            self.feedTableView.insertRows(at: indexPaths, with: .automatic)
+            self.feedTableView.reloadData()
         }
         self.feedTableView.reloadData()
     }

@@ -27,17 +27,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 
         let collection = Firestore.firestore().collection("posts").whereField("userId", isEqualTo:userId)
         localCollection = LocalCollection(query: collection) { [unowned self] (changes) in
-            var indexPaths: [IndexPath] = []
-
-            // Only care about additions in this block, updating existing reviews probably not important
-            // as there's no way to edit reviews.
-            for addition in changes.filter({ $0.type == .added }) {
-                let index = self.localCollection.index(of: addition.document)!
-                let indexPath = IndexPath(row: index, section: 0)
-                indexPaths.append(indexPath)
-            }
-            //self.colllectionView.insertRows(at: indexPaths, with: .automatic)
-            //self.colllectionView.insertItems(at: indexPaths)
             self.colllectionView.reloadData()
         }
         self.colllectionView.reloadData()

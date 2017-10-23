@@ -31,9 +31,9 @@ struct User {
     }
 }
 
-extension User: DocumentSerializable {
-    init?(dictionary: [String : Any]) {
-        guard let id = dictionary["id"] as? String,
+extension User {
+    init?(id: String?, dictionary: [String : Any]) {
+        guard let id = id,
             let name = dictionary["name"] as? String,
             let profileImageUrl = dictionary["profileImageUrl"] as? String else { return nil }
 

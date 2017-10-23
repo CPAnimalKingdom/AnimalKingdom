@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgQ-37-idj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4030" y="644"/>
+            <point key="canvasLocation" x="3793" y="788"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="Qrv-mw-eHT">
@@ -205,6 +205,10 @@
                                         <rect key="frame" x="172" y="22" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addButtonPressed:" destination="D0Y-wO-3jc" eventType="touchUpInside" id="FlM-WD-X9W"/>
+                                            <segue destination="uyi-fs-qGs" kind="presentation" identifier="createPostSegue" id="fH3-iJ-Z2E"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfZ-aD-E79">
                                         <rect key="frame" x="313" y="22" width="44" height="30"/>
@@ -232,22 +236,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEf-xU-oKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3055.1999999999998" y="781.25937031484261"/>
+            <point key="canvasLocation" x="2890" y="788"/>
         </scene>
-        <!--View Controller-->
+        <!--New Post-->
         <scene sceneID="17N-BS-xvA">
             <objects>
-                <viewController storyboardIdentifier="AddContentViewController" id="dVv-nG-3lp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePostViewController" id="dVv-nG-3lp" customClass="CreatePostViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xQA-7N-4PA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmK-4W-Afb">
+                                <rect key="frame" x="16" y="83" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write a caption .." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5bt-G2-RhN">
+                                <rect key="frame" x="116" y="83" width="243" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpj-cN-oRQ">
+                                <rect key="frame" x="16" y="191" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Location"/>
+                                <connections>
+                                    <action selector="addLocationButtonPressed:" destination="dVv-nG-3lp" eventType="touchUpInside" id="tKw-4q-6sk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="G8V-rc-XE7"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Post" id="xzr-tY-Ice">
+                        <barButtonItem key="leftBarButtonItem" title=" Back" id="Rus-B8-eBI">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="dVv-nG-3lp" id="acc-Vq-qDQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="vBc-pw-Jx6">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="dVv-nG-3lp" id="QbV-PV-bsj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="animalImage" destination="zmK-4W-Afb" id="m6Y-5M-fyS"/>
+                        <outlet property="imageCaption" destination="5bt-G2-RhN" id="rYu-dK-Hbp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbw-RQ-oXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4030" y="1320"/>
+            <point key="canvasLocation" x="3792.8000000000002" y="1772.5637181409297"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="HO1-0y-1PI">
@@ -298,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ue-f1-V36" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4720.8000000000002" y="643.62818590704649"/>
+            <point key="canvasLocation" x="4650" y="788"/>
         </scene>
         <!--Post Details View Controller-->
         <scene sceneID="nEW-P4-WoY">
@@ -366,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1v-wD-bCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6093.6000000000004" y="636.4317841079461"/>
+            <point key="canvasLocation" x="6186" y="788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0fI-MN-2Tw">
@@ -402,7 +443,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEE-T1-j4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2338" y="788"/>
+            <point key="canvasLocation" x="1889" y="788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="quS-RH-pQS">
@@ -420,7 +461,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vh3-PK-CII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5356.8000000000002" y="637.78110944527737"/>
+            <point key="canvasLocation" x="5406" y="788"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vP8-tT-Apj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uyi-fs-qGs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xhE-zb-E53">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dVv-nG-3lp" kind="relationship" relationship="rootViewController" id="PGw-pL-9oR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZw-qO-c43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="1773"/>
         </scene>
     </scenes>
 </document>

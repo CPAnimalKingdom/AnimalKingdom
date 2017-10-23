@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4MY-hg-iEK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4MY-hg-iEK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,6 +19,13 @@
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="571-wf-oaC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aDj-3u-JLw" appends="YES" id="Z5t-65-CDD"/>
+                                    <outletCollection property="gestureRecognizers" destination="yZM-IP-tPT" appends="YES" id="uwT-Ad-nLe"/>
+                                    <outletCollection property="gestureRecognizers" destination="SwK-hu-yce" appends="YES" id="EZ1-od-aWB"/>
+                                    <outletCollection property="gestureRecognizers" destination="25w-hR-qmc" appends="YES" id="MpS-cn-12G"/>
+                                </connections>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +42,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKd-M1-58t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="aDj-3u-JLw">
+                    <connections>
+                        <action selector="onPinch:" destination="4MY-hg-iEK" id="FBt-uY-vzw"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <tapGestureRecognizer id="yZM-IP-tPT">
+                    <connections>
+                        <action selector="onTap:" destination="4MY-hg-iEK" id="AEr-DB-f6p"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="SwK-hu-yce">
+                    <connections>
+                        <action selector="onPan:" destination="4MY-hg-iEK" id="oZa-Xm-ACU"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="25w-hR-qmc">
+                    <connections>
+                        <action selector="onRotation:" destination="4MY-hg-iEK" id="jfT-dz-RQX"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3909.5999999999999" y="853.22338830584715"/>
         </scene>

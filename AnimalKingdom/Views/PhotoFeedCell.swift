@@ -17,15 +17,27 @@ class PhotoFeedCell: UITableViewCell {
     @IBOutlet weak var imageDateTimeStamp: UILabel!
     @IBOutlet weak var locationTag: UILabel!
 
+
+    var myImage: UIImage? = nil
     func populate(post: Post) {
         imageCaption.text = post.imageCaption
         username.text = post.userName
 
-        if let imageURL = NSURL(string: post.photoUrl) {
-            if let data = NSData(contentsOf: imageURL as URL) {
-                animalImage.image = UIImage(data: data as Data)
+        DispatchQueue.global().async {
+            do {
+                if let imageURL = NSURL(string: post.photoUrl) {
+                    if let data = NSData(contentsOf: imageURL as URL) {
+                    self.myImage = UIImage(data: data as Data)
+                    }
+                }
+            }
+            DispatchQueue.main.async {
+                if self.myImage != nil {
+                    self.animalImage.image = self.myImage
+                }
             }
         }
+
     }
     override func awakeFromNib() {
         super.awakeFromNib()

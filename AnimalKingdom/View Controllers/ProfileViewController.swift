@@ -14,6 +14,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 
     @IBOutlet weak var colllectionView: UICollectionView!
     var localCollection: LocalCollection<Post>!
+    var myImage: UIImage? = nil
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,9 +70,19 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 
         let cell =  colllectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as! ProfileCollectionViewCell
         let post = localCollection[indexPath.row]
-        if let imageURL = NSURL(string: post.photoUrl) {
-            if let data = NSData(contentsOf: imageURL as URL) {
-                cell.animalImage.image = UIImage(data: data as Data)
+
+        DispatchQueue.global().async {
+            do {
+                if let imageURL = NSURL(string: post.photoUrl) {
+                    if let data = NSData(contentsOf: imageURL as URL) {
+                        self.myImage = UIImage(data: data as Data)
+                    }
+                }
+            }
+            DispatchQueue.main.async {
+                if self.myImage != nil {
+                    cell.animalImage.image = self.myImage
+                }
             }
         }
         return cell

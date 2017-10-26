@@ -19,7 +19,7 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     var selectedImage: UIImage!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -88,6 +88,12 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         self.present(vc, animated: true, completion: nil)
         
     }
+
+
+    @IBAction func settingsButtonPressed(_ sender: UIButton) {
+
+    }
+
     
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -111,6 +117,12 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
             let destinationViewController = vc.childViewControllers[0] as! CreatePostViewController
             destinationViewController.selectedAnimalImage = self.selectedImage
         }
+
+        if( segue.identifier == "SettingsSegue" ){
+
+            let vc = segue.destination as! CreatorViewController
+        }
+
+
     }
-    
 }

@@ -35,7 +35,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
 
     deinit {
-        localCollection.stopListening()
+        if (localCollection != nil) {
+            localCollection.stopListening()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {

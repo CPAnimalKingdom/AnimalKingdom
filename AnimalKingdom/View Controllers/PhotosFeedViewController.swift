@@ -31,7 +31,9 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
         self.feedTableView.reloadData()
     }
     deinit {
-        localCollection.stopListening()
+        if (localCollection != nil) {
+            localCollection.stopListening()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -74,6 +74,9 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
 
         self.profileName!.isHidden = false
         self.profileImage!.isHidden = false
+
+        self.performSegue(withIdentifier: "loginSegue", sender: nil)
+
     }
 
     func removeLoggedinView () {

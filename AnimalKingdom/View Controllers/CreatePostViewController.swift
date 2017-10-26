@@ -94,9 +94,4 @@ class CreatePostViewController: UIViewController {
         
     }
     
-    @IBAction func addLocationButtonPressed(_ sender: UIButton) {
-        print ("addLocationPressed")
-
-    }
-    
 }

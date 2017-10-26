@@ -75,7 +75,9 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         self.profileName!.isHidden = false
         self.profileImage!.isHidden = false
 
-        self.performSegue(withIdentifier: "loginSegue", sender: nil)
+
+        let vc = UIStoryboard(name: "Creator", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as! TabViewController
+        self.navigationController?.pushViewController(vc, animated: true)
 
     }
 

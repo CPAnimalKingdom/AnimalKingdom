@@ -10,7 +10,6 @@ import UIKit
 
 class PostDetailsViewController: UIViewController {
     
-    @IBOutlet weak var facebookProfileImage: UIImageView!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var locationTag: UILabel!
     @IBOutlet weak var animalImage: UIImageView!
@@ -18,6 +17,7 @@ class PostDetailsViewController: UIViewController {
     @IBOutlet weak var timestamp: UILabel!
 
     var post: Post!
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,8 @@ class PostDetailsViewController: UIViewController {
         self.username.text = post.userName
         self.caption.text = post.imageCaption
         self.timestamp.text = post.dateImageTaken
-        
+
+
         // Load image
         let url = URL(string: post.photoUrl)
         let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch

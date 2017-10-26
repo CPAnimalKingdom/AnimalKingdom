@@ -89,11 +89,6 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         
     }
 
-
-    @IBAction func settingsButtonPressed(_ sender: UIButton) {
-
-    }
-
     
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -117,12 +112,5 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
             let destinationViewController = vc.childViewControllers[0] as! CreatePostViewController
             destinationViewController.selectedAnimalImage = self.selectedImage
         }
-
-        if( segue.identifier == "SettingsSegue" ){
-
-            let vc = segue.destination as! CreatorViewController
-        }
-
-
     }
 }

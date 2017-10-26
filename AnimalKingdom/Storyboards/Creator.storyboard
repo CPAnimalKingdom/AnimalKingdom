@@ -12,7 +12,7 @@
         <!--Creator View Controller-->
         <scene sceneID="sFt-Xk-NWn">
             <objects>
-                <viewController id="z3Z-r3-fS3" customClass="CreatorViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatorViewController" id="z3Z-r3-fS3" customClass="CreatorViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wyi-Ra-lyk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,20 +193,6 @@
                                             <action selector="didPressTab:" destination="D0Y-wO-3jc" eventType="touchUpInside" id="ucX-LG-jw2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-JY-UvG">
-                                        <rect key="frame" x="20" y="22" width="41" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Home"/>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaH-A7-8h7">
-                                        <rect key="frame" x="297" y="22" width="57" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Settings"/>
-                                        <connections>
-                                            <action selector="settingsButtonPressed:" destination="D0Y-wO-3jc" eventType="touchUpInside" id="DGK-87-B72"/>
-                                            <segue destination="z3Z-r3-fS3" kind="presentation" identifier="SettingsSegue" id="Dp5-z0-NOI"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -214,9 +200,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hCA-fb-mDp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jnq-Mr-M21">
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="gyA-ts-X8I"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="jnq-Mr-M21"/>
                     <connections>
                         <outlet property="contentView" destination="RWS-ac-xfQ" id="QeL-18-SzH"/>
                         <outletCollection property="buttons" destination="ppr-Cf-X61" collectionClass="NSMutableArray" id="VZK-vk-b9t"/>

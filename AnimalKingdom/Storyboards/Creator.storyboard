@@ -58,7 +58,6 @@
                     <connections>
                         <outlet property="profileImage" destination="khn-if-ZCr" id="4zF-bC-g50"/>
                         <outlet property="profileName" destination="nAp-Mn-bEc" id="JwH-9w-9ah"/>
-                        <segue destination="D0Y-wO-3jc" kind="presentation" identifier="loginSegue" id="oJE-FI-fxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ask-JE-nnW" userLabel="First Responder" sceneMemberID="firstResponder"/>

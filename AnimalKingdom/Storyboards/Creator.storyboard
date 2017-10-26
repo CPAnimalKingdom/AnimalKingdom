@@ -26,20 +26,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-w6-o7V">
-                                        <rect key="frame" x="122" y="354" width="130" height="30"/>
-                                        <color key="backgroundColor" red="0.80197238353679123" green="0.072413863736672246" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Upload Image">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="uploadButtonTapped:" destination="z3Z-r3-fS3" eventType="touchUpInside" id="h2y-j0-1if"/>
-                                        </connections>
-                                    </button>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIj-Oz-gSo">
-                                        <rect key="frame" x="64" y="102" width="259" height="169"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAp-Mn-bEc">
                                         <rect key="frame" x="240" y="20" width="127" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,10 +41,7 @@
                                 <color key="backgroundColor" red="0.92806154819999997" green="0.61334819226613801" blue="0.64944494552442644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="T3n-AZ-yrT" firstAttribute="centerY" secondItem="9b3-1r-b3W" secondAttribute="centerY" id="4Lf-nZ-8Dd"/>
-                                    <constraint firstItem="tda-w6-o7V" firstAttribute="leading" secondItem="9b3-1r-b3W" secondAttribute="leading" constant="122" id="8P5-Tl-vpU"/>
                                     <constraint firstItem="T3n-AZ-yrT" firstAttribute="centerX" secondItem="9b3-1r-b3W" secondAttribute="centerX" id="ENS-Ce-Jxd"/>
-                                    <constraint firstItem="tda-w6-o7V" firstAttribute="top" secondItem="T3n-AZ-yrT" secondAttribute="bottom" constant="42" id="MsW-gg-GS3"/>
-                                    <constraint firstAttribute="trailing" secondItem="tda-w6-o7V" secondAttribute="trailing" constant="123" id="sOb-KO-L4K"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -79,10 +62,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageView" destination="ZIj-Oz-gSo" id="cDH-41-v8P"/>
                         <outlet property="profileImage" destination="khn-if-ZCr" id="4zF-bC-g50"/>
                         <outlet property="profileName" destination="nAp-Mn-bEc" id="JwH-9w-9ah"/>
-                        <outlet property="uploadButton" destination="tda-w6-o7V" id="p1b-Yg-rN9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ask-JE-nnW" userLabel="First Responder" sceneMemberID="firstResponder"/>

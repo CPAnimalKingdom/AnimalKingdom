@@ -13,14 +13,13 @@ import Firebase
 import FirebaseStorage
 import MBProgressHUD
 
-class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UINavigationControllerDelegate {
 
 
     @IBOutlet weak var profileImage: UIImageView!
 
     @IBOutlet weak var profileName: UILabel!
 
-    let imagePicker = UIImagePickerController()
     let storageRef = Storage.storage().reference()
 
     override func viewDidLoad() {
@@ -32,8 +31,6 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         loginButton.readPermissions = ["public_profile"]
         loginButton.center = self.view.center
         self.view.addSubview(loginButton)
-
-        imagePicker.delegate = self
 
         if (Auth.auth().currentUser != nil) {
             // If there is a logged in Firebase user
@@ -75,7 +72,6 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         self.profileName!.isHidden = false
         self.profileImage!.isHidden = false
 
-
         let vc = UIStoryboard(name: "Creator", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as! TabViewController
         self.navigationController?.pushViewController(vc, animated: true)
 
@@ -86,7 +82,6 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UIImage
         self.profileName!.isHidden = true
         self.profileImage!.isHidden = true
     }
-
 
 
     /*

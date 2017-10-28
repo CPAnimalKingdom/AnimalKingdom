@@ -22,6 +22,8 @@ class PhotoFeedCell: UITableViewCell {
     func populate(post: Post) {
         imageCaption.text = post.imageCaption
         username.text = post.userName
+        locationTag.text = post.locationTag
+        imageDateTimeStamp.text = post.dateImageTaken
 
         DispatchQueue.global().async {
             do {

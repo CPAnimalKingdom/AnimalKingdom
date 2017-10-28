@@ -25,6 +25,7 @@ class PostDetailsViewController: UIViewController {
         self.username.text = post.userName
         self.caption.text = post.imageCaption
         self.timestamp.text = post.dateImageTaken
+        self.locationTag.text = post.locationTag
 
 
         // Load image

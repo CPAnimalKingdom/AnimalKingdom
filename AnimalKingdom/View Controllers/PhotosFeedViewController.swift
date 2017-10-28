@@ -21,7 +21,7 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
         // Do any additional setup after loading the view.
         feedTableView.dataSource = self
         feedTableView.delegate = self
-        self.feedTableView.rowHeight = 500;
+        self.feedTableView.rowHeight = 400;
 
 
         let collection = Firestore.firestore().collection("posts")

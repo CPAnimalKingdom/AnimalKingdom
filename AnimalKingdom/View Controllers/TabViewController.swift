@@ -7,7 +7,6 @@
 //
 
 /* https://github.com/codepath/ios_guides/wiki/Creating-a-Custom-Tab-Bar */
-import Firebase
 import UIKit
 
 class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -34,10 +33,6 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
 
-        let currentUser = Auth.auth().currentUser
-        if (currentUser == nil) {
-            performSegue(withIdentifier: "signedOutSegue", sender: nil);
-        }
     }
 
     override func didReceiveMemoryWarning() {

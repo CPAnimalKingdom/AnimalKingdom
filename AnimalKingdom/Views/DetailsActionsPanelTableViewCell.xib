@@ -15,19 +15,27 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KOX-1C-n1J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORD-s7-RyV">
-                                <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
-                                <state key="normal" title="Creator"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xT-rE-76C">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                <state key="normal" title="Sounds"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crc-vN-cqT">
+                                <rect key="frame" x="80" y="0.0" width="80" height="44"/>
+                                <state key="normal" title="Videos"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSq-1b-5Nr">
-                                <rect key="frame" x="160" y="0.0" width="160" height="44"/>
+                                <rect key="frame" x="160" y="0.0" width="80" height="44"/>
                                 <state key="normal" title="AR"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORD-s7-RyV">
+                                <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                                <state key="normal" title="Creator"/>
                             </button>
                         </subviews>
                     </stackView>
@@ -44,6 +52,8 @@
             <connections>
                 <outlet property="ShowARButton" destination="jSq-1b-5Nr" id="MJs-Sf-gNS"/>
                 <outlet property="ShowCreatorButton" destination="ORD-s7-RyV" id="OZb-Qf-yc3"/>
+                <outlet property="ShowSoundButton" destination="2xT-rE-76C" id="q5k-6O-otX"/>
+                <outlet property="ShowVideoButton" destination="crc-vN-cqT" id="NQC-mk-bdr"/>
             </connections>
         </tableViewCell>
     </objects>

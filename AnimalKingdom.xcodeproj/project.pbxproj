@@ -221,10 +221,10 @@
 				370B99B01F8C960F00BFFEA6 /* ARViewController.swift */,
 				37029F351F920CE400F55A30 /* LoginViewController.swift */,
 				37029F371F920CFB00F55A30 /* LogoutViewController.swift */,
-				379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */,
 				76A8963A1F9C6F9A001A8192 /* TabViewController.swift */,
 				767ADA661F9D77BF00CD12B5 /* CreatePostViewController.swift */,
 				7685193A1FA5922200626DF3 /* CreatorSettingsViewController.swift */,
+				379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -238,13 +238,6 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		377538841FA66AAA004BADB5 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		37A033B21F8C868600C4AA86 = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +245,6 @@
 				37A033BC1F8C868600C4AA86 /* Products */,
 				C05F1D2CE444D62C6A2E7846 /* Pods */,
 				45308ECCC4700DE886ABDB67 /* Frameworks */,
-				377538841FA66AAA004BADB5 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};

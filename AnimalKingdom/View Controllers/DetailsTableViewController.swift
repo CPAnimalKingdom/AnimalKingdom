@@ -51,8 +51,9 @@ class DetailsTableViewController: UITableViewController {
             return cell
         } else if key == "actions" {
             let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
-            cell.ShowCreatorButton.isHidden = true
-            cell.ShowARButton.isHidden = true
+            cell.ShowCreatorButton.addTarget(self, action: #selector(ShowCreator), for: UIControlEvents.touchUpInside)
+            cell.ShowARButton.addTarget(self, action: #selector(ShowAR), for: UIControlEvents.touchUpInside)
+            
             return cell
         } else if key == "COMMON NAME" || key == "SCIENTIFIC NAME" || key == "TYPE" || key == "DIET" || key == "GROUP NAME" || key == "AVERAGE LIFESPAN" || key == "SIZE" || key == "WEIGHT" {
             let cell = Bundle.main.loadNibNamed("DetailsCardTableViewCell", owner: self, options: nil)?.first as! DetailsCardTableViewCell
@@ -84,11 +85,11 @@ class DetailsTableViewController: UITableViewController {
     }
     
     @objc func ShowAR() {
-        print("AR worked")
+        performSegue(withIdentifier: "ShowAR", sender: nil)
     }
 
     @objc func ShowCreator() {
-        print("Creator worked")
+        performSegue(withIdentifier: "ShowCreator", sender: nil)
     }
 
 

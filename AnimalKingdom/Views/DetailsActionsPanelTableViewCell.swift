@@ -10,6 +10,9 @@ import UIKit
 
 class DetailsActionsPanelTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet var ShowSoundButton: UIButton!
+    @IBOutlet var ShowVideoButton: UIButton!
     @IBOutlet var ShowCreatorButton: UIButton!
     @IBOutlet var ShowARButton: UIButton!
     override func awakeFromNib() {

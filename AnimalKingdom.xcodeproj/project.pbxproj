@@ -34,6 +34,7 @@
 		376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */; };
 		376611531E188620009DC840 /* DetailsAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */; };
 		376611541E188620009DC840 /* DetailsAboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */; };
+		377538861FA67771004BADB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377538851FA67770004BADB5 /* Assets.xcassets */; };
 		379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */; };
 		379B2C8E1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */; };
 		379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */; };
@@ -43,7 +44,6 @@
 		379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C971F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib */; };
 		37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A033BE1F8C868600C4AA86 /* AppDelegate.swift */; };
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
-		37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C51F8C868600C4AA86 /* Assets.xcassets */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
 		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
 		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
@@ -96,6 +96,7 @@
 		3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCardTableViewCell.xib; sourceTree = "<group>"; };
 		376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutTableViewCell.swift; sourceTree = "<group>"; };
 		376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsAboutTableViewCell.xib; sourceTree = "<group>"; };
+		377538851FA67770004BADB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AnimalKingdom/Assets.xcassets; sourceTree = "<group>"; };
 		379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderImageTableViewCell.swift; sourceTree = "<group>"; };
 		379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsHeaderImageTableViewCell.xib; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		37A033BB1F8C868600C4AA86 /* AnimalKingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalKingdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A033BE1F8C868600C4AA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A033C31F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37A033C51F8C868600C4AA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37A033C81F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A033CA1F8C868600C4AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
@@ -241,6 +241,7 @@
 		37A033B21F8C868600C4AA86 = {
 			isa = PBXGroup;
 			children = (
+				377538851FA67770004BADB5 /* Assets.xcassets */,
 				37A033BD1F8C868600C4AA86 /* AnimalKingdom */,
 				37A033BC1F8C868600C4AA86 /* Products */,
 				C05F1D2CE444D62C6A2E7846 /* Pods */,
@@ -266,7 +267,6 @@
 				370B999C1F8C90A100BFFEA6 /* Views */,
 				370B999D1F8C90AE00BFFEA6 /* Storyboards */,
 				370B999F1F8C90DA00BFFEA6 /* Other */,
-				37A033C51F8C868600C4AA86 /* Assets.xcassets */,
 				12B26CD01F9723AA00B3D73D /* art.scnassets */,
 				766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */,
 				37A033CA1F8C868600C4AA86 /* Info.plist */,
@@ -358,10 +358,10 @@
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
 				379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */,
 				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
+				377538861FA67771004BADB5 /* Assets.xcassets in Resources */,
 				12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
-				37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */,
 				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
 				376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */,
 				379B2C931F9982E000060D3B /* DetailsTitleTableViewCell.xib in Resources */,

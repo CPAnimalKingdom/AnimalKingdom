@@ -16,6 +16,7 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
 
     var photosFeedViewController:  UIViewController!
     var profileViewController:  UIViewController!
+    var creatorSettingsViewController:  UIViewController!
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     var selectedImage: UIImage!
@@ -27,8 +28,9 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         let storyboard = UIStoryboard(name: "Creator", bundle: nil)
         photosFeedViewController = storyboard.instantiateViewController(withIdentifier: "PhotosFeedViewController")
         profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+        creatorSettingsViewController = storyboard.instantiateViewController(withIdentifier: "CreatorSettingsViewController")
 
-        viewControllers = [photosFeedViewController, profileViewController]
+        viewControllers = [photosFeedViewController, profileViewController, creatorSettingsViewController]
 
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])

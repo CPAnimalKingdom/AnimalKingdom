@@ -173,7 +173,7 @@
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiE-yc-h5u">
-                                        <rect key="frame" x="167" y="5" width="40" height="40"/>
+                                        <rect key="frame" x="133" y="5" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Add" image="AddButton"/>
                                         <connections>
@@ -182,15 +182,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppr-Cf-X61">
-                                        <rect key="frame" x="55" y="5" width="40" height="40"/>
+                                        <rect key="frame" x="31" y="5" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Feed" image="feedButton"/>
                                         <connections>
                                             <action selector="didPressTab:" destination="D0Y-wO-3jc" eventType="touchUpInside" id="YsE-oA-qHk"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-GT-VDF" userLabel="Settings">
+                                        <rect key="frame" x="319" y="5" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Feed" image="settingsButton"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="D0Y-wO-3jc" eventType="touchUpInside" id="DVZ-PP-9tU"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfZ-aD-E79">
-                                        <rect key="frame" x="259" y="0.0" width="52" height="50"/>
+                                        <rect key="frame" x="219" y="0.0" width="52" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Profile" image="userButton"/>
                                         <connections>
@@ -221,6 +229,7 @@
                         <outlet property="contentView" destination="RWS-ac-xfQ" id="QeL-18-SzH"/>
                         <outletCollection property="buttons" destination="ppr-Cf-X61" collectionClass="NSMutableArray" id="VZK-vk-b9t"/>
                         <outletCollection property="buttons" destination="mfZ-aD-E79" collectionClass="NSMutableArray" id="uu8-No-Wlg"/>
+                        <outletCollection property="buttons" destination="zQP-GT-VDF" collectionClass="NSMutableArray" id="QN8-mw-k5t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEf-xU-oKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,10 +447,26 @@
             </objects>
             <point key="canvasLocation" x="2889" y="1773"/>
         </scene>
+        <!--Creator Settings View Controller-->
+        <scene sceneID="vHS-wZ-Dzc">
+            <objects>
+                <viewController storyboardIdentifier="CreatorSettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9UW-Pl-y2n" customClass="CreatorSettingsViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9Y-HD-QsZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LAy-4x-Ku3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQc-cx-maN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4695" y="1701"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AddButton" width="50" height="50"/>
         <image name="feedButton" width="50" height="50"/>
+        <image name="settingsButton" width="50" height="50"/>
         <image name="userButton" width="50" height="50"/>
     </resources>
 </document>

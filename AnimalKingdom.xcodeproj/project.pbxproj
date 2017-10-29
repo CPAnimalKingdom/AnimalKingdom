@@ -58,6 +58,7 @@
 		760C5E661F94405400E64444 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C5E651F94405400E64444 /* Post.swift */; };
 		766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */; };
 		767ADA671F9D77BF00CD12B5 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767ADA661F9D77BF00CD12B5 /* CreatePostViewController.swift */; };
+		7685193B1FA5922200626DF3 /* CreatorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685193A1FA5922200626DF3 /* CreatorSettingsViewController.swift */; };
 		768BA3B91F9D30320008977E /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768BA3B81F9D30320008977E /* PostDetailsViewController.swift */; };
 		769956811F9C86C7008DCEF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769956801F9C86C7008DCEF0 /* ProfileViewController.swift */; };
 		769956831F9C8829008DCEF0 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769956821F9C8829008DCEF0 /* ProfileCollectionViewCell.swift */; };
@@ -123,6 +124,7 @@
 		760C5E651F94405400E64444 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		767ADA661F9D77BF00CD12B5 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		7685193A1FA5922200626DF3 /* CreatorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorSettingsViewController.swift; sourceTree = "<group>"; };
 		768BA3B81F9D30320008977E /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostDetailsViewController.swift; path = "AnimalKingdom/View Controllers/PostDetailsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		769956801F9C86C7008DCEF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		769956821F9C8829008DCEF0 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */,
 				76A8963A1F9C6F9A001A8192 /* TabViewController.swift */,
 				767ADA661F9D77BF00CD12B5 /* CreatePostViewController.swift */,
+				7685193A1FA5922200626DF3 /* CreatorSettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */,
 				12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */,
 				379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */,
+				7685193B1FA5922200626DF3 /* CreatorSettingsViewController.swift in Sources */,
 				760C5E641F94404100E64444 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

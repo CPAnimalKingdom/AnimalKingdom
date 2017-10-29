@@ -71,10 +71,6 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UINavig
 
         self.profileName!.isHidden = false
         self.profileImage!.isHidden = false
-
-        let vc = UIStoryboard(name: "Creator", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as! TabViewController
-        self.navigationController?.pushViewController(vc, animated: true)
-
     }
 
     func removeLoggedinView () {

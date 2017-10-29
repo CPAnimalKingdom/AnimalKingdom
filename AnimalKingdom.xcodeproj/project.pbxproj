@@ -27,7 +27,6 @@
 		370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */; };
 		370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99B01F8C960F00BFFEA6 /* ARViewController.swift */; };
 		372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 372087B11F9C19D6000D1DA2 /* tron_grid.png */; };
-		372087B41F9D1E9D000D1DA2 /* african-elephant-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 372087B31F9D1E9D000D1DA2 /* african-elephant-main.jpg */; };
 		3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419B1F91C0E300BEE34F /* AnimalBundle.swift */; };
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
@@ -90,7 +89,6 @@
 		370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		370B99B01F8C960F00BFFEA6 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		372087B11F9C19D6000D1DA2 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tron_grid.png; sourceTree = "<group>"; };
-		372087B31F9D1E9D000D1DA2 /* african-elephant-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "african-elephant-main.jpg"; sourceTree = "<group>"; };
 		3735419B1F91C0E300BEE34F /* AnimalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBundle.swift; sourceTree = "<group>"; };
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -240,40 +238,12 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		372087AE1F9BF21C000D1DA2 /* african-elephant */ = {
+		377538841FA66AAA004BADB5 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				372087B31F9D1E9D000D1DA2 /* african-elephant-main.jpg */,
 			);
-			path = "african-elephant";
+			name = "Recovered References";
 			sourceTree = "<group>";
-		};
-		379B2C9C1F999CA200060D3B /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				379B2C9F1F999D2E00060D3B /* Animal */,
-				379B2C9E1F999D1600060D3B /* Bundles */,
-			);
-			name = Images;
-			path = /Users/dan/Developer/AnimalKingdom/AnimalKingdom/Images;
-			sourceTree = "<absolute>";
-		};
-		379B2C9E1F999D1600060D3B /* Bundles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Bundles;
-			path = /Users/dan/Developer/AnimalKingdom/AnimalKingdom/Images/Bundles;
-			sourceTree = "<absolute>";
-		};
-		379B2C9F1F999D2E00060D3B /* Animal */ = {
-			isa = PBXGroup;
-			children = (
-				372087AE1F9BF21C000D1DA2 /* african-elephant */,
-			);
-			name = Animal;
-			path = /Users/dan/Developer/AnimalKingdom/AnimalKingdom/Images/Animal;
-			sourceTree = "<absolute>";
 		};
 		37A033B21F8C868600C4AA86 = {
 			isa = PBXGroup;
@@ -282,6 +252,7 @@
 				37A033BC1F8C868600C4AA86 /* Products */,
 				C05F1D2CE444D62C6A2E7846 /* Pods */,
 				45308ECCC4700DE886ABDB67 /* Frameworks */,
+				377538841FA66AAA004BADB5 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -398,7 +369,6 @@
 				12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
-				372087B41F9D1E9D000D1DA2 /* african-elephant-main.jpg in Resources */,
 				37A033C61F8C868600C4AA86 /* Assets.xcassets in Resources */,
 				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
 				376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */,

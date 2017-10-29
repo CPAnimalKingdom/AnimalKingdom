@@ -61,7 +61,7 @@ class CreatorSettingsViewController: UIViewController, FBSDKLoginButtonDelegate 
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
-            // self.removeLoggedinView()
+            performSegue(withIdentifier: "unwindToHomeSegue", sender: self)
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }

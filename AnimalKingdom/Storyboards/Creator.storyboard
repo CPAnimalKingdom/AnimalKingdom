@@ -234,6 +234,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEf-xU-oKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7qO-hh-ufu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2888.8000000000002" y="787.55622188905556"/>
         </scene>
@@ -458,6 +459,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LAy-4x-Ku3"/>
                     </view>
+                    <connections>
+                        <segue destination="7qO-hh-ufu" kind="unwind" identifier="unwindToHomeSegue" unwindAction="unwindToHomeWithSegue:" id="Tr2-oO-gCw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQc-cx-maN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

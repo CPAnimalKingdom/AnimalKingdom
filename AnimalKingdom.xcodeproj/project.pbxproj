@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121BB3041F9C1A7B00685654 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 121BB3031F9C1A7B00685654 /* tron_grid.png */; };
 		126DD8FE1F9C8C3500E74C89 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126DD8FD1F9C8C3500E74C89 /* Utilities.swift */; };
 		12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B26CD01F9723AA00B3D73D /* art.scnassets */; };
 		12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26CD21F99C35B00B3D73D /* ARPlane.swift */; };
@@ -35,8 +34,8 @@
 		376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */; };
 		376611531E188620009DC840 /* DetailsAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */; };
 		376611541E188620009DC840 /* DetailsAboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */; };
-		377538861FA67771004BADB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377538851FA67770004BADB5 /* Assets.xcassets */; };
 		3775388A1FA6926A004BADB5 /* DesignBundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377538891FA6926A004BADB5 /* DesignBundleView.swift */; };
+		378BCB291FA6F955003E800F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378BCB281FA6F955003E800F /* Assets.xcassets */; };
 		379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */; };
 		379B2C8E1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */; };
 		379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */; };
@@ -70,7 +69,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		121BB3031F9C1A7B00685654 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tron_grid.png; sourceTree = "<group>"; };
 		126DD8FD1F9C8C3500E74C89 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		12B26CD01F9723AA00B3D73D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		12B26CD21F99C35B00B3D73D /* ARPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlane.swift; sourceTree = "<group>"; };
@@ -99,8 +97,8 @@
 		3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCardTableViewCell.xib; sourceTree = "<group>"; };
 		376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutTableViewCell.swift; sourceTree = "<group>"; };
 		376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsAboutTableViewCell.xib; sourceTree = "<group>"; };
-		377538851FA67770004BADB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AnimalKingdom/Assets.xcassets; sourceTree = "<group>"; };
 		377538891FA6926A004BADB5 /* DesignBundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignBundleView.swift; sourceTree = "<group>"; };
+		378BCB281FA6F955003E800F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AnimalKingdom/Assets.xcassets; sourceTree = "<group>"; };
 		379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderImageTableViewCell.swift; sourceTree = "<group>"; };
 		379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsHeaderImageTableViewCell.xib; sourceTree = "<group>"; };
@@ -254,7 +252,7 @@
 		37A033B21F8C868600C4AA86 = {
 			isa = PBXGroup;
 			children = (
-				377538851FA67770004BADB5 /* Assets.xcassets */,
+				378BCB281FA6F955003E800F /* Assets.xcassets */,
 				37A033BD1F8C868600C4AA86 /* AnimalKingdom */,
 				37A033BC1F8C868600C4AA86 /* Products */,
 				C05F1D2CE444D62C6A2E7846 /* Pods */,
@@ -274,7 +272,6 @@
 		37A033BD1F8C868600C4AA86 /* AnimalKingdom */ = {
 			isa = PBXGroup;
 			children = (
-				121BB3031F9C1A7B00685654 /* tron_grid.png */,
 				37029F3B1F92116200F55A30 /* Data */,
 				370B999B1F8C909400BFFEA6 /* Models */,
 				370B999E1F8C90BA00BFFEA6 /* View Controllers */,
@@ -372,8 +369,8 @@
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
 				12B60E371FA18319003423F5 /* african-elephant-main.jpg in Resources */,
 				379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */,
+				378BCB291FA6F955003E800F /* Assets.xcassets in Resources */,
 				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
-				377538861FA67771004BADB5 /* Assets.xcassets in Resources */,
 				12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
@@ -386,7 +383,6 @@
 				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
 				379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */,
 				372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */,
-				121BB3041F9C1A7B00685654 /* tron_grid.png in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,

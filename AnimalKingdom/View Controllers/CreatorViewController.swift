@@ -80,7 +80,10 @@ class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UINavig
         self.profileImage!.isHidden = true
     }
 
-
+    @IBAction func onDismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

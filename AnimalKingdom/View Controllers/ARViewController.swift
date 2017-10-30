@@ -13,27 +13,53 @@ import ARKit
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var dismissButton: UIButton!
     var animations = [String: CAAnimation]()
     var planes = [UUID: ARPlane]()
     var idle: Bool = true
     var modelNode: SCNNode?
+    var isWalking = false
     let walkKey = "walk"
-
+    let breatheKey = "breathe"
+    let lookAroundKey = "lookAround"
+    let lookaroundEatKey = "lookAroundEat"
+    let chewKey = "chew"
+    let cameraFlashView = UIView()
 
     // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // SCNScene
+        let scene = SCNScene()
+        sceneView.scene = scene
         sceneView.delegate = self
-        sceneView.showsStatistics = true
-//        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
+//        sceneView.showsStatistics = true
 
         // TODO: Lighting
         sceneView.autoenablesDefaultLighting = false
 
-        let scene = SCNScene()
-        sceneView.scene = scene
+        // Camera Button
+        cameraButton.layer.cornerRadius = cameraButton.frame.size.height / 2
+        cameraButton.layer.borderWidth = 3
+        cameraButton.layer.borderColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1).cgColor
+        cameraButton.imageEdgeInsets = UIEdgeInsets(top: 8, left: 10, bottom: 12, right: 10)
+        cameraButton.imageView?.contentMode = .scaleAspectFill
+        cameraButton.clipsToBounds = true
+        cameraButton.alpha = 0.7
+
+        // Dismiss Button
+        dismissButton.layer.cornerRadius = dismissButton.frame.size.height / 2
+        dismissButton.layer.borderWidth = 1.5
+        dismissButton.layer.borderColor = dismissButton.titleLabel?.textColor.cgColor
+        dismissButton.alpha = 0.7
+
+        // Camera Flash
+        cameraFlashView.backgroundColor = UIColor.black
+        cameraFlashView.alpha = 0
+        sceneView.addSubview(cameraFlashView)
 
         UIApplication.shared.isIdleTimerDisabled = true
         loadAnimations()
@@ -41,6 +67,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        cameraFlashView.frame = sceneView.frame
 
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
@@ -54,78 +82,138 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         UIApplication.shared.isIdleTimerDisabled = false
     }
 
+    // MARK: StatusBar
+
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
+
     // MARK: Helpers
 
-    func insertModel(position: SCNVector3 = SCNVector3(0, -1, -2), scale: SCNVector3 = SCNVector3(0.05, 0.05, 0.05)) {
+    func insertModel(position: SCNVector3 = SCNVector3(0, -1, -2), scale: SCNVector3 = SCNVector3(0.5, 0.5, 0.5)) {
         let idleScene = SCNScene(named: "art.scnassets/Elephant.dae")!
 
-        let node = SCNNode()
+        modelNode = SCNNode()
         for child in idleScene.rootNode.childNodes {
-            node.addChildNode(child)
+            modelNode!.addChildNode(child)
         }
 
-        node.position = position
-        node.scale = scale
+        modelNode!.scale = scale
+        modelNode!.position = position
 
-        sceneView.scene.rootNode.addChildNode(node)
-        modelNode = node
+        //Rotate towards camera
+        let rotate = simd_float4x4(SCNMatrix4MakeRotation(sceneView.session.currentFrame!.camera.eulerAngles.y, 0, 1, 0))
+        let combinedTransform = simd_mul(simd_float4x4(modelNode!.worldTransform), rotate)
+        modelNode!.simdTransform = combinedTransform
+
+        sceneView.scene.rootNode.addChildNode(modelNode!)
+
+        startIdle()
     }
 
     func loadAnimations() {
-        //Walk
+        let animationsIdentifier = "Elephant9Animations-1"
+        guard let animationsSceneURL = Bundle.main.url(forResource: "art.scnassets/Elephant9Animations", withExtension: "dae") else { return }
+        guard let animationsSceneSource = SCNSceneSource(url: animationsSceneURL, options: nil) else { return }
+
+        // Walk
         let startWalk = 25.5666667064031
         let endWalk = 27.5666667064031
-        loadAnimation(key: walkKey, startTime: startWalk, endTime: endWalk)
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: walkKey, startTime: startWalk, endTime: endWalk)
+
+        // Idle chew
+        let startChew = 0.0
+        let endChew = 2.0
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: chewKey, startTime: startChew, endTime: endChew)
+
+        // Idle lookaround
+        let startLookAround = 16.166666666666668
+        let endLookAround = 24.166666666666668
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: lookAroundKey, startTime: startLookAround, endTime: endLookAround)
+
+        // Idle lookaround eat
+        let startLookAroundEat = 6.1
+        let endLookAroundEat = 15.1
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: lookaroundEatKey, startTime: startLookAroundEat, endTime: endLookAroundEat)
+
+        // Idle breathe
+        let startBreathe = 2.0333333333333332
+        let endBreathe = 4.0333333333333332
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: breatheKey, startTime: startBreathe, endTime: endBreathe)
     }
 
-    func loadAnimation(key: String, startTime: Double, endTime: Double) {
-        let sceneName = "art.scnassets/Elephant9Animations"
-        let animationIdentifier = "Elephant9Animations-1"
-
-        let sceneURL = Bundle.main.url(forResource: sceneName, withExtension: "dae")
-        let sceneSource = SCNSceneSource(url: sceneURL!, options: nil)
-
-        if let animationsObject = sceneSource?.entryWithIdentifier(animationIdentifier, withClass: CAAnimation.self) {
+    func loadAnimation(sceneSource: SCNSceneSource, identifier: String, key: String, startTime: Double, endTime: Double) {
+        if let animationsObject = sceneSource.entryWithIdentifier(identifier, withClass: CAAnimation.self) {
             let animation = CAAnimationGroup()
             let sub = animationsObject.copy() as! CAAnimation
-            sub.timeOffset = 25.5666667064031
+            sub.timeOffset = startTime
             animation.animations = [sub]
-            animation.duration = 27.5666667064031 - sub.timeOffset
+            animation.duration = endTime - sub.timeOffset
             animation.repeatCount = Float.greatestFiniteMagnitude
+            animation.fadeInDuration = 0.5
 
             animations[key] = animation
         }
     }
 
     func playAnimation(key: String) {
-        sceneView.scene.rootNode.addAnimation(animations[key]!, forKey: key)
+        guard let modelNode = modelNode else { return }
+
+        modelNode.addAnimation(animations[key]!, forKey: key)
     }
 
     func stopAnimation(key: String) {
-        sceneView.scene.rootNode.removeAnimation(forKey: key, blendOutDuration: CGFloat(0.5))
-    }
-
-    // MARK: Animation
-
-    var isWalking = false
-
-    func toggleWalk() {
         guard let modelNode = modelNode else { return }
 
-        if !isWalking {
-            playAnimation(key: walkKey)
+        modelNode.removeAnimation(forKey: key, blendOutDuration: CGFloat(0.5))
+    }
 
-            let walkAction = SCNAction.move(to: SCNVector3Make(modelNode.position.x, modelNode.position.y, modelNode.position.z + 1), duration: 2.0)
-            modelNode.runAction(walkAction, forKey: walkKey)
+    // MARK: Animation and Action
 
-            isWalking = true
-        } else {
-            stopAnimation(key: walkKey)
+    func startIdle() {
+        playAnimation(key: lookAroundKey)
+    }
 
-            modelNode.removeAction(forKey: walkKey)
+    func stopIdle() {
+        stopAnimation(key: lookAroundKey)
+    }
 
-            isWalking = false
-        }
+    func startWalk(destination: SCNVector3) {
+        guard let modelNode = modelNode else { return }
+
+        stopIdle()
+
+        playAnimation(key: walkKey)
+
+//        let node = SCNNode()
+//        node.tra
+//        SCNLookAtConstraint(
+//        modelNode.constraints = [SCNLookAtConstraint()]
+
+        let waitAction = SCNAction.wait(duration: 0.5)
+        let walkAction = SCNAction.move(to: destination, duration: 2.0)
+        let walkSequence = SCNAction.sequence([waitAction, walkAction])
+        modelNode.runAction(walkSequence, forKey: walkKey)
+
+        isWalking = true
+    }
+
+    func stopWalk() {
+        guard let modelNode = modelNode else { return }
+
+        stopAnimation(key: walkKey)
+        modelNode.removeAction(forKey: walkKey)
+
+        startIdle()
+
+        isWalking = false
+    }
+
+    func stopActionsAndAnimations() {
+        guard let modelNode = modelNode else { return }
+
+        modelNode.removeAllActions()
+        modelNode.removeAllAnimations()
     }
 
     // MARK: Interaction
@@ -142,6 +230,10 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 let planeWorldTransform = firstPlane.worldTransform.columns.3
                 let position = SCNVector3Make(planeWorldTransform.x, planeWorldTransform.y, planeWorldTransform.z)
 
+//                if let arAnchor = firstPlane.anchor, let arPlane = planes[arAnchor.identifier] {
+//                    arPlane.isHidden = true
+//                }
+
                 insertModel(position: position)
             }
         } else {
@@ -149,16 +241,36 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             var hitTestOptions = [SCNHitTestOption: Any]()
             hitTestOptions[SCNHitTestOption.boundingBoxOnly] = true
 
-            let hitResults: [SCNHitTestResult]  = sceneView.hitTest(location, options: hitTestOptions)
+            let hitResults = sceneView.hitTest(location, options: hitTestOptions)
+            if let firstHit = hitResults.first {
+                // Test if 3D Object is elephant
+                var didTouchElephant = false
+                modelNode?.enumerateChildNodes({ (childNode: SCNNode, stop) in
 
-            if hitResults.first != nil {
-                if(idle) {
-                    playAnimation(key: "Walk")
+                    if childNode == firstHit.node {
+
+                        didTouchElephant = true
+
+                        stop.pointee = true
+                    }
+                })
+
+                if didTouchElephant {
+                    // TODO: Do another animation
+                    if isWalking {
+                        stopWalk()
+                    }
                 } else {
-                    stopAnimation(key: "Walk")
+                    //Get touched position location based on the plane the user touched
+                    let hitPlanes = sceneView.hitTest(location, types: .existingPlane)
+
+                    if let firstPlane = hitPlanes.first {
+                        let planeWorldTransform = firstPlane.worldTransform.columns.3
+                        let tapPosition = SCNVector3Make(planeWorldTransform.x, planeWorldTransform.y, planeWorldTransform.z)
+
+                        startWalk(destination: tapPosition)
+                    }
                 }
-                idle = !idle
-                return
             }
         }
     }
@@ -186,6 +298,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
     }
 
+    var isPan = true
+
     @IBAction func onPan(_ pan: UIPanGestureRecognizer) {
         guard let modelNode = modelNode else { return }
 
@@ -197,6 +311,30 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
             modelNode.simdPosition = planeHitTestPosition
         }
+
+    }
+
+    // MARK: - Take Picture
+    
+    @IBAction func onCameraTap(_ sender: Any) {
+        let image = sceneView.snapshot()
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+
+        AudioServicesPlayAlertSound(1108) // Camera alert sound and vibration
+        
+        UIView.animate(withDuration: 0.1, delay: 0, options: .autoreverse, animations: {
+            self.cameraButton.alpha = 0
+            self.cameraFlashView.alpha = 1
+        }) { (done) in
+            self.cameraButton.alpha = 1
+            self.cameraFlashView.alpha = 0
+        }
+    }
+
+    // MARK: - Dismiss ViewController
+
+    @IBAction func onDismissTap(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 
     // MARK: - ARSCNViewDelegate

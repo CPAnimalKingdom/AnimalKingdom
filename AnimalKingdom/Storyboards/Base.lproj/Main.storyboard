@@ -106,7 +106,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Account" image="userButton" springLoaded="YES" id="ife-MU-A1W">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="mRE-Fj-c03" kind="show" id="BL7-cG-YG6"/>
+                                <segue destination="mRE-Fj-c03" kind="modal" id="BL7-cG-YG6"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="menu" style="plain" id="yXS-t8-Lri">

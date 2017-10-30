@@ -35,6 +35,7 @@
 		376611531E188620009DC840 /* DetailsAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */; };
 		376611541E188620009DC840 /* DetailsAboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */; };
 		377538861FA67771004BADB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377538851FA67770004BADB5 /* Assets.xcassets */; };
+		3775388A1FA6926A004BADB5 /* DesignBundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377538891FA6926A004BADB5 /* DesignBundleView.swift */; };
 		379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */; };
 		379B2C8E1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */; };
 		379B2C8F1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */; };
@@ -97,6 +98,7 @@
 		376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutTableViewCell.swift; sourceTree = "<group>"; };
 		376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsAboutTableViewCell.xib; sourceTree = "<group>"; };
 		377538851FA67770004BADB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AnimalKingdom/Assets.xcassets; sourceTree = "<group>"; };
+		377538891FA6926A004BADB5 /* DesignBundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignBundleView.swift; sourceTree = "<group>"; };
 		379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		379B2C8C1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderImageTableViewCell.swift; sourceTree = "<group>"; };
 		379B2C8D1F997C3000060D3B /* DetailsHeaderImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsHeaderImageTableViewCell.xib; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */,
 				376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */,
 				376611521E188620009DC840 /* DetailsAboutTableViewCell.xib */,
+				377538891FA6926A004BADB5 /* DesignBundleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				37460A9E1F91AB6A0098171A /* Animal.swift in Sources */,
 				767ADA671F9D77BF00CD12B5 /* CreatePostViewController.swift in Sources */,
 				760C5E621F94400600E64444 /* LocalCollection.swift in Sources */,
+				3775388A1FA6926A004BADB5 /* DesignBundleView.swift in Sources */,
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */,
 				379B2C921F9982E000060D3B /* DetailsTitleTableViewCell.swift in Sources */,
@@ -643,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ACVWC32HP;
+				DEVELOPMENT_TEAM = EJTT2N9E3L;
 				INFOPLIST_FILE = AnimalKingdom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -660,7 +664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ACVWC32HP;
+				DEVELOPMENT_TEAM = EJTT2N9E3L;
 				INFOPLIST_FILE = AnimalKingdom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

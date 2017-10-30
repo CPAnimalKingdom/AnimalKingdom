@@ -22,7 +22,7 @@ class Datasource: NSObject {
             [
                 [
                     "name": "Africa Savannas",
-                    "image": "imageString",
+                    "image": "african-savanna",
                     "animals":
                         [
                             [

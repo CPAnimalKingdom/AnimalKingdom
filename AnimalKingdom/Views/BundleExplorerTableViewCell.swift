@@ -1,21 +1,18 @@
 //
-//  GroupTableViewCell.swift
+//  BundleExplorerTableViewCell.swift
 //  AnimalKingdom
 //
-//  Created by Dan on 10/14/17.
+//  Created by Dan on 10/29/17.
 //  Copyright © 2017 Dan. All rights reserved.
 //
 
 import UIKit
 
-class BundleTableViewCell: UITableViewCell {
-    
-    @IBOutlet var bundleImageView: UIImageView!
-    @IBOutlet var bundleNameTextLabel: UILabel!
+class BundleExplorerTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        bundleImageView.layer.cornerRadius = 10
-        bundleImageView.clipsToBounds = true
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

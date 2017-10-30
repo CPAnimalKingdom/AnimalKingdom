@@ -31,7 +31,8 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = bundleTableView.dequeueReusableCell(withIdentifier: "BundleTableViewCell", for: indexPath) as! BundleTableViewCell
-        cell.bundleNameTextLabel.text = "\(bundles[indexPath.row]["name"] ?? "Error: AnimalBundle name not available")"
+        cell.bundleImageView.image = UIImage(named: bundles[indexPath.row]["image"] as! String)
+        
         return cell
     }
     

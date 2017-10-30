@@ -17,31 +17,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-48-Nib">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FZ4-av-LUK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-48-Nib">
                                 <rect key="frame" x="16" y="20" width="343" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BundleTableViewCell" rowHeight="96" id="0mT-Vl-HnF" customClass="BundleTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BundleTableViewCell" rowHeight="96" id="0mT-Vl-HnF" customClass="BundleTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0mT-Vl-HnF" id="h9q-sw-cTB">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="95.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niN-Oj-lpb">
-                                                    <rect key="frame" x="150.5" y="37" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-mn-Qwj" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="327" height="80"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUA-hR-D00">
+                                                            <rect key="frame" x="0.0" y="0.0" width="327" height="80"/>
+                                                            <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="eUA-hR-D00" firstAttribute="leading" secondItem="pwK-mn-Qwj" secondAttribute="leading" id="23A-eZ-lOg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="eUA-hR-D00" secondAttribute="trailing" id="9gd-K1-NhJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eUA-hR-D00" secondAttribute="bottom" id="nOZ-1m-doQ"/>
+                                                        <constraint firstItem="eUA-hR-D00" firstAttribute="top" secondItem="pwK-mn-Qwj" secondAttribute="top" id="yT7-wR-fXe"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="niN-Oj-lpb" firstAttribute="centerY" secondItem="h9q-sw-cTB" secondAttribute="centerY" id="Td1-Zl-9FX"/>
-                                                <constraint firstItem="niN-Oj-lpb" firstAttribute="centerX" secondItem="h9q-sw-cTB" secondAttribute="centerX" id="gv5-KA-emM"/>
+                                                <constraint firstItem="pwK-mn-Qwj" firstAttribute="leading" secondItem="h9q-sw-cTB" secondAttribute="leading" constant="8" id="8nV-44-KHR"/>
+                                                <constraint firstItem="pwK-mn-Qwj" firstAttribute="top" secondItem="h9q-sw-cTB" secondAttribute="top" constant="8" id="D67-J1-Vm5"/>
+                                                <constraint firstAttribute="trailing" secondItem="pwK-mn-Qwj" secondAttribute="trailing" constant="8" id="Ija-3R-YjX"/>
+                                                <constraint firstAttribute="bottom" secondItem="pwK-mn-Qwj" secondAttribute="bottom" constant="7.5" id="o5v-1M-Kbe"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="bundleNameTextLabel" destination="niN-Oj-lpb" id="lHg-KJ-9sS"/>
+                                            <outlet property="bundleImageView" destination="eUA-hR-D00" id="nVY-hG-NQu"/>
                                             <segue destination="AKx-Tu-PYE" kind="show" id="gj1-4y-15g"/>
                                         </connections>
                                     </tableViewCell>
@@ -51,8 +87,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RMp-48-Nib" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" constant="16" id="G0P-PX-e8g"/>
+                            <constraint firstItem="FZ4-av-LUK" firstAttribute="bottom" secondItem="nfx-81-sFu" secondAttribute="bottom" id="a0L-QM-pkn"/>
+                            <constraint firstItem="FZ4-av-LUK" firstAttribute="trailing" secondItem="nfx-81-sFu" secondAttribute="trailing" id="dsF-Q9-L7f"/>
                             <constraint firstItem="nfx-81-sFu" firstAttribute="trailing" secondItem="RMp-48-Nib" secondAttribute="trailing" constant="16" id="frK-aJ-MjJ"/>
+                            <constraint firstItem="FZ4-av-LUK" firstAttribute="top" secondItem="tan-JW-KHH" secondAttribute="top" id="kTP-Hq-ox5"/>
                             <constraint firstItem="RMp-48-Nib" firstAttribute="top" secondItem="nfx-81-sFu" secondAttribute="top" id="ohz-lo-gvw"/>
+                            <constraint firstItem="FZ4-av-LUK" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" id="sAi-V8-Rt7"/>
                             <constraint firstItem="RMp-48-Nib" firstAttribute="bottom" secondItem="nfx-81-sFu" secondAttribute="bottom" id="tap-rO-O3E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nfx-81-sFu"/>
@@ -130,4 +170,7 @@
             <point key="canvasLocation" x="2707" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="505" height="748"/>
+    </resources>
 </document>

@@ -113,31 +113,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-ZW-9U8">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-HS-cTF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-ZW-9U8">
                                 <rect key="frame" x="16" y="0.0" width="343" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnimalTableViewCell" rowHeight="167" id="AKs-dp-6Em" customClass="AnimalTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AnimalTableViewCell" rowHeight="167" id="AKs-dp-6Em" customClass="AnimalTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AKs-dp-6Em" id="zDZ-9F-aG9">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="166.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="167"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLx-fP-L7V">
-                                                    <rect key="frame" x="150" y="73" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2N-Xw-5Hk" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="327" height="151"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gP-7y-eKr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="327" height="151"/>
+                                                            <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="3gP-7y-eKr" secondAttribute="trailing" id="MRe-1v-Sfq"/>
+                                                        <constraint firstItem="3gP-7y-eKr" firstAttribute="leading" secondItem="C2N-Xw-5Hk" secondAttribute="leading" id="Vm7-cw-9Qi"/>
+                                                        <constraint firstItem="3gP-7y-eKr" firstAttribute="top" secondItem="C2N-Xw-5Hk" secondAttribute="top" id="Vr2-6O-NzI"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3gP-7y-eKr" secondAttribute="bottom" id="eUq-mB-Dvd"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xLx-fP-L7V" firstAttribute="centerX" secondItem="zDZ-9F-aG9" secondAttribute="centerX" id="OPv-S6-ygr"/>
-                                                <constraint firstItem="xLx-fP-L7V" firstAttribute="centerY" secondItem="zDZ-9F-aG9" secondAttribute="centerY" id="dZX-o9-gtJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="C2N-Xw-5Hk" secondAttribute="trailing" constant="8" id="7Rq-bR-dIP"/>
+                                                <constraint firstItem="C2N-Xw-5Hk" firstAttribute="top" secondItem="zDZ-9F-aG9" secondAttribute="top" constant="8" id="CkZ-nR-Zza"/>
+                                                <constraint firstItem="C2N-Xw-5Hk" firstAttribute="leading" secondItem="zDZ-9F-aG9" secondAttribute="leading" constant="8" id="JUo-cO-mf0"/>
+                                                <constraint firstAttribute="bottom" secondItem="C2N-Xw-5Hk" secondAttribute="bottom" constant="7.5" id="teb-nv-9wz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="animalNameTextLabel" destination="xLx-fP-L7V" id="O4u-Yf-YiQ"/>
+                                            <outlet property="animalImageView" destination="3gP-7y-eKr" id="HyA-9u-sa3"/>
                                             <segue destination="lrC-26-U1c" kind="show" id="pAE-bi-MW4"/>
                                         </connections>
                                     </tableViewCell>
@@ -146,9 +176,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6hT-HS-cTF" firstAttribute="leading" secondItem="CjR-eW-iSb" secondAttribute="leading" id="0UI-oa-dz7"/>
                             <constraint firstItem="gMC-ZW-9U8" firstAttribute="top" secondItem="FTJ-lf-Is2" secondAttribute="top" id="L3c-RP-qzr"/>
+                            <constraint firstItem="6hT-HS-cTF" firstAttribute="top" secondItem="FTJ-lf-Is2" secondAttribute="top" id="aav-p4-IYf"/>
+                            <constraint firstItem="6hT-HS-cTF" firstAttribute="trailing" secondItem="CjR-eW-iSb" secondAttribute="trailing" id="b1L-PV-4T0"/>
                             <constraint firstItem="gMC-ZW-9U8" firstAttribute="bottom" secondItem="CjR-eW-iSb" secondAttribute="bottom" id="bja-Rk-LVJ"/>
                             <constraint firstItem="CjR-eW-iSb" firstAttribute="trailing" secondItem="gMC-ZW-9U8" secondAttribute="trailing" constant="16" id="cpi-P4-Cnj"/>
+                            <constraint firstItem="6hT-HS-cTF" firstAttribute="bottom" secondItem="CjR-eW-iSb" secondAttribute="bottom" id="gdy-0E-dLi"/>
                             <constraint firstItem="gMC-ZW-9U8" firstAttribute="leading" secondItem="CjR-eW-iSb" secondAttribute="leading" constant="16" id="t5k-OU-Fky"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjR-eW-iSb"/>
@@ -159,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwt-qq-fp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150" y="80"/>
+            <point key="canvasLocation" x="2149.5999999999999" y="79.610194902548727"/>
         </scene>
         <!--Details-->
         <scene sceneID="Tc1-Wb-DoO">

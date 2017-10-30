@@ -41,9 +41,9 @@ class DetailsTableViewController: UITableViewController {
         let key = animal.details[indexPath.row].allKeys[0] as! NSString
         let value =  animal.details[indexPath.row]
 
-        if key == "mainPhoto" {
+        if key == "photo" {
             let cell = Bundle.main.loadNibNamed("DetailsHeaderImageTableViewCell", owner: self, options: nil)?.first as! DetailsHeaderImageTableViewCell
-            cell.animalImageImageView.image = UIImage(named: (value[key] as? String)!)
+            cell.animalImageImageView.image = UIImage(named: "\(value[key] ?? "ERR")-main.jpg")
             return cell
         } else if key == "displayName" {
             let cell = Bundle.main.loadNibNamed("DetailsTitleTableViewCell", owner: self, options: nil)?.first as! DetailsTitleTableViewCell
@@ -69,7 +69,7 @@ class DetailsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let key = animal.details[indexPath.row].allKeys[0] as! NSString
-        if key == "mainPhoto" {
+        if key == "photo" {
             return (tableView.frame.width / 5 ) * 3
         } else if key == "displayName" {
             return (tableView.frame.width / 6 )

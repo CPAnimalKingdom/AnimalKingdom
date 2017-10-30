@@ -10,10 +10,11 @@ import UIKit
 
 class AnimalTableViewCell: UITableViewCell {
 
-    @IBOutlet var animalNameTextLabel: UILabel!
+    @IBOutlet var animalImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        animalImageView.layer.cornerRadius = 10
+        animalImageView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

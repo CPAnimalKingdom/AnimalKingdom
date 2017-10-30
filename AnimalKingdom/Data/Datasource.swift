@@ -28,7 +28,7 @@ class Datasource: NSObject {
                             [
                                 "details":
                                     [
-                                        ["mainPhoto": "african-elephant-main.jpg"],
+                                        ["photo": "african-elephant"],
                                         ["displayName": "THE AFRICAN ELEPHANT"],
                                         ["actions": "xxx"],
                                         ["COMMON NAME": "African Elephant"],

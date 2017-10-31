@@ -19,12 +19,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     var planes = [UUID: ARPlane]()
     var idle: Bool = true
     var modelNode: SCNNode?
-    var isWalking = false
+    var isIdle = false
     let walkKey = "walk"
     let breatheKey = "breathe"
     let lookAroundKey = "lookAround"
     let lookaroundEatKey = "lookAroundEat"
     let chewKey = "chew"
+    let comboAttackKey = "comboAttackKey"
     let cameraFlashView = UIView()
 
     // MARK: Lifecycle
@@ -84,7 +85,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
     // MARK: Helpers
 
-    func insertModel(position: SCNVector3 = SCNVector3(0, -1, -2), scale: SCNVector3 = SCNVector3(0.5, 0.5, 0.5)) {
+    func insertModel(position: SCNVector3 = SCNVector3(0, -1, -2), scale: SCNVector3 = SCNVector3(0.25, 0.25, 0.25)) {
         let idleScene = SCNScene(named: "art.scnassets/Elephant.dae")!
 
         modelNode = SCNNode()
@@ -113,37 +114,42 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         // Walk
         let startWalk = 25.5666667064031
         let endWalk = 27.5666667064031
-        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: walkKey, startTime: startWalk, endTime: endWalk)
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: walkKey, startTime: startWalk, endTime: endWalk, repeatCount: Float.greatestFiniteMagnitude)
 
         // Idle chew
         let startChew = 0.0
         let endChew = 2.0
-        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: chewKey, startTime: startChew, endTime: endChew)
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: chewKey, startTime: startChew, endTime: endChew, repeatCount: Float.greatestFiniteMagnitude)
 
         // Idle lookaround
         let startLookAround = 16.166666666666668
         let endLookAround = 24.166666666666668
-        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: lookAroundKey, startTime: startLookAround, endTime: endLookAround)
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: lookAroundKey, startTime: startLookAround, endTime: endLookAround, repeatCount: Float.greatestFiniteMagnitude)
 
         // Idle lookaround eat
         let startLookAroundEat = 6.1
         let endLookAroundEat = 15.1
-        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: lookaroundEatKey, startTime: startLookAroundEat, endTime: endLookAroundEat)
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: lookaroundEatKey, startTime: startLookAroundEat, endTime: endLookAroundEat, repeatCount: Float.greatestFiniteMagnitude)
 
         // Idle breathe
         let startBreathe = 2.0333333333333332
         let endBreathe = 4.0333333333333332
-        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: breatheKey, startTime: startBreathe, endTime: endBreathe)
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: breatheKey, startTime: startBreathe, endTime: endBreathe, repeatCount: Float.greatestFiniteMagnitude)
+
+        // Tusks Combo Attack
+        let startComboAttack = 4.0666666666666664
+        let endComboAttack = 6.0666666666666664
+        loadAnimation(sceneSource: animationsSceneSource, identifier: animationsIdentifier, key: comboAttackKey, startTime: startComboAttack, endTime: endComboAttack, repeatCount: 1)
     }
 
-    func loadAnimation(sceneSource: SCNSceneSource, identifier: String, key: String, startTime: Double, endTime: Double) {
+    func loadAnimation(sceneSource: SCNSceneSource, identifier: String, key: String, startTime: Double, endTime: Double, repeatCount: Float) {
         if let animationsObject = sceneSource.entryWithIdentifier(identifier, withClass: CAAnimation.self) {
             let animation = CAAnimationGroup()
             let sub = animationsObject.copy() as! CAAnimation
             sub.timeOffset = startTime
             animation.animations = [sub]
             animation.duration = endTime - sub.timeOffset
-            animation.repeatCount = Float.greatestFiniteMagnitude
+            animation.repeatCount = repeatCount
             animation.fadeInDuration = 0.5
 
             animations[key] = animation
@@ -166,10 +172,14 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
     func startIdle() {
         playAnimation(key: lookAroundKey)
+
+        isIdle = true
     }
 
     func stopIdle() {
         stopAnimation(key: lookAroundKey)
+
+        isIdle = false
     }
 
     func startWalk(destination: SCNVector3) {
@@ -179,17 +189,16 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
         playAnimation(key: walkKey)
 
-//        let node = SCNNode()
-//        node.tra
-//        SCNLookAtConstraint(
-//        modelNode.constraints = [SCNLookAtConstraint()]
-
-        let waitAction = SCNAction.wait(duration: 0.5)
+        let waitAction = SCNAction.wait(duration: 0.3)
         let walkAction = SCNAction.move(to: destination, duration: 2.0)
         let walkSequence = SCNAction.sequence([waitAction, walkAction])
         modelNode.runAction(walkSequence, forKey: walkKey)
 
-        isWalking = true
+//        var reverse = SCNVector3()
+//        reverse.x = -destination.x
+//        reverse.y = destination.y
+//        reverse.z = -destination.z
+//        modelNode.look(at: destination)
     }
 
     func stopWalk() {
@@ -199,8 +208,18 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         modelNode.removeAction(forKey: walkKey)
 
         startIdle()
+    }
 
-        isWalking = false
+    func doComboAttack() {
+        stopIdle()
+
+        playAnimation(key: comboAttackKey)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1) + .milliseconds(500), execute: {
+            self.stopAnimation(key: self.comboAttackKey)
+
+            self.startIdle()
+        })
     }
 
     func stopActionsAndAnimations() {
@@ -225,7 +244,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 let position = SCNVector3Make(planeWorldTransform.x, planeWorldTransform.y, planeWorldTransform.z)
 
 //                if let arAnchor = firstPlane.anchor, let arPlane = planes[arAnchor.identifier] {
-//                    arPlane.isHidden = true
+//                    arPlane.opacity = 0
 //                }
 
                 insertModel(position: position)
@@ -237,7 +256,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
             let hitResults = sceneView.hitTest(location, options: hitTestOptions)
             if let firstHit = hitResults.first {
-                // Test if 3D Object is elephant
+                // Test if 3D Object is elephant, might be plane
                 var didTouchElephant = false
                 modelNode?.enumerateChildNodes({ (childNode: SCNNode, stop) in
 
@@ -251,18 +270,27 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
                 if didTouchElephant {
                     // TODO: Do another animation
-                    if isWalking {
-                        stopWalk()
+                    if isIdle {
+                        doComboAttack()
                     }
                 } else {
-                    //Get touched position location based on the plane the user touched
-                    let hitPlanes = sceneView.hitTest(location, types: .existingPlane)
+                    if isIdle {
+                        //Get touched position location based on the plane the user touched
+                        let hitPlanes = sceneView.hitTest(location, types: .existingPlane)
 
-                    if let firstPlane = hitPlanes.first {
-                        let planeWorldTransform = firstPlane.worldTransform.columns.3
-                        let tapPosition = SCNVector3Make(planeWorldTransform.x, planeWorldTransform.y, planeWorldTransform.z)
+                        if let firstPlane = hitPlanes.first {
+                            let planeWorldTransform = firstPlane.worldTransform.columns.3
+                            let tapPosition = SCNVector3Make(planeWorldTransform.x, planeWorldTransform.y, planeWorldTransform.z)
 
-                        startWalk(destination: tapPosition)
+                            startWalk(destination: tapPosition)
+
+                            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1) + .milliseconds(500), execute: {
+                                self.stopWalk()
+                            })
+                        }
+                    } else {
+                        stopWalk()
+                        startIdle()
                     }
                 }
             }

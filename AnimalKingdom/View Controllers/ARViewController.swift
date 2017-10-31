@@ -32,6 +32,10 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.backIndicatorImage = myBackButton
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = myBackButton
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        
         // SCNScene
         let scene = SCNScene()
         sceneView.scene = scene

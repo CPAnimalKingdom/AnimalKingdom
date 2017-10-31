@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "launch-screen-image.png",
+      "filename" : "user-icon.png",
       "scale" : "1x"
     },
     {

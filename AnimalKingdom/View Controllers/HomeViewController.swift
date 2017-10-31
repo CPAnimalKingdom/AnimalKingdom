@@ -13,7 +13,23 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
+        let myBackButton = UIImage(named: "back-icon")
+
+        self.navigationController?.navigationBar.backIndicatorImage = myBackButton
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = myBackButton
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        
+        let statusBarWindow = UIApplication.shared.value(forKey: "statusBarWindow") as? UIWindow
+        UIView.animate(withDuration: 3) {
+            statusBarWindow?.alpha = 0
+        }
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

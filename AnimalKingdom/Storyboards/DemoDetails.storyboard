@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo Details View Controller-->
         <scene sceneID="Qx1-Uc-uET">
             <objects>
-                <viewController storyboardIdentifier="DemoDetails" id="ZWT-7O-xKw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoDetails" id="ZWT-7O-xKw" customClass="DemoDetailsViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wRW-P7-ddp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zw-pK-3ju">
-                                <rect key="frame" x="0.0" y="65" width="375" height="262"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoHeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="4vB-bL-tmU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </view>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRo-s7-lQA" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
-                                <rect key="frame" x="7" y="325" width="360" height="54"/>
+                                <rect key="frame" x="7" y="270" width="360" height="54"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Reu-AM-rLs">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
@@ -88,7 +88,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-wc-a9a">
-                                <rect key="frame" x="0.0" y="387" width="375" height="2213"/>
+                                <rect key="frame" x="0.0" y="332" width="375" height="2268"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-yH-ryH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="3500"/>
@@ -110,7 +110,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="eyi-yH-ryH" secondAttribute="bottom" id="Oe7-XT-Aej"/>
+                                    <constraint firstAttribute="bottom" secondItem="eyi-yH-ryH" secondAttribute="bottom" constant="-1232" id="Oe7-XT-Aej"/>
                                     <constraint firstItem="eyi-yH-ryH" firstAttribute="leading" secondItem="9Rp-wc-a9a" secondAttribute="leading" id="ZGA-6H-1yy"/>
                                     <constraint firstItem="eyi-yH-ryH" firstAttribute="top" secondItem="9Rp-wc-a9a" secondAttribute="top" id="iF1-X2-FAW"/>
                                     <constraint firstAttribute="trailing" secondItem="eyi-yH-ryH" secondAttribute="trailing" id="oym-N6-5NC"/>
@@ -119,7 +119,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MRo-s7-lQA" firstAttribute="top" secondItem="1zw-pK-3ju" secondAttribute="bottom" constant="-2" id="3cP-9I-5jY"/>
+                            <constraint firstItem="MRo-s7-lQA" firstAttribute="top" secondItem="1zw-pK-3ju" secondAttribute="bottom" constant="8" id="3cP-9I-5jY"/>
                             <constraint firstItem="MRo-s7-lQA" firstAttribute="leading" secondItem="JvR-v2-gNf" secondAttribute="leading" constant="7" id="6p4-vC-C1c"/>
                             <constraint firstItem="eyi-yH-ryH" firstAttribute="width" secondItem="wRW-P7-ddp" secondAttribute="width" id="ErV-v6-ITu"/>
                             <constraint firstItem="MRo-s7-lQA" firstAttribute="trailing" secondItem="JvR-v2-gNf" secondAttribute="trailing" constant="-8" id="F0O-WM-B9b"/>
@@ -128,7 +128,7 @@
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="bottom" secondItem="JvR-v2-gNf" secondAttribute="bottom" id="N5i-Ir-8PD"/>
                             <constraint firstItem="1zw-pK-3ju" firstAttribute="trailing" secondItem="JvR-v2-gNf" secondAttribute="trailing" id="Rsv-Fa-bAp"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="leading" secondItem="JvR-v2-gNf" secondAttribute="leading" id="UKX-M7-kxV"/>
-                            <constraint firstItem="1zw-pK-3ju" firstAttribute="top" secondItem="wRW-P7-ddp" secondAttribute="top" constant="65" id="nK4-3k-QlN"/>
+                            <constraint firstItem="1zw-pK-3ju" firstAttribute="top" secondItem="wRW-P7-ddp" secondAttribute="top" id="nK4-3k-QlN"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="top" secondItem="MRo-s7-lQA" secondAttribute="bottom" constant="8" id="uKa-El-rdd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JvR-v2-gNf"/>

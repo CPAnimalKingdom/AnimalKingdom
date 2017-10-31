@@ -1,25 +1,28 @@
 //
-//  AdventurerViewController.swift
+//  DemoDetailsViewController.swift
 //  AnimalKingdom
 //
-//  Created by Dan on 10/9/17.
+//  Created by Dan on 10/30/17.
 //  Copyright © 2017 Dan. All rights reserved.
 //
 
 import UIKit
 
-class AdventurerViewController: UIViewController {
+class DemoDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        self.navigationController?.navigationBar.shadowImage = nil
+        self.navigationController?.navigationBar.isTranslucent = false
+        let myHomeButton = UIImage(named: "home-icon")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: nil, action: nil)
+
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

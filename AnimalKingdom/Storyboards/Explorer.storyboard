@@ -22,21 +22,21 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-48-Nib">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="56" y="0.0" width="262" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BundleTableViewCell" rowHeight="96" id="0mT-Vl-HnF" customClass="BundleTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="96"/>
+                                        <rect key="frame" x="0.0" y="28" width="262" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0mT-Vl-HnF" id="h9q-sw-cTB">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="262" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-mn-Qwj" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="8" width="327" height="80"/>
+                                                    <rect key="frame" x="8" y="8" width="246" height="80"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUA-hR-D00">
-                                                            <rect key="frame" x="0.0" y="0.0" width="327" height="80"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="246" height="80"/>
                                                             <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
                                                     </subviews>
@@ -86,12 +86,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RMp-48-Nib" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" constant="16" id="G0P-PX-e8g"/>
+                            <constraint firstItem="RMp-48-Nib" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" constant="56" id="8gW-V7-hQb"/>
                             <constraint firstItem="FZ4-av-LUK" firstAttribute="bottom" secondItem="nfx-81-sFu" secondAttribute="bottom" id="a0L-QM-pkn"/>
                             <constraint firstItem="FZ4-av-LUK" firstAttribute="trailing" secondItem="nfx-81-sFu" secondAttribute="trailing" id="dsF-Q9-L7f"/>
-                            <constraint firstItem="nfx-81-sFu" firstAttribute="trailing" secondItem="RMp-48-Nib" secondAttribute="trailing" constant="16" id="frK-aJ-MjJ"/>
                             <constraint firstItem="FZ4-av-LUK" firstAttribute="top" secondItem="tan-JW-KHH" secondAttribute="top" id="kTP-Hq-ox5"/>
-                            <constraint firstItem="RMp-48-Nib" firstAttribute="top" secondItem="nfx-81-sFu" secondAttribute="top" id="ohz-lo-gvw"/>
+                            <constraint firstItem="RMp-48-Nib" firstAttribute="top" secondItem="tan-JW-KHH" secondAttribute="top" id="pa4-5Z-MHg"/>
+                            <constraint firstItem="nfx-81-sFu" firstAttribute="trailing" secondItem="RMp-48-Nib" secondAttribute="trailing" constant="57" id="qrK-Bv-IzI"/>
                             <constraint firstItem="FZ4-av-LUK" firstAttribute="leading" secondItem="nfx-81-sFu" secondAttribute="leading" id="sAi-V8-Rt7"/>
                             <constraint firstItem="RMp-48-Nib" firstAttribute="bottom" secondItem="nfx-81-sFu" secondAttribute="bottom" id="tap-rO-O3E"/>
                         </constraints>
@@ -117,21 +117,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-ZW-9U8">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <rect key="frame" x="56" y="0.0" width="263" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AnimalTableViewCell" rowHeight="167" id="AKs-dp-6Em" customClass="AnimalTableViewCell" customModule="AnimalKingdom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="167"/>
+                                        <rect key="frame" x="0.0" y="28" width="263" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AKs-dp-6Em" id="zDZ-9F-aG9">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="167"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="263" height="167"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2N-Xw-5Hk" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="8" width="327" height="151"/>
+                                                    <rect key="frame" x="8" y="8" width="247" height="151"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gP-7y-eKr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="327" height="151"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="247" height="151"/>
                                                             <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </imageView>
                                                     </subviews>
@@ -181,9 +181,9 @@
                             <constraint firstItem="6hT-HS-cTF" firstAttribute="top" secondItem="FTJ-lf-Is2" secondAttribute="top" id="aav-p4-IYf"/>
                             <constraint firstItem="6hT-HS-cTF" firstAttribute="trailing" secondItem="CjR-eW-iSb" secondAttribute="trailing" id="b1L-PV-4T0"/>
                             <constraint firstItem="gMC-ZW-9U8" firstAttribute="bottom" secondItem="CjR-eW-iSb" secondAttribute="bottom" id="bja-Rk-LVJ"/>
-                            <constraint firstItem="CjR-eW-iSb" firstAttribute="trailing" secondItem="gMC-ZW-9U8" secondAttribute="trailing" constant="16" id="cpi-P4-Cnj"/>
+                            <constraint firstItem="gMC-ZW-9U8" firstAttribute="leading" secondItem="CjR-eW-iSb" secondAttribute="leading" constant="56" id="fkm-Yg-4Ek"/>
                             <constraint firstItem="6hT-HS-cTF" firstAttribute="bottom" secondItem="CjR-eW-iSb" secondAttribute="bottom" id="gdy-0E-dLi"/>
-                            <constraint firstItem="gMC-ZW-9U8" firstAttribute="leading" secondItem="CjR-eW-iSb" secondAttribute="leading" constant="16" id="t5k-OU-Fky"/>
+                            <constraint firstItem="CjR-eW-iSb" firstAttribute="trailing" secondItem="gMC-ZW-9U8" secondAttribute="trailing" constant="56" id="phi-D5-Rj7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjR-eW-iSb"/>
                     </view>

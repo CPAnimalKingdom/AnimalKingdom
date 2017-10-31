@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4MY-hg-iEK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4MY-hg-iEK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
                                     <outletCollection property="gestureRecognizers" destination="25w-hR-qmc" appends="YES" id="MpS-cn-12G"/>
                                 </connections>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-ta-usO">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-ta-usO">
                                 <rect key="frame" x="154.5" y="582" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -41,20 +41,6 @@
                                     <action selector="onCameraTap:" destination="4MY-hg-iEK" eventType="touchUpInside" id="F5C-f0-dEU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V67-mF-vKP">
-                                <rect key="frame" x="334" y="16" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="6Qx-pk-Ah5"/>
-                                    <constraint firstAttribute="height" constant="25" id="dSq-Ry-IE1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <state key="normal" title="X">
-                                    <color key="titleColor" red="0.16930796861648556" green="0.16930796861648556" blue="0.16930796861648556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onDismissTap:" destination="4MY-hg-iEK" eventType="touchUpInside" id="XoB-Wq-7Qb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,8 +48,6 @@
                             <constraint firstItem="571-wf-oaC" firstAttribute="trailing" secondItem="7kg-Nk-jPc" secondAttribute="trailing" id="6nC-bt-iFB"/>
                             <constraint firstItem="571-wf-oaC" firstAttribute="leading" secondItem="7kg-Nk-jPc" secondAttribute="leading" id="DOZ-zv-7m4"/>
                             <constraint firstItem="571-wf-oaC" firstAttribute="bottom" secondItem="7kg-Nk-jPc" secondAttribute="bottom" id="F48-uM-XxI"/>
-                            <constraint firstItem="V67-mF-vKP" firstAttribute="top" secondItem="j7p-7q-4dE" secondAttribute="top" constant="16" id="NZC-Uo-y0L"/>
-                            <constraint firstItem="7kg-Nk-jPc" firstAttribute="trailing" secondItem="V67-mF-vKP" secondAttribute="trailing" constant="16" id="qe5-Qs-akh"/>
                             <constraint firstItem="7kg-Nk-jPc" firstAttribute="bottom" secondItem="HEV-ta-usO" secondAttribute="bottom" constant="20" id="rCn-VB-tGS"/>
                             <constraint firstItem="HEV-ta-usO" firstAttribute="centerX" secondItem="j7p-7q-4dE" secondAttribute="centerX" id="zty-P9-aCJ"/>
                         </constraints>
@@ -71,7 +55,6 @@
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="HEV-ta-usO" id="lZl-0t-UvR"/>
-                        <outlet property="dismissButton" destination="V67-mF-vKP" id="Hst-da-YOT"/>
                         <outlet property="sceneView" destination="571-wf-oaC" id="j4e-m1-NMq"/>
                     </connections>
                 </viewController>

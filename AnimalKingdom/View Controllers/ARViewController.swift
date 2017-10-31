@@ -32,10 +32,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.backIndicatorImage = myBackButton
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = myBackButton
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-        
         // SCNScene
         let scene = SCNScene()
         sceneView.scene = scene
@@ -53,12 +49,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         cameraButton.imageView?.contentMode = .scaleAspectFill
         cameraButton.clipsToBounds = true
         cameraButton.alpha = 0.7
-
-        // Dismiss Button
-        dismissButton.layer.cornerRadius = dismissButton.frame.size.height / 2
-        dismissButton.layer.borderWidth = 1.5
-        dismissButton.layer.borderColor = dismissButton.titleLabel?.textColor.cgColor
-        dismissButton.alpha = 0.7
 
         // Camera Flash
         cameraFlashView.backgroundColor = UIColor.black
@@ -333,12 +323,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             self.cameraButton.alpha = 1
             self.cameraFlashView.alpha = 0
         }
-    }
-
-    // MARK: - Dismiss ViewController
-
-    @IBAction func onDismissTap(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
     }
 
     // MARK: - ARSCNViewDelegate

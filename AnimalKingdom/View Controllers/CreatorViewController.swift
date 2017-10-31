@@ -11,7 +11,6 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
 import FirebaseStorage
-import MBProgressHUD
 
 class CreatorViewController: UIViewController, FBSDKLoginButtonDelegate, UINavigationControllerDelegate {
 

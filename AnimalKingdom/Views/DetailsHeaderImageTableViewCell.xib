@@ -19,18 +19,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="342" height="204.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-rn-daC">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-UV-6tK" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="342" height="205"/>
-                        <color key="backgroundColor" red="0.37096673060000002" green="0.92806154819999997" blue="0.60257142740000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-rn-daC">
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="205"/>
+                                <color key="backgroundColor" red="0.37096673060000002" green="0.92806154819999997" blue="0.60257142740000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xh1-rn-daC" secondAttribute="height" multiplier="5:3" id="VDs-1M-fL4"/>
+                                    <constraint firstAttribute="width" secondItem="xh1-rn-daC" secondAttribute="height" multiplier="5:3" id="Wg0-gW-Dyr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="xh1-rn-daC" secondAttribute="height" multiplier="5:3" id="VDs-1M-fL4"/>
+                            <constraint firstAttribute="bottom" secondItem="xh1-rn-daC" secondAttribute="bottom" id="05s-eM-GRN"/>
+                            <constraint firstItem="xh1-rn-daC" firstAttribute="top" secondItem="c9b-UV-6tK" secondAttribute="top" id="hpf-km-bTb"/>
+                            <constraint firstItem="xh1-rn-daC" firstAttribute="leading" secondItem="c9b-UV-6tK" secondAttribute="leading" id="lad-Zd-4bh"/>
+                            <constraint firstAttribute="trailing" secondItem="xh1-rn-daC" secondAttribute="trailing" id="pxs-ch-Gqx"/>
                         </constraints>
-                    </imageView>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="xh1-rn-daC" secondAttribute="trailing" id="96m-aA-sWj"/>
-                    <constraint firstItem="xh1-rn-daC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TRU-5u-6eK"/>
-                    <constraint firstItem="xh1-rn-daC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u7l-fH-NAS"/>
+                    <constraint firstAttribute="bottom" secondItem="c9b-UV-6tK" secondAttribute="bottom" id="2sP-Mt-OOb"/>
+                    <constraint firstAttribute="trailing" secondItem="c9b-UV-6tK" secondAttribute="trailing" id="4oo-p2-ocV"/>
+                    <constraint firstItem="c9b-UV-6tK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GtV-qq-G5G"/>
+                    <constraint firstItem="c9b-UV-6tK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NmY-ji-ssO"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

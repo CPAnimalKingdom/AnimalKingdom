@@ -52,8 +52,8 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         let animal: Animal = animals[indexPath!.row]
         
         // Pass the selected object to the new view controller.
-        let detailsViewController = segue.destination as! DetailsTableViewController
-        detailsViewController.animal = animal
+        //let detailsViewController = segue.destination as! DetailsTableViewController
+        //detailsViewController.animal = animal
     }
     
 }

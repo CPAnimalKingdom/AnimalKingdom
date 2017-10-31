@@ -43,6 +43,7 @@
 		379B2C931F9982E000060D3B /* DetailsTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C911F9982E000060D3B /* DetailsTitleTableViewCell.xib */; };
 		379B2C981F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2C961F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift */; };
 		379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379B2C971F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib */; };
+		379BDAE61FA7FD69007E96C4 /* DemoDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379BDAE51FA7FD69007E96C4 /* DemoDetails.storyboard */; };
 		37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A033BE1F8C868600C4AA86 /* AppDelegate.swift */; };
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
@@ -106,6 +107,7 @@
 		379B2C911F9982E000060D3B /* DetailsTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTitleTableViewCell.xib; sourceTree = "<group>"; };
 		379B2C961F9985B400060D3B /* DetailsActionsPanelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsActionsPanelTableViewCell.swift; sourceTree = "<group>"; };
 		379B2C971F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsActionsPanelTableViewCell.xib; sourceTree = "<group>"; };
+		379BDAE51FA7FD69007E96C4 /* DemoDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoDetails.storyboard; sourceTree = "<group>"; };
 		37A033BB1F8C868600C4AA86 /* AnimalKingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalKingdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A033BE1F8C868600C4AA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A033C31F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				37FB91951F8DB15400E88D98 /* Settings.storyboard */,
 				37029F331F920C3800F55A30 /* Login.storyboard */,
 				37029F391F920D9200F55A30 /* Logout.storyboard */,
+				379BDAE51FA7FD69007E96C4 /* DemoDetails.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
+				379BDAE61FA7FD69007E96C4 /* DemoDetails.storyboard in Resources */,
 				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

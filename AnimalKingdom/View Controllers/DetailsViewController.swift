@@ -16,8 +16,6 @@ class DetailsViewController: UIViewController{
     @IBOutlet var animalNameTextLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        detailsTableView.delegate = self
-        detailsTableView.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {

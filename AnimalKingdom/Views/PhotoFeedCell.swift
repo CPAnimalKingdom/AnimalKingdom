@@ -25,6 +25,7 @@ class PhotoFeedCell: UITableViewCell {
         locationTag.text = post.locationTag
         imageDateTimeStamp.text = post.dateImageTaken
 
+        self.animalImage.image = UIImage(named: "defaultPictureIcon")
         DispatchQueue.global().async {
             do {
                 if let imageURL = NSURL(string: post.photoUrl) {
@@ -35,7 +36,11 @@ class PhotoFeedCell: UITableViewCell {
             }
             DispatchQueue.main.async {
                 if self.myImage != nil {
-                    self.animalImage.image = self.myImage
+                    UIView.transition(with: self.animalImage,
+                                      duration: 0.5,
+                                      options: .transitionCrossDissolve,
+                                      animations: { self.animalImage.image = self.myImage },
+                                      completion: nil)
                 }
             }
         }

@@ -73,6 +73,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         let cell =  colllectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as! ProfileCollectionViewCell
         let post = localCollection[indexPath.row]
 
+        cell.animalImage.image = UIImage(named: "defaultPictureIcon")
         DispatchQueue.global().async {
             do {
                 if let imageURL = NSURL(string: post.photoUrl) {
@@ -83,7 +84,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             }
             DispatchQueue.main.async {
                 if self.myImage != nil {
-                    cell.animalImage.image = self.myImage
+                    UIView.transition(with: cell.animalImage,
+                                      duration: 0.5,
+                                      options: .transitionCrossDissolve,
+                                      animations: { cell.animalImage.image = self.myImage },
+                                      completion: nil)
                 }
             }
         }

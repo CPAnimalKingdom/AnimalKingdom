@@ -21,7 +21,7 @@ class ARPlane: SCNNode {
         planeGeometry = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
 
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "tron_grid")
+        material.diffuse.contents = UIImage(named: "tron_gridGreen2")
         planeGeometry.materials = [material]
 
         let planeNode = SCNNode(geometry: planeGeometry)

@@ -52,6 +52,15 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         return 200
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        cell.alpha = 0
+        
+        UIView.animate(withDuration: 0.6, animations: {
+            cell.alpha = 1
+        })
+    }
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -26,6 +26,7 @@ PODS:
   - BoringSSL/Implementation (9.0):
     - BoringSSL/Interface (= 9.0)
   - BoringSSL/Interface (9.0)
+  - Canvas (0.1.2)
   - FBSDKCoreKit (4.27.1):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.27.1):
@@ -107,6 +108,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Bolts
+  - Canvas
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -120,6 +122,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   BoringSSL: 19083b821ef3ae0f758fae15482e183003b1e265
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
   FBSDKCoreKit: 03365dad5d790249196ffad8be4f6d8a2d98f932
   FBSDKLoginKit: 66ff53b73cffd967ab773e32fac39e90a60e6d46
   FBSDKShareKit: 6a6a0ef9e850c741e4e1d7a7d21335205e997ec1
@@ -141,6 +144,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
 
-PODFILE CHECKSUM: f0ae05d333673b48ead79b572f9f31d208a0351c
+PODFILE CHECKSUM: 863eef82f9e5de2f334ad2bee447b60049f7dbf6
 
 COCOAPODS: 1.3.1

@@ -11,11 +11,14 @@ import UIKit
 class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     let bundles: [NSDictionary] = Datasource.data.bundleData
+    var shownCellState = [Bool]()
+    var dummyCounter: Int = 0
     @IBOutlet var bundleTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         bundleTableView.delegate = self
         bundleTableView.dataSource = self
+        shownCellState = [Bool](repeating: false, count: bundles.count)
         // Do any additional setup after loading the view.
     }
     
@@ -47,6 +50,15 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+ func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        cell.alpha = 0
+    
+        UIView.animate(withDuration: 0.6, animations: {
+            cell.alpha = 1
+        })
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -16,4 +16,5 @@ target 'AnimalKingdom' do
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   pod 'MBProgressHUD'
+  pod 'Canvas'
 end

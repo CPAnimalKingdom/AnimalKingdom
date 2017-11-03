@@ -35,9 +35,14 @@
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-mn-Qwj" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="246" height="80"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUA-hR-D00">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUA-hR-D00" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="246" height="80"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,18 +68,12 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="pwK-mn-Qwj" firstAttribute="leading" secondItem="h9q-sw-cTB" secondAttribute="leading" constant="8" id="8nV-44-KHR"/>
                                                 <constraint firstItem="pwK-mn-Qwj" firstAttribute="top" secondItem="h9q-sw-cTB" secondAttribute="top" constant="8" id="D67-J1-Vm5"/>
                                                 <constraint firstAttribute="trailing" secondItem="pwK-mn-Qwj" secondAttribute="trailing" constant="8" id="Ija-3R-YjX"/>
                                                 <constraint firstAttribute="bottom" secondItem="pwK-mn-Qwj" secondAttribute="bottom" constant="7.5" id="o5v-1M-Kbe"/>
                                             </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>

@@ -27,7 +27,7 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         let myHomeButton = UIImage(named: "home-icon")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,6 +59,10 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         UIView.animate(withDuration: 0.6, animations: {
             cell.alpha = 1
         })
+    }
+    
+    @objc func onHome() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     // MARK: - Navigation

@@ -20,7 +20,7 @@ class DemoDetailsViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         let myHomeButton = UIImage(named: "home-icon")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
     
 
@@ -29,6 +29,9 @@ class DemoDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func onHome() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

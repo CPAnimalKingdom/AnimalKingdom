@@ -28,53 +28,75 @@
                                     <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xOw-OK-0Tg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-yy-Wzf" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
-                                        <rect key="frame" x="67" y="213.5" width="240" height="240"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypX-Hl-6bt" customClass="CSAnimationView">
+                                        <rect key="frame" x="67" y="214" width="240" height="240"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxY-E7-xrO">
-                                                <rect key="frame" x="8" y="8" width="224" height="224"/>
-                                                <state key="normal" image="african-elephant-adventurer"/>
-                                                <connections>
-                                                    <segue destination="lrC-26-U1c" kind="show" id="8LA-t6-LcW"/>
-                                                </connections>
-                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-yy-Wzf" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxY-E7-xrO">
+                                                        <rect key="frame" x="8" y="8" width="224" height="224"/>
+                                                        <state key="normal" image="african-elephant-adventurer"/>
+                                                        <connections>
+                                                            <segue destination="lrC-26-U1c" kind="show" id="8LA-t6-LcW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="sxY-E7-xrO" firstAttribute="leading" secondItem="vcq-yy-Wzf" secondAttribute="leading" constant="8" id="1qy-5K-NO4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sxY-E7-xrO" secondAttribute="bottom" constant="8" id="N4n-xy-2Ht"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sxY-E7-xrO" secondAttribute="trailing" constant="8" id="RHe-nn-mo0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sxY-E7-xrO" secondAttribute="bottom" constant="8" id="RKx-yq-NQe"/>
+                                                    <constraint firstAttribute="width" constant="240" id="YdJ-kD-Q75"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sxY-E7-xrO" secondAttribute="trailing" constant="8" id="cET-h1-doW"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="cMe-6F-8NB"/>
+                                                    <constraint firstItem="sxY-E7-xrO" firstAttribute="leading" secondItem="vcq-yy-Wzf" secondAttribute="leading" constant="8" id="h4N-AI-ATv"/>
+                                                    <constraint firstItem="sxY-E7-xrO" firstAttribute="top" secondItem="vcq-yy-Wzf" secondAttribute="top" constant="8" id="nRF-VH-uGH"/>
+                                                    <constraint firstAttribute="height" constant="240" id="pow-vz-maT"/>
+                                                    <constraint firstItem="sxY-E7-xrO" firstAttribute="top" secondItem="vcq-yy-Wzf" secondAttribute="top" constant="8" id="s2Z-1j-7i2"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="ybe-9Z-Wq5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="sxY-E7-xrO" firstAttribute="leading" secondItem="vcq-yy-Wzf" secondAttribute="leading" constant="8" id="1qy-5K-NO4"/>
-                                            <constraint firstAttribute="bottom" secondItem="sxY-E7-xrO" secondAttribute="bottom" constant="8" id="N4n-xy-2Ht"/>
-                                            <constraint firstAttribute="trailing" secondItem="sxY-E7-xrO" secondAttribute="trailing" constant="8" id="RHe-nn-mo0"/>
-                                            <constraint firstAttribute="bottom" secondItem="sxY-E7-xrO" secondAttribute="bottom" constant="8" id="RKx-yq-NQe"/>
-                                            <constraint firstAttribute="width" constant="240" id="YdJ-kD-Q75"/>
-                                            <constraint firstAttribute="trailing" secondItem="sxY-E7-xrO" secondAttribute="trailing" constant="8" id="cET-h1-doW"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="cMe-6F-8NB"/>
-                                            <constraint firstItem="sxY-E7-xrO" firstAttribute="leading" secondItem="vcq-yy-Wzf" secondAttribute="leading" constant="8" id="h4N-AI-ATv"/>
-                                            <constraint firstItem="sxY-E7-xrO" firstAttribute="top" secondItem="vcq-yy-Wzf" secondAttribute="top" constant="8" id="nRF-VH-uGH"/>
-                                            <constraint firstAttribute="height" constant="240" id="pow-vz-maT"/>
-                                            <constraint firstItem="sxY-E7-xrO" firstAttribute="top" secondItem="vcq-yy-Wzf" secondAttribute="top" constant="8" id="s2Z-1j-7i2"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="ybe-9Z-Wq5"/>
+                                            <constraint firstItem="vcq-yy-Wzf" firstAttribute="centerY" secondItem="ypX-Hl-6bt" secondAttribute="centerY" id="Gto-W5-6CA"/>
+                                            <constraint firstAttribute="width" constant="240" id="dHl-ox-5OW"/>
+                                            <constraint firstAttribute="height" constant="240" id="fSY-2v-UpG"/>
+                                            <constraint firstItem="vcq-yy-Wzf" firstAttribute="centerX" secondItem="ypX-Hl-6bt" secondAttribute="centerX" id="gEv-5T-lMP"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="shake"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
-                                                <integer key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
-                                                <integer key="value" value="2"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <integer key="value" value="0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-3H-I47">
                                         <rect key="frame" x="137" y="480.5" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="0Fs-5k-pIK"/>
                                             <constraint firstAttribute="height" constant="100" id="HAv-ky-QIO"/>
                                             <constraint firstAttribute="width" constant="100" id="bLS-Bh-eeZ"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="pCt-Ov-D2y"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="refresh-button"/>
+                                        <connections>
+                                            <action selector="onButton:" destination="vbh-fu-4hX" eventType="touchUpInside" id="3FT-RZ-5ez"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE AFRICAN ELEPHANT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-ZN-H8s">
                                         <rect key="frame" x="32" y="123" width="311" height="48"/>
@@ -85,16 +107,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="ypX-Hl-6bt" firstAttribute="centerY" secondItem="ctr-v0-ddM" secondAttribute="centerY" id="141-FB-e6z"/>
                                     <constraint firstItem="xOw-OK-0Tg" firstAttribute="leading" secondItem="ctr-v0-ddM" secondAttribute="leading" id="2pB-1J-5ch"/>
-                                    <constraint firstItem="vcq-yy-Wzf" firstAttribute="centerY" secondItem="ctr-v0-ddM" secondAttribute="centerY" id="66H-fc-1ZC"/>
                                     <constraint firstItem="xOw-OK-0Tg" firstAttribute="top" secondItem="ctr-v0-ddM" secondAttribute="top" id="9Wd-6m-gci"/>
+                                    <constraint firstItem="ypX-Hl-6bt" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="9mr-KN-Fa4"/>
                                     <constraint firstItem="hTj-3H-I47" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="K41-An-Uy3"/>
+                                    <constraint firstItem="hTj-3H-I47" firstAttribute="top" secondItem="ypX-Hl-6bt" secondAttribute="bottom" constant="26.5" id="Mqt-a2-Loh"/>
                                     <constraint firstAttribute="bottom" secondItem="xOw-OK-0Tg" secondAttribute="bottom" id="QaW-Sh-qOJ"/>
+                                    <constraint firstItem="ypX-Hl-6bt" firstAttribute="top" secondItem="gVQ-ZN-H8s" secondAttribute="bottom" constant="43" id="S6s-tB-JW9"/>
                                     <constraint firstAttribute="trailing" secondItem="xOw-OK-0Tg" secondAttribute="trailing" id="oC2-c8-n6q"/>
-                                    <constraint firstItem="vcq-yy-Wzf" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="pdH-l8-dq8"/>
-                                    <constraint firstItem="vcq-yy-Wzf" firstAttribute="top" secondItem="gVQ-ZN-H8s" secondAttribute="bottom" constant="42.5" id="rZ6-Oj-6AQ"/>
                                     <constraint firstItem="gVQ-ZN-H8s" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="su6-9f-pVv"/>
-                                    <constraint firstItem="hTj-3H-I47" firstAttribute="top" secondItem="vcq-yy-Wzf" secondAttribute="bottom" constant="27" id="vFn-OR-2DK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -107,6 +129,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="43S-88-TQs"/>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="ypX-Hl-6bt" id="Epb-dx-7QI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Rr-8kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

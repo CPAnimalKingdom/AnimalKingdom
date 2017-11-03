@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Canvas
 
 class AdventurerViewController: UIViewController {
 
+    @IBOutlet var animationView: CSAnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,15 +22,21 @@ class AdventurerViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-
-        
+        let myHomeButton = UIImage(named: "home-icon")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
 
+    @IBAction func onButton(_ sender: Any) {
+        animationView.startCanvasAnimation()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func onHome() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

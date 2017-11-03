@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Canvas
 
 class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
@@ -28,7 +29,7 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         let myHomeButton = UIImage(named: "home-icon")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +60,10 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
         UIView.animate(withDuration: 0.6, animations: {
             cell.alpha = 1
         })
+    }
+    
+    @objc func onHome() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

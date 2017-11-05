@@ -87,13 +87,13 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-3H-I47">
+                                    <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-3H-I47">
                                         <rect key="frame" x="137" y="480.5" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="HAv-ky-QIO"/>
                                             <constraint firstAttribute="width" constant="100" id="bLS-Bh-eeZ"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="refresh-button"/>
+                                        <state key="normal" title="Button" image="refresh"/>
                                         <connections>
                                             <action selector="onButton:" destination="vbh-fu-4hX" eventType="touchUpInside" id="3FT-RZ-5ez"/>
                                         </connections>
@@ -149,6 +149,6 @@
     <resources>
         <image name="african-elephant-adventurer" width="790" height="790"/>
         <image name="background" width="505" height="748"/>
-        <image name="refresh-button" width="256" height="256"/>
+        <image name="refresh" width="512" height="512"/>
     </resources>
 </document>

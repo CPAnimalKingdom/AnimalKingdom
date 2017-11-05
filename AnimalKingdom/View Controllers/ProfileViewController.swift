@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         colllectionView.delegate = self
         colllectionView.dataSource = self
 
+        
         let currentUser = Auth.auth().currentUser
         let userId = currentUser!.uid;
 
@@ -96,10 +97,10 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 4
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 2
     }
 }

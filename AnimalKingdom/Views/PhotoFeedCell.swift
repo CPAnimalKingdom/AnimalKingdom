@@ -11,12 +11,11 @@ import UIKit
 class PhotoFeedCell: UITableViewCell {
 
     @IBOutlet weak var animalImage: UIImageView!
-
     @IBOutlet weak var imageCaption: UILabel!
     @IBOutlet weak var username: UILabel!
+    @IBOutlet var userImage: UIImageView!
     @IBOutlet weak var imageDateTimeStamp: UILabel!
     @IBOutlet weak var locationTag: UILabel!
-
 
     var myImage: UIImage? = nil
     func populate(post: Post) {
@@ -48,7 +47,7 @@ class PhotoFeedCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        userImage.layer.cornerRadius = userImage.frame.height / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

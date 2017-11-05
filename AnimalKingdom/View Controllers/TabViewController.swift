@@ -25,6 +25,10 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let myHomeButton = UIImage(named: "home-icon")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
+        
+        
         // Do any additional setup after loading the view.
         let storyboard = UIStoryboard(name: "Creator", bundle: nil)
         photosFeedViewController = storyboard.instantiateViewController(withIdentifier: "PhotosFeedViewController")
@@ -57,6 +61,10 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @objc func onHome() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 
     @IBAction func didPressTab(_ sender: UIButton) {
 

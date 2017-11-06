@@ -109,7 +109,7 @@
                                 <segue destination="mRE-Fj-c03" kind="show" id="BL7-cG-YG6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="menu-icon" style="plain" id="yXS-t8-Lri">
+                        <barButtonItem key="rightBarButtonItem" image="settingsButton" style="plain" id="yXS-t8-Lri">
                             <color key="tintColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="95R-PG-0Y8" kind="presentation" id="hRc-Ab-ahx"/>
@@ -194,7 +194,7 @@
         <image name="background" width="505" height="748"/>
         <image name="creator-button" width="180" height="180"/>
         <image name="explorer-button" width="180" height="180"/>
-        <image name="menu-icon" width="50" height="50"/>
+        <image name="settingsButton" width="50" height="50"/>
         <image name="user-icon" width="50" height="50"/>
     </resources>
 </document>

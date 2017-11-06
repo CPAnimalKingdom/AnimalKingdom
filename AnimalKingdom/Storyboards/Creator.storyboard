@@ -393,16 +393,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCP-xq-O5t">
-                                                    <rect key="frame" x="0.0" y="2" width="130" height="130"/>
-                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8t-3P-6Aq" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCP-xq-O5t">
+                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bCP-xq-O5t" firstAttribute="leading" secondItem="h8t-3P-6Aq" secondAttribute="leading" id="Lzd-KW-Y2v"/>
+                                                        <constraint firstItem="bCP-xq-O5t" firstAttribute="top" secondItem="h8t-3P-6Aq" secondAttribute="top" id="Tzp-gM-3rM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bCP-xq-O5t" secondAttribute="bottom" id="Wri-A3-P0R"/>
+                                                        <constraint firstAttribute="trailing" secondItem="bCP-xq-O5t" secondAttribute="trailing" id="t8q-JJ-OWo"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="bCP-xq-O5t" firstAttribute="leading" secondItem="kjf-TV-hhL" secondAttribute="leading" id="5Ml-BU-7mp"/>
-                                            <constraint firstItem="bCP-xq-O5t" firstAttribute="top" secondItem="kjf-TV-hhL" secondAttribute="top" constant="2" id="Fyk-ei-xMF"/>
-                                            <constraint firstAttribute="trailing" secondItem="bCP-xq-O5t" secondAttribute="trailing" id="TUI-fD-8aV"/>
-                                            <constraint firstAttribute="bottom" secondItem="bCP-xq-O5t" secondAttribute="bottom" constant="-2" id="lta-ZB-QEj"/>
+                                            <constraint firstItem="h8t-3P-6Aq" firstAttribute="leading" secondItem="kjf-TV-hhL" secondAttribute="leading" id="FPZ-zn-l3v"/>
+                                            <constraint firstItem="h8t-3P-6Aq" firstAttribute="top" secondItem="kjf-TV-hhL" secondAttribute="top" id="k9K-X0-hHZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="h8t-3P-6Aq" secondAttribute="trailing" id="tlg-Dx-6qQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="h8t-3P-6Aq" secondAttribute="bottom" id="whB-8o-Hu9"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="animalImage" destination="bCP-xq-O5t" id="Vgo-Yg-mFF"/>
@@ -524,6 +547,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jP8-bP-46h">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

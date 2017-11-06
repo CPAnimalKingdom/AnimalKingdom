@@ -36,7 +36,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxY-E7-xrO">
                                                         <rect key="frame" x="8" y="8" width="224" height="224"/>
-                                                        <state key="normal" image="african-elephant-adventurer"/>
+                                                        <state key="normal" backgroundImage="blur"/>
                                                         <connections>
                                                             <segue destination="lrC-26-U1c" kind="show" id="8LA-t6-LcW"/>
                                                         </connections>
@@ -87,23 +87,44 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-3H-I47">
-                                        <rect key="frame" x="137" y="480.5" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="HAv-ky-QIO"/>
-                                            <constraint firstAttribute="width" constant="100" id="bLS-Bh-eeZ"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="refresh"/>
-                                        <connections>
-                                            <action selector="onButton:" destination="vbh-fu-4hX" eventType="touchUpInside" id="3FT-RZ-5ez"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE AFRICAN ELEPHANT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-ZN-H8s">
-                                        <rect key="frame" x="32" y="123" width="311" height="48"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-ZN-H8s">
+                                        <rect key="frame" x="188" y="171" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="0.90143407534246578" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRi-1j-KTw" customClass="CSAnimationView">
+                                        <rect key="frame" x="137" y="480" width="100" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-3H-I47">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="HAv-ky-QIO"/>
+                                                    <constraint firstAttribute="width" constant="100" id="bLS-Bh-eeZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="refresh"/>
+                                                <connections>
+                                                    <action selector="onButton:" destination="vbh-fu-4hX" eventType="touchUpInside" id="3FT-RZ-5ez"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="hTj-3H-I47" firstAttribute="centerY" secondItem="SRi-1j-KTw" secondAttribute="centerY" id="1xS-OV-NeQ"/>
+                                            <constraint firstAttribute="height" constant="100" id="2ck-VA-IcY"/>
+                                            <constraint firstItem="hTj-3H-I47" firstAttribute="centerX" secondItem="SRi-1j-KTw" secondAttribute="centerX" id="78F-YY-LAR"/>
+                                            <constraint firstAttribute="width" constant="100" id="GRF-nU-Km2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -111,10 +132,10 @@
                                     <constraint firstItem="xOw-OK-0Tg" firstAttribute="leading" secondItem="ctr-v0-ddM" secondAttribute="leading" id="2pB-1J-5ch"/>
                                     <constraint firstItem="xOw-OK-0Tg" firstAttribute="top" secondItem="ctr-v0-ddM" secondAttribute="top" id="9Wd-6m-gci"/>
                                     <constraint firstItem="ypX-Hl-6bt" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="9mr-KN-Fa4"/>
-                                    <constraint firstItem="hTj-3H-I47" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="K41-An-Uy3"/>
-                                    <constraint firstItem="hTj-3H-I47" firstAttribute="top" secondItem="ypX-Hl-6bt" secondAttribute="bottom" constant="26.5" id="Mqt-a2-Loh"/>
                                     <constraint firstAttribute="bottom" secondItem="xOw-OK-0Tg" secondAttribute="bottom" id="QaW-Sh-qOJ"/>
                                     <constraint firstItem="ypX-Hl-6bt" firstAttribute="top" secondItem="gVQ-ZN-H8s" secondAttribute="bottom" constant="43" id="S6s-tB-JW9"/>
+                                    <constraint firstItem="SRi-1j-KTw" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="aLP-bE-Egj"/>
+                                    <constraint firstItem="SRi-1j-KTw" firstAttribute="top" secondItem="sxY-E7-xrO" secondAttribute="bottom" constant="34" id="lLs-8Q-d4B"/>
                                     <constraint firstAttribute="trailing" secondItem="xOw-OK-0Tg" secondAttribute="trailing" id="oC2-c8-n6q"/>
                                     <constraint firstItem="gVQ-ZN-H8s" firstAttribute="centerX" secondItem="ctr-v0-ddM" secondAttribute="centerX" id="su6-9f-pVv"/>
                                 </constraints>
@@ -130,7 +151,10 @@
                         <viewLayoutGuide key="safeArea" id="43S-88-TQs"/>
                     </view>
                     <connections>
+                        <outlet property="animalImage" destination="sxY-E7-xrO" id="QJX-Vc-4oD"/>
+                        <outlet property="animalName" destination="gVQ-ZN-H8s" id="zdB-4O-o8E"/>
                         <outlet property="animationView" destination="ypX-Hl-6bt" id="Epb-dx-7QI"/>
+                        <outlet property="buttonView" destination="SRi-1j-KTw" id="DvQ-E2-s8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Rr-8kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,8 +171,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="african-elephant-adventurer" width="790" height="790"/>
         <image name="background" width="505" height="748"/>
+        <image name="blur" width="100" height="100"/>
         <image name="refresh" width="512" height="512"/>
     </resources>
 </document>

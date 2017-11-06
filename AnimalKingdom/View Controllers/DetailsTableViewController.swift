@@ -51,9 +51,11 @@ class DetailsTableViewController: UITableViewController {
             return cell
         } else if key == "actions" {
             let cell = Bundle.main.loadNibNamed("DetailsActionsPanelTableViewCell", owner: self, options: nil)?.first as! DetailsActionsPanelTableViewCell
+            
             cell.ShowCreatorButton.addTarget(self, action: #selector(ShowCreator), for: UIControlEvents.touchUpInside)
             cell.ShowARButton.addTarget(self, action: #selector(ShowAR), for: UIControlEvents.touchUpInside)
-            
+            cell.ShowVideoButton.addTarget(self, action: #selector(ShowVideo), for: UIControlEvents.touchUpInside)
+
             return cell
         } else if key == "COMMON NAME" || key == "SCIENTIFIC NAME" || key == "TYPE" || key == "DIET" || key == "GROUP NAME" || key == "AVERAGE LIFESPAN" || key == "SIZE" || key == "WEIGHT" {
             let cell = Bundle.main.loadNibNamed("DetailsCardTableViewCell", owner: self, options: nil)?.first as! DetailsCardTableViewCell
@@ -90,6 +92,11 @@ class DetailsTableViewController: UITableViewController {
 
     @objc func ShowCreator() {
         performSegue(withIdentifier: "ShowCreator", sender: nil)
+    }
+
+    @objc func ShowVideo() {
+        print("WWW")
+        //performSegue(withIdentifier: "ShowVideo", sender: nil)
     }
 
 

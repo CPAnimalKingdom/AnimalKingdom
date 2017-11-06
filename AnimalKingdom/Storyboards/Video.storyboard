@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXP-Y7-wyi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,39 +14,167 @@
             <objects>
                 <viewController id="vXP-Y7-wyi" customClass="VideoViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LP7-TJ-Nv1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJB-Pd-c4I">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MCp-9r-VM9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="06T-3z-RPm">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-0L-UUF">
-                                        <rect key="frame" x="165.5" y="291" width="44" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-yY-ZeW" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="202.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPictureIcon" translatesAutoresizingMaskIntoConstraints="NO" id="S2Q-cA-hT2">
+                                                <rect key="frame" x="8" y="8" width="359" height="186.5"/>
+                                            </imageView>
+                                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kft-g8-TXb">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="202.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kft-g8-TXb" secondAttribute="trailing" id="0mv-lk-J8a"/>
+                                            <constraint firstAttribute="bottom" secondItem="kft-g8-TXb" secondAttribute="bottom" id="5Sb-Vw-hmC"/>
+                                            <constraint firstItem="S2Q-cA-hT2" firstAttribute="top" secondItem="Vjc-yY-ZeW" secondAttribute="top" constant="8" id="Jnq-QH-jvu"/>
+                                            <constraint firstItem="kft-g8-TXb" firstAttribute="leading" secondItem="Vjc-yY-ZeW" secondAttribute="leading" id="QfD-RX-rGI"/>
+                                            <constraint firstItem="kft-g8-TXb" firstAttribute="top" secondItem="Vjc-yY-ZeW" secondAttribute="top" id="Rkg-JJ-USd"/>
+                                            <constraint firstItem="S2Q-cA-hT2" firstAttribute="leading" secondItem="Vjc-yY-ZeW" secondAttribute="leading" constant="8" id="cpX-aj-If5"/>
+                                            <constraint firstAttribute="bottom" secondItem="S2Q-cA-hT2" secondAttribute="bottom" constant="8" id="pps-lb-LPi"/>
+                                            <constraint firstAttribute="trailing" secondItem="S2Q-cA-hT2" secondAttribute="trailing" constant="8" id="t6V-0a-h85"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7a-gO-njg" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="202.5" width="375" height="202"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPictureIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4UJ-ZV-0n5">
+                                                <rect key="frame" x="8" y="8" width="359" height="186"/>
+                                            </imageView>
+                                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e98-bb-mdV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="4UJ-ZV-0n5" secondAttribute="bottom" constant="8" id="GfD-bh-Yt9"/>
+                                            <constraint firstItem="4UJ-ZV-0n5" firstAttribute="leading" secondItem="f7a-gO-njg" secondAttribute="leading" constant="8" id="Hvx-Ba-196"/>
+                                            <constraint firstAttribute="trailing" secondItem="4UJ-ZV-0n5" secondAttribute="trailing" constant="8" id="KCx-MR-Tcd"/>
+                                            <constraint firstAttribute="trailing" secondItem="e98-bb-mdV" secondAttribute="trailing" id="LIG-TD-um5"/>
+                                            <constraint firstItem="e98-bb-mdV" firstAttribute="centerX" secondItem="f7a-gO-njg" secondAttribute="centerX" id="LzK-Ly-5L9"/>
+                                            <constraint firstItem="4UJ-ZV-0n5" firstAttribute="top" secondItem="f7a-gO-njg" secondAttribute="top" constant="8" id="MV4-8l-FOT"/>
+                                            <constraint firstItem="e98-bb-mdV" firstAttribute="top" secondItem="f7a-gO-njg" secondAttribute="top" id="ejc-nV-ioG"/>
+                                            <constraint firstItem="e98-bb-mdV" firstAttribute="leading" secondItem="f7a-gO-njg" secondAttribute="leading" id="lMs-yc-Cxi"/>
+                                            <constraint firstItem="e98-bb-mdV" firstAttribute="centerY" secondItem="f7a-gO-njg" secondAttribute="centerY" id="pvi-Nd-Jzi"/>
+                                            <constraint firstAttribute="bottom" secondItem="e98-bb-mdV" secondAttribute="bottom" id="tsb-K5-w3P"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecs-AW-TsR" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="404.5" width="375" height="202.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPictureIcon" translatesAutoresizingMaskIntoConstraints="NO" id="soJ-fT-88c">
+                                                <rect key="frame" x="8" y="8" width="359" height="186.5"/>
+                                            </imageView>
+                                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-bW-FZX">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="soJ-fT-88c" firstAttribute="top" secondItem="ecs-AW-TsR" secondAttribute="top" constant="8" id="7QB-Nb-HDN"/>
+                                            <constraint firstItem="8DZ-bW-FZX" firstAttribute="top" secondItem="ecs-AW-TsR" secondAttribute="top" id="BQe-cu-1tZ"/>
+                                            <constraint firstItem="soJ-fT-88c" firstAttribute="leading" secondItem="ecs-AW-TsR" secondAttribute="leading" constant="8" id="RCk-1A-YVn"/>
+                                            <constraint firstAttribute="bottom" secondItem="8DZ-bW-FZX" secondAttribute="bottom" id="TYb-zQ-Dg3"/>
+                                            <constraint firstItem="8DZ-bW-FZX" firstAttribute="leading" secondItem="ecs-AW-TsR" secondAttribute="leading" id="jcI-x2-bjB"/>
+                                            <constraint firstAttribute="bottom" secondItem="soJ-fT-88c" secondAttribute="bottom" constant="8" id="lc5-Xx-CxU"/>
+                                            <constraint firstAttribute="trailing" secondItem="8DZ-bW-FZX" secondAttribute="trailing" id="rMf-XD-i83"/>
+                                            <constraint firstAttribute="trailing" secondItem="soJ-fT-88c" secondAttribute="trailing" constant="8" id="xDY-Ne-0VE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92806154819999997" green="0.81718951702941378" blue="0.36288208975659725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Lr1-0L-UUF" firstAttribute="centerX" secondItem="mJB-Pd-c4I" secondAttribute="centerX" id="C5X-hc-FYz"/>
-                                    <constraint firstItem="Lr1-0L-UUF" firstAttribute="centerY" secondItem="mJB-Pd-c4I" secondAttribute="centerY" id="pCc-qV-hkB"/>
+                                    <constraint firstItem="ecs-AW-TsR" firstAttribute="top" secondItem="f7a-gO-njg" secondAttribute="bottom" id="92n-KH-25A"/>
+                                    <constraint firstItem="f7a-gO-njg" firstAttribute="leading" secondItem="06T-3z-RPm" secondAttribute="leading" id="NCB-EF-wvu"/>
+                                    <constraint firstItem="f7a-gO-njg" firstAttribute="top" secondItem="Vjc-yY-ZeW" secondAttribute="bottom" id="jul-cK-aAE"/>
+                                    <constraint firstAttribute="trailing" secondItem="f7a-gO-njg" secondAttribute="trailing" id="yEu-vL-jSd"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mJB-Pd-c4I" firstAttribute="trailing" secondItem="hiY-HP-awK" secondAttribute="trailing" id="AnQ-RM-KQZ"/>
-                            <constraint firstItem="mJB-Pd-c4I" firstAttribute="bottom" secondItem="hiY-HP-awK" secondAttribute="bottom" id="EO8-G4-sZa"/>
-                            <constraint firstItem="mJB-Pd-c4I" firstAttribute="top" secondItem="hiY-HP-awK" secondAttribute="top" id="Isb-Jo-s5M"/>
-                            <constraint firstItem="mJB-Pd-c4I" firstAttribute="leading" secondItem="hiY-HP-awK" secondAttribute="leading" id="QnI-im-9YB"/>
+                            <constraint firstItem="MCp-9r-VM9" firstAttribute="trailing" secondItem="hiY-HP-awK" secondAttribute="trailing" id="Dby-st-e5A"/>
+                            <constraint firstItem="06T-3z-RPm" firstAttribute="bottom" secondItem="hiY-HP-awK" secondAttribute="bottom" id="F21-di-7sF"/>
+                            <constraint firstItem="06T-3z-RPm" firstAttribute="top" secondItem="LP7-TJ-Nv1" secondAttribute="top" constant="60" id="Faj-66-6NL"/>
+                            <constraint firstItem="MCp-9r-VM9" firstAttribute="top" secondItem="LP7-TJ-Nv1" secondAttribute="top" id="OuV-Pm-dJH"/>
+                            <constraint firstItem="06T-3z-RPm" firstAttribute="leading" secondItem="hiY-HP-awK" secondAttribute="leading" id="Paw-TB-jHS"/>
+                            <constraint firstItem="06T-3z-RPm" firstAttribute="trailing" secondItem="hiY-HP-awK" secondAttribute="trailing" id="b0G-r2-Xmt"/>
+                            <constraint firstItem="MCp-9r-VM9" firstAttribute="leading" secondItem="hiY-HP-awK" secondAttribute="leading" id="bjH-Io-xOG"/>
+                            <constraint firstItem="MCp-9r-VM9" firstAttribute="bottom" secondItem="hiY-HP-awK" secondAttribute="bottom" id="vwd-Zy-H1p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hiY-HP-awK"/>
                     </view>
+                    <connections>
+                        <outlet property="videoView_1" destination="kft-g8-TXb" id="EPY-ve-4ct"/>
+                        <outlet property="videoView_2" destination="e98-bb-mdV" id="TMd-EQ-KnJ"/>
+                        <outlet property="videoView_3" destination="8DZ-bW-FZX" id="oIp-vy-V6H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wD9-pH-rUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3910" y="82"/>
+            <point key="canvasLocation" x="3909.5999999999999" y="81.409295352323838"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="505" height="748"/>
+        <image name="defaultPictureIcon" width="622" height="415"/>
+    </resources>
 </document>

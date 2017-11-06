@@ -49,6 +49,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0b-tF-9Qj">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="53.5"/>
                                                 <state key="normal" image="video-button"/>
+                                                <connections>
+                                                    <segue destination="zZf-B6-oSS" kind="show" id="5jN-8p-V0U"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-fx-oCd">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="53.5"/>
@@ -145,7 +148,7 @@
                 <viewControllerPlaceholder storyboardName="AR" id="YS5-F8-lRN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yv5-V0-KHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="-957"/>
+            <point key="canvasLocation" x="642" y="-965"/>
         </scene>
         <!--Creator-->
         <scene sceneID="LuY-Gt-w6m">
@@ -154,6 +157,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aly-MO-Vrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="665" y="-925"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="d3u-9q-UCE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Video" id="zZf-B6-oSS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIP-UE-DCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655" y="-882"/>
         </scene>
     </scenes>
     <resources>

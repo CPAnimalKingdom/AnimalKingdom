@@ -34,6 +34,7 @@
                     <connections>
                         <segue destination="bQr-7F-LEe" kind="show" identifier="ShowAR" id="FPd-6S-GUi"/>
                         <segue destination="lay-nC-Axk" kind="show" identifier="ShowCreator" id="bgU-PY-2r3"/>
+                        <segue destination="kNa-Lo-VmH" kind="show" identifier="ShowVideo" id="tah-2A-jm9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWJ-Ik-HJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -46,7 +47,7 @@
                 <viewControllerPlaceholder storyboardName="AR" id="bQr-7F-LEe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aga-Ta-KSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4050" y="-543"/>
+            <point key="canvasLocation" x="4050" y="-595"/>
         </scene>
         <!--Creator-->
         <scene sceneID="Yus-XX-57o">
@@ -54,7 +55,15 @@
                 <viewControllerPlaceholder storyboardName="Creator" id="lay-nC-Axk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CK3-D5-Ufq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4072" y="-409"/>
+            <point key="canvasLocation" x="4072" y="-486"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="jCP-MJ-PfK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Video" id="kNa-Lo-VmH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnC-fa-Ix3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4063" y="-376"/>
         </scene>
     </scenes>
 </document>

@@ -104,15 +104,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="bFR-Js-sgn">
                         <barButtonItem key="leftBarButtonItem" title="Account" image="user-icon" springLoaded="YES" id="ife-MU-A1W">
-                            <color key="tintColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="mRE-Fj-c03" kind="show" id="BL7-cG-YG6"/>
+                                <segue destination="mRE-Fj-c03" kind="showDetail" action="showViewController:sender:" id="BL7-cG-YG6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="menu-icon" style="plain" id="yXS-t8-Lri">
-                            <color key="tintColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="rightBarButtonItem" image="settingsButton" style="plain" id="yXS-t8-Lri">
+                            <color key="tintColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="95R-PG-0Y8" kind="presentation" id="hRc-Ab-ahx"/>
+                                <segue destination="95R-PG-0Y8" kind="popoverPresentation" popoverAnchorBarButtonItem="yXS-t8-Lri" id="hRc-Ab-ahx">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -194,7 +196,7 @@
         <image name="background" width="505" height="748"/>
         <image name="creator-button" width="180" height="180"/>
         <image name="explorer-button" width="180" height="180"/>
-        <image name="menu-icon" width="50" height="50"/>
+        <image name="settingsButton" width="50" height="50"/>
         <image name="user-icon" width="50" height="50"/>
     </resources>
 </document>

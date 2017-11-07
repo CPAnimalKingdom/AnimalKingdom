@@ -172,7 +172,7 @@
     </scenes>
     <resources>
         <image name="background" width="505" height="748"/>
-        <image name="blur" width="100" height="100"/>
+        <image name="blur" width="300" height="300"/>
         <image name="refresh" width="512" height="512"/>
     </resources>
 </document>

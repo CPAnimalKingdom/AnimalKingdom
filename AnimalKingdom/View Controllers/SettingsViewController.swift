@@ -8,14 +8,23 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let myButton = UIImage(named: "camera")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myButton, style: .plain, target: self, action: #selector(onHome))
+    }
 
+    @objc func onHome() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

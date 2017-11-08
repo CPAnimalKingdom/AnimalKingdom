@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SettingsViewController: UITableViewController {
 
+    @IBOutlet var textToRead: UITextView!
+    @IBAction func onReadButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

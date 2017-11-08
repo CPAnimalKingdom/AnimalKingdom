@@ -50,6 +50,7 @@
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
 		37AF63EA1FA828C000A2FF7C /* DemoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF63E91FA828C000A2FF7C /* DemoDetailsViewController.swift */; };
+		37E0008E1FB1BAB200C3AA05 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */; };
 		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
 		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
 		37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918F1F8DB09900E88D98 /* Details.storyboard */; };
@@ -119,6 +120,7 @@
 		37A033C81F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A033CA1F8C868600C4AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AF63E91FA828C000A2FF7C /* DemoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDetailsViewController.swift; sourceTree = "<group>"; };
+		37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		37FB918D1F8DB06900E88D98 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		37FB918F1F8DB09900E88D98 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				760C5E631F94404100E64444 /* User.swift */,
 				760C5E651F94405400E64444 /* Post.swift */,
 				12B26CD21F99C35B00B3D73D /* ARPlane.swift */,
+				37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */,
 				379B2C921F9982E000060D3B /* DetailsTitleTableViewCell.swift in Sources */,
+				37E0008E1FB1BAB200C3AA05 /* SettingsManager.swift in Sources */,
 				37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */,
 				37029F3D1F92120300F55A30 /* Datasource.swift in Sources */,
 				769956811F9C86C7008DCEF0 /* ProfileViewController.swift in Sources */,

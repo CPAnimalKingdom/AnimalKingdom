@@ -238,56 +238,6 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="TEXT" id="YG4-To-iLW">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tAL-X4-NYq">
-                                        <rect key="frame" x="0.0" y="552" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tAL-X4-NYq" id="cpX-ti-eu4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iD3-x6-G8E">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="iD3-x6-G8E" firstAttribute="top" secondItem="cpX-ti-eu4" secondAttribute="top" id="4T9-XP-CCy"/>
-                                                <constraint firstItem="iD3-x6-G8E" firstAttribute="leading" secondItem="cpX-ti-eu4" secondAttribute="leading" id="STN-EZ-cgJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="iD3-x6-G8E" secondAttribute="bottom" id="WLk-cx-1cf"/>
-                                                <constraint firstAttribute="trailing" secondItem="iD3-x6-G8E" secondAttribute="trailing" id="et1-UW-Kl5"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96862745100000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="40W-e7-9Et">
-                                        <rect key="frame" x="0.0" y="596" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="40W-e7-9Et" id="LQc-Cv-LQO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4O-D4-xnC">
-                                                    <rect key="frame" x="170" y="7" width="35" height="30"/>
-                                                    <state key="normal" title="Read"/>
-                                                    <connections>
-                                                        <action selector="onReadButton:" destination="Bza-pF-tO7" eventType="touchUpInside" id="dDf-gc-0Gh"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="r4O-D4-xnC" firstAttribute="centerY" secondItem="LQc-Cv-LQO" secondAttribute="centerY" id="dqN-c8-pEK"/>
-                                                <constraint firstItem="r4O-D4-xnC" firstAttribute="centerX" secondItem="LQc-Cv-LQO" secondAttribute="centerX" id="lWx-dU-Jcn"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96862745100000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Bza-pF-tO7" id="WZb-Bt-asd"/>

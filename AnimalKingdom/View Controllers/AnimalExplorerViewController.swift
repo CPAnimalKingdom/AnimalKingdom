@@ -10,6 +10,7 @@ import UIKit
 
 class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var backgroundImageView: UIImageView!
     var bundle: NSDictionary!
     var animals: [Animal]!
     
@@ -22,6 +23,13 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background_k")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background")
+        }
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

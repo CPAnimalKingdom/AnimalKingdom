@@ -98,6 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="nfx-81-sFu"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="FZ4-av-LUK" id="Sbl-LS-ywQ"/>
                         <outlet property="bundleTableView" destination="RMp-48-Nib" id="lak-Ua-ln5"/>
                     </connections>
                 </viewController>
@@ -189,6 +190,7 @@
                     </view>
                     <connections>
                         <outlet property="animalTableView" destination="gMC-ZW-9U8" id="mBZ-yV-KKf"/>
+                        <outlet property="backgroundImageView" destination="6hT-HS-cTF" id="BuB-2K-jWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwt-qq-fp6" userLabel="First Responder" sceneMemberID="firstResponder"/>

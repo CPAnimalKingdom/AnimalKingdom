@@ -11,6 +11,7 @@ import Canvas
 
 class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var backgroundImageView: UIImageView!
     let bundles: [NSDictionary] = Datasource.data.bundleData
     var shownCellState = [Bool]()
     var dummyCounter: Int = 0
@@ -24,6 +25,15 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
     }
     
     override func viewWillAppear(_ animated: Bool) {
+       
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background_k")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background")
+        }
+        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

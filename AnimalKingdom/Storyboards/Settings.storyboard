@@ -183,6 +183,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wl4-fB-a1e">
                                                     <rect key="frame" x="318" y="6.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="onKidsModeSwitch:" destination="Bza-pF-tO7" eventType="valueChanged" id="Byg-Ra-Q87"/>
+                                                    </connections>
                                                 </switch>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids-icon" translatesAutoresizingMaskIntoConstraints="NO" id="j0y-la-T9y">
                                                     <rect key="frame" x="89" y="6" width="30" height="30"/>
@@ -247,7 +250,7 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iD3-x6-G8E">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -292,8 +295,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="readButton" destination="r4O-D4-xnC" id="yrQ-Uq-0Y2"/>
-                        <outlet property="textToRead" destination="iD3-x6-G8E" id="N5i-Qv-sKL"/>
+                        <outlet property="kidsModeSwitch" destination="Wl4-fB-a1e" id="QQm-Ey-4Yd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVq-Qo-Mmd" userLabel="First Responder" sceneMemberID="firstResponder"/>

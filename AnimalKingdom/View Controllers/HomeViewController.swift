@@ -10,10 +10,20 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var backgroundImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
+
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background_k")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background")
+        }
+        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

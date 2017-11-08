@@ -11,6 +11,7 @@ import Canvas
 
 class AdventurerViewController: UIViewController {
 
+    @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var animalName: UILabel!
     @IBOutlet var animalImage: UIButton!
     @IBOutlet var animationView: CSAnimationView!
@@ -24,6 +25,13 @@ class AdventurerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.dummyAdventurerCounter = 0
 
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background_k")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background")
+        }
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

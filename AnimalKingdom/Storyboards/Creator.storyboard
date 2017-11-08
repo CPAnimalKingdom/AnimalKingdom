@@ -225,6 +225,7 @@
                         <viewLayoutGuide key="safeArea" id="CaQ-Ld-xnN"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="BYD-G0-lrU" id="7I6-HG-yc3"/>
                         <outlet property="feedTableView" destination="C7O-Sh-XdP" id="dPl-sR-Ow3"/>
                     </connections>
                 </viewController>
@@ -449,6 +450,7 @@
                         <viewLayoutGuide key="safeArea" id="E6g-uF-E8X"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="xis-KB-Vin" id="Zek-Jn-vfU"/>
                         <outlet property="colllectionView" destination="ZRa-ez-1D6" id="NEC-D4-pud"/>
                     </connections>
                 </viewController>

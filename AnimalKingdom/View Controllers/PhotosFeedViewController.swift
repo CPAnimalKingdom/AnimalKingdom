@@ -14,6 +14,7 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
 
     var localCollection: LocalCollection<Post>!
 
+    @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet weak var feedTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,15 @@ class PhotosFeedViewController: UIViewController, UITableViewDataSource, UITable
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         localCollection.listen()
+        
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background_k")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

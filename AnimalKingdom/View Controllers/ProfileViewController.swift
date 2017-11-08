@@ -12,6 +12,7 @@ import FirebaseFirestore
 
 class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet weak var colllectionView: UICollectionView!
     var localCollection: LocalCollection<Post>!
     var myImage: UIImage? = nil
@@ -43,6 +44,15 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         localCollection.listen()
+        
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background_k")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+            backgroundImageView.image = UIImage(named: "background")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

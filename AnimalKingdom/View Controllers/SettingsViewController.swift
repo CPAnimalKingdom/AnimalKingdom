@@ -11,9 +11,7 @@ import AVFoundation
 
 class SettingsViewController: UITableViewController {
 
-    @IBOutlet var textToRead: UITextView!
-    @IBAction func onReadButton(_ sender: Any) {
-    }
+    @IBOutlet var kidsModeSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +21,7 @@ class SettingsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         let myButton = UIImage(named: "camera")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myButton, style: .plain, target: self, action: #selector(onHome))
+        kidsModeSwitch.isOn = UserDefaults.standard.bool(forKey: "kidsMode")
     }
 
     @objc func onHome() {
@@ -36,6 +35,14 @@ class SettingsViewController: UITableViewController {
     
     @IBAction func onDismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onKidsModeSwitch(_ sender: Any) {
+        if kidsModeSwitch.isOn {
+            UserDefaults.standard.set(true, forKey: "kidsMode")
+        } else {
+            UserDefaults.standard.set(false, forKey: "kidsMode")
+        }
     }
     
     /*

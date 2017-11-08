@@ -9,11 +9,4 @@
 import UIKit
 
 class SettingsManager: NSObject {
-    
-    static var kidsMode: Bool = false
-
-    
-    
-    
-    
 }

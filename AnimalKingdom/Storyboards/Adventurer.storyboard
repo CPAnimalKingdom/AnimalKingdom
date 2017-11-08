@@ -154,6 +154,7 @@
                         <outlet property="animalImage" destination="sxY-E7-xrO" id="QJX-Vc-4oD"/>
                         <outlet property="animalName" destination="gVQ-ZN-H8s" id="zdB-4O-o8E"/>
                         <outlet property="animationView" destination="ypX-Hl-6bt" id="Epb-dx-7QI"/>
+                        <outlet property="backgroundImageView" destination="xOw-OK-0Tg" id="4JY-FQ-LIF"/>
                         <outlet property="buttonView" destination="SRi-1j-KTw" id="DvQ-E2-s8s"/>
                     </connections>
                 </viewController>

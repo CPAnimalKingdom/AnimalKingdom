@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12335E551FB278B20049D846 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12335E531FB278B10049D846 /* FocusSquare.swift */; };
+		12335E561FB278B20049D846 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12335E541FB278B20049D846 /* FocusSquareSegment.swift */; };
+		12335E5C1FB27A630049D846 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12335E5B1FB27A620049D846 /* StatusViewController.swift */; };
+		12335E5E1FB2BC4A0049D846 /* ARViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12335E5D1FB2BC4A0049D846 /* ARViewController+ARSCNViewDelegate.swift */; };
+		12335E601FB2BEF50049D846 /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12335E5F1FB2BEF50049D846 /* VirtualObjectARView.swift */; };
 		126DD8FE1F9C8C3500E74C89 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126DD8FD1F9C8C3500E74C89 /* Utilities.swift */; };
 		12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B26CD01F9723AA00B3D73D /* art.scnassets */; };
 		12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26CD21F99C35B00B3D73D /* ARPlane.swift */; };
@@ -80,6 +85,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12335E531FB278B10049D846 /* FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		12335E541FB278B20049D846 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		12335E5B1FB27A620049D846 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		12335E5D1FB2BC4A0049D846 /* ARViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		12335E5F1FB2BEF50049D846 /* VirtualObjectARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
 		126DD8FD1F9C8C3500E74C89 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		12B26CD01F9723AA00B3D73D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		12B26CD21F99C35B00B3D73D /* ARPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlane.swift; sourceTree = "<group>"; };
@@ -147,7 +157,7 @@
 		766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		767ADA661F9D77BF00CD12B5 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		7685193A1FA5922200626DF3 /* CreatorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorSettingsViewController.swift; sourceTree = "<group>"; };
-		768BA3B81F9D30320008977E /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostDetailsViewController.swift; path = "AnimalKingdom/View Controllers/PostDetailsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		768BA3B81F9D30320008977E /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostDetailsViewController.swift; path = "AnimalKingdom/View Controllers/Creator/PostDetailsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		769956801F9C86C7008DCEF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		769956821F9C8829008DCEF0 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFeedViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +178,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12335E521FB278A60049D846 /* Focus Square */ = {
+			isa = PBXGroup;
+			children = (
+				12335E531FB278B10049D846 /* FocusSquare.swift */,
+				12335E541FB278B20049D846 /* FocusSquareSegment.swift */,
+			);
+			name = "Focus Square";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		12335E571FB279A00049D846 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				370B99B01F8C960F00BFFEA6 /* ARViewController.swift */,
+				12335E5D1FB2BC4A0049D846 /* ARViewController+ARSCNViewDelegate.swift */,
+				12335E5F1FB2BEF50049D846 /* VirtualObjectARView.swift */,
+				12335E5B1FB27A620049D846 /* StatusViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		12335E581FB279B60049D846 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				370B99AA1F8C95B600BFFEA6 /* CreatorViewController.swift */,
+				7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */,
+				768BA3B81F9D30320008977E /* PostDetailsViewController.swift */,
+				769956801F9C86C7008DCEF0 /* ProfileViewController.swift */,
+				37029F351F920CE400F55A30 /* LoginViewController.swift */,
+				37029F371F920CFB00F55A30 /* LogoutViewController.swift */,
+				76A8963A1F9C6F9A001A8192 /* TabViewController.swift */,
+				767ADA661F9D77BF00CD12B5 /* CreatePostViewController.swift */,
+				7685193A1FA5922200626DF3 /* CreatorSettingsViewController.swift */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		12335E591FB279D60049D846 /* Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				370B99A21F8C920200BFFEA6 /* BundleExplorerViewController.swift */,
+				370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */,
+				370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */,
+				379B2C8A1F997BC200060D3B /* DetailsTableViewController.swift */,
+				37AF63E91FA828C000A2FF7C /* DemoDetailsViewController.swift */,
+			);
+			path = Explorer;
+			sourceTree = "<group>";
+		};
+		12335E5A1FB279EC0049D846 /* Adventurer */ = {
+			isa = PBXGroup;
+			children = (
+				370B99A61F8C927800BFFEA6 /* AdventurerViewController.swift */,
+			);
+			path = Adventurer;
+			sourceTree = "<group>";
+		};
 		12B60E351FA17E44003423F5 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +262,7 @@
 				760C5E651F94405400E64444 /* Post.swift */,
 				12B26CD21F99C35B00B3D73D /* ARPlane.swift */,
 				37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */,
+				12335E521FB278A60049D846 /* Focus Square */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,13 +312,11 @@
 		370B999E1F8C90BA00BFFEA6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7699DFB31F99D4A30017DAD6 /* PhotosFeedViewController.swift */,
-				768BA3B81F9D30320008977E /* PostDetailsViewController.swift */,
-				769956801F9C86C7008DCEF0 /* ProfileViewController.swift */,
+				12335E5A1FB279EC0049D846 /* Adventurer */,
+				12335E571FB279A00049D846 /* AR */,
+				12335E581FB279B60049D846 /* Creator */,
+				12335E591FB279D60049D846 /* Explorer */,
 				370B99A01F8C912100BFFEA6 /* HomeViewController.swift */,
-				370B99A21F8C920200BFFEA6 /* BundleExplorerViewController.swift */,
-				370B99A41F8C921000BFFEA6 /* AnimalExplorerViewController.swift */,
-				370B99A61F8C927800BFFEA6 /* AdventurerViewController.swift */,
 				370B99A81F8C958400BFFEA6 /* SettingsViewController.swift */,
 				370B99AA1F8C95B600BFFEA6 /* CreatorViewController.swift */,
 				370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */,
@@ -541,12 +607,15 @@
 				37460A9E1F91AB6A0098171A /* Animal.swift in Sources */,
 				767ADA671F9D77BF00CD12B5 /* CreatePostViewController.swift in Sources */,
 				760C5E621F94400600E64444 /* LocalCollection.swift in Sources */,
+				12335E601FB2BEF50049D846 /* VirtualObjectARView.swift in Sources */,
 				3775388A1FA6926A004BADB5 /* DesignBundleView.swift in Sources */,
+				12335E5E1FB2BC4A0049D846 /* ARViewController+ARSCNViewDelegate.swift in Sources */,
 				3735419E1F91C38100BEE34F /* Settings.swift in Sources */,
 				3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */,
 				379B2C921F9982E000060D3B /* DetailsTitleTableViewCell.swift in Sources */,
 				37E0008E1FB1BAB200C3AA05 /* SettingsManager.swift in Sources */,
 				37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */,
+				12335E561FB278B20049D846 /* FocusSquareSegment.swift in Sources */,
 				37029F3D1F92120300F55A30 /* Datasource.swift in Sources */,
 				769956811F9C86C7008DCEF0 /* ProfileViewController.swift in Sources */,
 				379B2C8E1F997C3000060D3B /* DetailsHeaderImageTableViewCell.swift in Sources */,
@@ -567,9 +636,11 @@
 				37029F411F92CE6300F55A30 /* AnimalTableViewCell.swift in Sources */,
 				37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */,
 				370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */,
+				12335E551FB278B20049D846 /* FocusSquare.swift in Sources */,
 				12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */,
 				379B2C8B1F997BC200060D3B /* DetailsTableViewController.swift in Sources */,
 				7685193B1FA5922200626DF3 /* CreatorSettingsViewController.swift in Sources */,
+				12335E5C1FB27A630049D846 /* StatusViewController.swift in Sources */,
 				760C5E641F94404100E64444 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,11 +780,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EJTT2N9E3L;
+				DEVELOPMENT_TEAM = 8ACVWC32HP;
 				INFOPLIST_FILE = AnimalKingdom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdomNED;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -726,11 +797,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EJTT2N9E3L;
+				DEVELOPMENT_TEAM = 8ACVWC32HP;
 				INFOPLIST_FILE = AnimalKingdom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AnimalKingdomNED;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

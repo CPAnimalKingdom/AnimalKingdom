@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qjQ-w2-tJa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details Table View Controller-->
+        <scene sceneID="M1j-d0-kff">
+            <objects>
+                <tableViewController id="qjQ-w2-tJa" customClass="DetailsTableViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u2v-9C-7XG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="HKU-qF-Kgq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HKU-qF-Kgq" id="X5i-b5-Jgq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qjQ-w2-tJa" id="YSk-KT-McW"/>
+                            <outlet property="delegate" destination="qjQ-w2-tJa" id="1TK-Ut-Czp"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="bQr-7F-LEe" kind="show" identifier="ShowAR" id="FPd-6S-GUi"/>
+                        <segue destination="lay-nC-Axk" kind="show" identifier="ShowCreator" id="bgU-PY-2r3"/>
+                        <segue destination="kNa-Lo-VmH" kind="show" identifier="ShowVideo" id="tah-2A-jm9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWJ-Ik-HJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3464.8000000000002" y="-485.30734632683664"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="jpB-Z4-Jsb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AR" id="bQr-7F-LEe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aga-Ta-KSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4050" y="-595"/>
+        </scene>
+        <!--Creator-->
+        <scene sceneID="Yus-XX-57o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Creator" id="lay-nC-Axk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK3-D5-Ufq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4072" y="-486"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="jCP-MJ-PfK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Video" id="kNa-Lo-VmH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnC-fa-Ix3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4063" y="-376"/>
+        </scene>
+    </scenes>
+</document>

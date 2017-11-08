@@ -140,7 +140,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Account" image="user-icon" springLoaded="YES" id="ife-MU-A1W">
                             <color key="tintColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="mRE-Fj-c03" kind="showDetail" action="showViewController:sender:" id="BL7-cG-YG6"/>
+                                <segue destination="4P1-2m-PvK" kind="showDetail" id="9QT-rW-vqY"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="settingsButton" style="plain" id="yXS-t8-Lri">
@@ -203,12 +203,12 @@
             <point key="canvasLocation" x="931" y="55"/>
         </scene>
         <!--AR-->
-        <scene sceneID="hiP-VI-J51">
+        <scene sceneID="Cig-1z-Y9c">
             <objects>
-                <viewControllerPlaceholder storyboardName="AR" id="mRE-Fj-c03" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Cm-Mj-NfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AR" id="4P1-2m-PvK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2Q-C9-L0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-249"/>
+            <point key="canvasLocation" x="986" y="-95"/>
         </scene>
         <!--Settings-->
         <scene sceneID="gZg-3v-9mz">

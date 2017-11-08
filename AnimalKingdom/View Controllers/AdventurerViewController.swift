@@ -8,9 +8,10 @@
 
 import UIKit
 import Canvas
+import AVFoundation
 
 class AdventurerViewController: UIViewController {
-
+    var player = AVAudioPlayer()
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var animalName: UILabel!
     @IBOutlet var animalImage: UIButton!
@@ -41,6 +42,7 @@ class AdventurerViewController: UIViewController {
     }
 
     @IBAction func onButton(_ sender: Any) {
+        playSound(named: "digi_plink")
         let image = UIImage(named: "blur") as UIImage?
         animalImage.setImage(image, for: .normal)
         animationView.startCanvasAnimation()
@@ -53,10 +55,12 @@ class AdventurerViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: delay) {
             if (self.dummyAdventurerCounter < 2)
             {
+                self.playSound(named: "music_marimba")
                 self.animalName.text = "THE BENGAL TIGER"
                 let image = UIImage(named: "tiger-adventurer") as UIImage?
                 self.animalImage.setImage(image, for: .normal)
             } else {
+                self.playSound(named: "music_marimba")
                 self.animalName.text = "THE AFRICAN ELEPHANT"
                 let image = UIImage(named: "african-elephant-adventurer") as UIImage?
                 self.animalImage.setImage(image, for: .normal)
@@ -74,6 +78,16 @@ class AdventurerViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
 
+    @IBAction func onBigButton(_ sender: Any) {
+        self.playSound(named: "pop_drip")
+    }
+    @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
+        let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")
+        player = try! AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        player.play()
+        return player
+    }
+    
     /*
     // MARK: - Navigation
 

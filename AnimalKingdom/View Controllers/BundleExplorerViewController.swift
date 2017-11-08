@@ -8,9 +8,11 @@
 
 import UIKit
 import Canvas
+import AVFoundation
+
 
 class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-
+    var player = AVAudioPlayer()
     @IBOutlet var backgroundImageView: UIImageView!
     let bundles: [NSDictionary] = Datasource.data.bundleData
     var shownCellState = [Bool]()
@@ -72,7 +74,12 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
         })
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        playSound(named: "pop_drip")
+    }
+    
     @objc func onHome() {
+        playSound(named: "digi_plink")
         self.navigationController?.popToRootViewController(animated: true)
     }
 
@@ -86,4 +93,12 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
         let animalExplorerViewController = segue.destination as! AnimalExplorerViewController
         animalExplorerViewController.bundle = bundle
     }
+    
+    @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
+        let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")
+        player = try! AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        player.play()
+        return player
+    }
+    
 }

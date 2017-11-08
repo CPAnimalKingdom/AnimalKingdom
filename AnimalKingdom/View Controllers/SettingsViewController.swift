@@ -12,6 +12,7 @@ import AVFoundation
 class SettingsViewController: UITableViewController {
 
     @IBOutlet var kidsModeSwitch: UISwitch!
+    var player = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,7 @@ class SettingsViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        playSound(named: "digi_plink")
         let myButton = UIImage(named: "camera")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myButton, style: .plain, target: self, action: #selector(onHome))
         kidsModeSwitch.isOn = UserDefaults.standard.bool(forKey: "kidsMode")
@@ -43,6 +45,13 @@ class SettingsViewController: UITableViewController {
         } else {
             UserDefaults.standard.set(false, forKey: "kidsMode")
         }
+    }
+    
+    @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
+        let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")
+        player = try! AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        player.play()
+        return player
     }
     
     /*

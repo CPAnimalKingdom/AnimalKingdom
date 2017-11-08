@@ -7,21 +7,45 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HomeViewController: UIViewController {
 
+    var audioPlayer = AVAudioPlayer()
+    var player = AVAudioPlayer()
+    
     @IBOutlet var backgroundImageView: UIImageView!
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "themeSong", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+        } catch {
+            print(error)
+        }
     }
+    
     override func viewWillAppear(_ animated: Bool) {
-
         if UserDefaults.standard.bool(forKey: "kidsMode") == true {
             UserDefaults.standard.set(true, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background_k")
+            if audioPlayer.isPlaying == true {
+            } else {
+                do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "themeSong", ofType: "mp3")!))
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                } catch {
+                    print(error)
+                }
+            }
+
         } else {
             UserDefaults.standard.set(false, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background")
+            if audioPlayer.isPlaying == true {
+                fadeVolumeAndStop()
+            }
         }
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -45,7 +69,32 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
+        let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")
+        player = try! AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        player.play()
+        return player
+    }
+    
+    func fadeVolumeAndStop(){
+        if self.audioPlayer.volume > 0.1 {
+            self.audioPlayer.volume = self.audioPlayer.volume - 0.05
+            
+            let delay = DispatchTime.now() + 0.1
+            DispatchQueue.main.asyncAfter(deadline: delay) {
+                self.fadeVolumeAndStop()
+            }
+            
+        } else {
+            self.audioPlayer.stop()
+            self.audioPlayer.volume = 1.0
+        }
+    }
+    
+    @IBAction func onBigButton(_ sender: Any) {
+        playSound(named: "pop_drip")
+    }
+    
     /*
     // MARK: - Navigation
 

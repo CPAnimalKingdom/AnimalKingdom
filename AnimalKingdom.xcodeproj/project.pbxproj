@@ -29,6 +29,10 @@
 		370B99AF1F8C960100BFFEA6 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */; };
 		370B99B11F8C960F00BFFEA6 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B99B01F8C960F00BFFEA6 /* ARViewController.swift */; };
 		372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 372087B11F9C19D6000D1DA2 /* tron_grid.png */; };
+		37233DFD1FB2BD2D005A79DF /* themeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37233DFC1FB2B9F8005A79DF /* themeSong.mp3 */; };
+		37233DFF1FB2CB34005A79DF /* pop_drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37233DFE1FB2CB20005A79DF /* pop_drip.wav */; };
+		37233E011FB2CC99005A79DF /* digi_plink.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37233E001FB2CC8F005A79DF /* digi_plink.wav */; };
+		37233E031FB2DC48005A79DF /* music_marimba.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37233E021FB2DC3F005A79DF /* music_marimba.wav */; };
 		3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419B1F91C0E300BEE34F /* AnimalBundle.swift */; };
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
@@ -97,6 +101,10 @@
 		370B99AE1F8C960100BFFEA6 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		370B99B01F8C960F00BFFEA6 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		372087B11F9C19D6000D1DA2 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tron_grid.png; sourceTree = "<group>"; };
+		37233DFC1FB2B9F8005A79DF /* themeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = themeSong.mp3; sourceTree = "<group>"; };
+		37233DFE1FB2CB20005A79DF /* pop_drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop_drip.wav; sourceTree = "<group>"; };
+		37233E001FB2CC8F005A79DF /* digi_plink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digi_plink.wav; sourceTree = "<group>"; };
+		37233E021FB2DC3F005A79DF /* music_marimba.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music_marimba.wav; sourceTree = "<group>"; };
 		3735419B1F91C0E300BEE34F /* AnimalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBundle.swift; sourceTree = "<group>"; };
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -262,6 +270,17 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		37233DFB1FB2B9DB005A79DF /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				37233E021FB2DC3F005A79DF /* music_marimba.wav */,
+				37233E001FB2CC8F005A79DF /* digi_plink.wav */,
+				37233DFE1FB2CB20005A79DF /* pop_drip.wav */,
+				37233DFC1FB2B9F8005A79DF /* themeSong.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		37A033B21F8C868600C4AA86 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +304,7 @@
 		37A033BD1F8C868600C4AA86 /* AnimalKingdom */ = {
 			isa = PBXGroup;
 			children = (
+				37233DFB1FB2B9DB005A79DF /* Music */,
 				12C2E3FB1FA91FCB00DD1762 /* tron_gridGreen2.png */,
 				12C2E3F91FA91DBD00DD1762 /* tron_gridGreen.png */,
 				37029F3B1F92116200F55A30 /* Data */,
@@ -380,6 +400,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37233E031FB2DC48005A79DF /* music_marimba.wav in Resources */,
+				37233E011FB2CC99005A79DF /* digi_plink.wav in Resources */,
+				37233DFF1FB2CB34005A79DF /* pop_drip.wav in Resources */,
+				37233DFD1FB2BD2D005A79DF /* themeSong.mp3 in Resources */,
 				12C2E3FA1FA91DBE00DD1762 /* tron_gridGreen.png in Resources */,
 				766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */,
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,

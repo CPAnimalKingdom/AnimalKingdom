@@ -31,6 +31,7 @@
                                                 <rect key="frame" x="89.5" y="10" width="180" height="180"/>
                                                 <state key="normal" image="explorer-button"/>
                                                 <connections>
+                                                    <action selector="onBigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4f5-rK-0Mq"/>
                                                     <segue destination="4PG-Hn-zMd" kind="show" id="4BM-9O-lrr"/>
                                                 </connections>
                                             </button>
@@ -57,6 +58,7 @@
                                                 <rect key="frame" x="89" y="10" width="180" height="180"/>
                                                 <state key="normal" image="adventurer-button"/>
                                                 <connections>
+                                                    <action selector="onBigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeJ-0E-kMh"/>
                                                     <segue destination="cIY-CQ-or3" kind="show" id="zpp-jf-cfn"/>
                                                 </connections>
                                             </button>
@@ -83,6 +85,7 @@
                                                 <rect key="frame" x="89.5" y="10" width="180" height="180"/>
                                                 <state key="normal" image="creator-button"/>
                                                 <connections>
+                                                    <action selector="onBigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buS-tO-AgD"/>
                                                     <segue destination="ThY-im-XAm" kind="show" id="Ihf-wG-hN9"/>
                                                 </connections>
                                             </button>

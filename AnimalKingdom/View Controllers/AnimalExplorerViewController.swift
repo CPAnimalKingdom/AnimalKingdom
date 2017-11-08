@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    var player = AVAudioPlayer()
     @IBOutlet var backgroundImageView: UIImageView!
     var bundle: NSDictionary!
     var animals: [Animal]!
@@ -69,10 +70,14 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         })
     }
     
-    @objc func onHome() {
-        self.navigationController?.popToRootViewController(animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        playSound(named: "pop_drip")
     }
     
+    @objc func onHome() {
+        playSound(named: "digi_plink")
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -86,5 +91,11 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         //detailsViewController.animal = animal
     }
     
+    @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
+        let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")
+        player = try! AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        player.play()
+        return player
+    }
 }
 

@@ -38,6 +38,7 @@
                                                         <rect key="frame" x="8" y="8" width="224" height="224"/>
                                                         <state key="normal" backgroundImage="blur"/>
                                                         <connections>
+                                                            <action selector="onBigButton:" destination="vbh-fu-4hX" eventType="touchUpInside" id="4F2-ZZ-aUk"/>
                                                             <segue destination="lrC-26-U1c" kind="show" id="8LA-t6-LcW"/>
                                                         </connections>
                                                     </button>

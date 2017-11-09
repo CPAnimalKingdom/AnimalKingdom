@@ -75,7 +75,10 @@ class PhotoFeedCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    
+    
     func setProfileImage() {
+        self.userImage.image = UIImage(named: "eggPersonIcon")
         DispatchQueue.global().async {
             do {
                 if let imageURL = NSURL(string: (self.user?.profileImageUrl)!) {

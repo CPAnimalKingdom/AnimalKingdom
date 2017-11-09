@@ -36,8 +36,8 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-        let myHomeButton = UIImage(named: "home-icon")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
+//        let myHomeButton = UIImage(named: "home-icon")
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
     
     override func didReceiveMemoryWarning() {

@@ -142,9 +142,8 @@
                                                                 <constraint firstAttribute="width" constant="15" id="UiN-iZ-cuy"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q13-iN-wwv">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eggPersonIcon" translatesAutoresizingMaskIntoConstraints="NO" id="q13-iN-wwv">
                                                             <rect key="frame" x="30" y="15" width="50" height="50"/>
-                                                            <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="Nhz-Z7-NXc"/>
                                                                 <constraint firstAttribute="height" constant="50" id="cbS-9v-sNo"/>
@@ -613,6 +612,7 @@
         <image name="background" width="505" height="748"/>
         <image name="creator_feed" width="40" height="40"/>
         <image name="creator_me" width="40" height="40"/>
+        <image name="eggPersonIcon" width="660" height="658"/>
         <image name="more" width="40" height="40"/>
         <image name="place-icon" width="20" height="20"/>
         <image name="time-icon" width="20" height="20"/>

@@ -49,8 +49,8 @@ class VideoViewController: UIViewController, WKNavigationDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let myHomeButton = UIImage(named: "home-icon")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
+//        let myHomeButton = UIImage(named: "home-icon")
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
 
     }
 

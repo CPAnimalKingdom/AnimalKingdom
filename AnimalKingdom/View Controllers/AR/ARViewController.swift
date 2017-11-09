@@ -45,7 +45,6 @@ class ARViewController: UIViewController {
         // SCNScene
         sceneView.scene = SCNScene()
         sceneView.delegate = self
-//        sceneView.showsStatistics = true
 
         // Set up scene content.
         setupCamera()

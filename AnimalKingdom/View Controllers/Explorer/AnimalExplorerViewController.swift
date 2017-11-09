@@ -20,6 +20,7 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         animalTableView.delegate = self
         animalTableView.dataSource = self
+        animalTableView.showsVerticalScrollIndicator = false
         animals = Animal.animalArray(dictionaries: bundle["animals"]! as! [NSDictionary])
     }
     

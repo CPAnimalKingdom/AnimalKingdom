@@ -22,6 +22,7 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
         super.viewDidLoad()
         bundleTableView.delegate = self
         bundleTableView.dataSource = self
+        bundleTableView.showsVerticalScrollIndicator = false
         shownCellState = [Bool](repeating: false, count: bundles.count)
         // Do any additional setup after loading the view.
     }

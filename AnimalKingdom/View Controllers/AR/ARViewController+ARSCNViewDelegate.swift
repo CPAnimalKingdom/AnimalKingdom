@@ -16,20 +16,6 @@ extension ARViewController: ARSCNViewDelegate, ARSessionDelegate {
 //            self.virtualObjectInteraction.updateObjectToCurrentTrackingPosition()
             self.updateFocusSquare()
         }
-
-        // If light estimation is enabled, update the intensity of the model's lights and the environment map
-        // Model needs to have physicaly based lighting
-//        let baseIntensity: CGFloat = 40
-//        let lightingEnvironment = sceneView.scene.lightingEnvironment
-////        print("before: \(lightingEnvironment.intensity)")
-//        if let lightEstimate = sceneView.session.currentFrame?.lightEstimate {
-////            print(lightEstimate.ambientIntensity)
-//            lightingEnvironment.intensity = lightEstimate.ambientIntensity / 40
-//        } else {
-////            print("no ambient light intensity")
-//            lightingEnvironment.intensity = baseIntensity
-//        }
-////        print("after: \(lightingEnvironment.intensity)")
     }
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {

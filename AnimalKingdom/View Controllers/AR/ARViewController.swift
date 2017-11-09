@@ -58,9 +58,35 @@ class ARViewController: UIViewController {
             modelNode!.addChildNode(child)
         }
 
+//        modelNode?.enumerateHierarchy({ (node, pointer) in
+//            if let geometry = node.geometry {
+//                for material in geometry.materials {
+//                    material.lightingModel = .physicallyBased
+//                    material.ambientOcclusion.contents = UIImage(named: "art.scnassets/textures/T_Elephant_Occlusion.png")
+//                    material.normal.contents = UIImage(named: "art.scnassets/textures/T_Elephant_Normal.png")
+//                    material.specular.contents = UIImage(named: "art.scnassets/textures/T_Elephant_SpecularSmoothness.png")
+//                    material.metalness.contents = UIColor.darkGray
+//                    material.roughness.contents = UIColor.lightGray
+//                    print("------")
+//                    print(material.diffuse)
+//                    print(material.metalness)
+//                    print(material.roughness)
+//                    print(material.normal)
+//                    print(material.ambientOcclusion)
+//                    print(material.selfIllumination)
+//                    print(material.emission)
+//                    print(material.displacement)
+//
+//                    print(material.specular)
+//                    print("------")
+//                }
+//            }
+//        })
+
         // Lighting
         // `.automaticallyUpdatesLighting` option creates an ambient light source and modulates its intensity.
         sceneView.automaticallyUpdatesLighting = false
+        sceneView.autoenablesDefaultLighting = false
         // This modulates a global lighting environment map for use with physically based materials, so disable automatic lighting.
         if let environmentMap = UIImage(named: "art.scnassets/environment_blur.exr") {
             sceneView.scene.lightingEnvironment.contents = environmentMap
@@ -91,6 +117,7 @@ class ARViewController: UIViewController {
 
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
+//        configuration.isLightEstimationEnabled = true
         sceneView.session.run(configuration)
     }
 
@@ -161,6 +188,7 @@ class ARViewController: UIViewController {
 
         startIdle()
         modelNotPlaced = false
+        focusSquare.isHidden = true
     }
 
     func loadAnimations() {

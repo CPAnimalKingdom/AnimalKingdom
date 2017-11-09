@@ -16,8 +16,6 @@
 		12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B26CD01F9723AA00B3D73D /* art.scnassets */; };
 		12B26CD31F99C35B00B3D73D /* ARPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26CD21F99C35B00B3D73D /* ARPlane.swift */; };
 		12B60E371FA18319003423F5 /* african-elephant-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12B60E361FA18319003423F5 /* african-elephant-main.jpg */; };
-		12C2E3FA1FA91DBE00DD1762 /* tron_gridGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C2E3F91FA91DBD00DD1762 /* tron_gridGreen.png */; };
-		12C2E3FC1FA91FCB00DD1762 /* tron_gridGreen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C2E3FB1FA91FCB00DD1762 /* tron_gridGreen2.png */; };
 		37029F341F920C3800F55A30 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029F331F920C3800F55A30 /* Login.storyboard */; };
 		37029F361F920CE400F55A30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F351F920CE400F55A30 /* LoginViewController.swift */; };
 		37029F381F920CFB00F55A30 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029F371F920CFB00F55A30 /* LogoutViewController.swift */; };
@@ -94,8 +92,6 @@
 		12B26CD01F9723AA00B3D73D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		12B26CD21F99C35B00B3D73D /* ARPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlane.swift; sourceTree = "<group>"; };
 		12B60E361FA18319003423F5 /* african-elephant-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "african-elephant-main.jpg"; sourceTree = "<group>"; };
-		12C2E3F91FA91DBD00DD1762 /* tron_gridGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tron_gridGreen.png; sourceTree = "<group>"; };
-		12C2E3FB1FA91FCB00DD1762 /* tron_gridGreen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tron_gridGreen2.png; sourceTree = "<group>"; };
 		2B53B6107745491A3CF219BA /* Pods_AnimalKingdom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalKingdom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37029F331F920C3800F55A30 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		37029F351F920CE400F55A30 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -388,7 +384,6 @@
 				12B26CD01F9723AA00B3D73D /* art.scnassets */,
 				766CF2E61F93CCF5000821BB /* GoogleService-Info.plist */,
 				37A033CA1F8C868600C4AA86 /* Info.plist */,
-				372087B11F9C19D6000D1DA2 /* tron_grid.png */,
 			);
 			path = AnimalKingdom;
 			sourceTree = "<group>";
@@ -485,7 +480,6 @@
 				37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */,
 				12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
-				12C2E3FC1FA91FCB00DD1762 /* tron_gridGreen2.png in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
 				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
 				376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */,
@@ -496,7 +490,6 @@
 				375DF5CA1FB3B77F001AEB2A /* DemoDetails_KM.storyboard in Resources */,
 				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
 				379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */,
-				372087B21F9C19D6000D1DA2 /* tron_grid.png in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 				379BDAE61FA7FD69007E96C4 /* DemoDetails.storyboard in Resources */,

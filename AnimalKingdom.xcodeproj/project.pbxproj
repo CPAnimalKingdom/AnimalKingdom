@@ -48,6 +48,8 @@
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
 		375DF5CA1FB3B77F001AEB2A /* DemoDetails_KM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5C91FB3B77F001AEB2A /* DemoDetails_KM.storyboard */; };
+		375DF5CD1FB40AF9001AEB2A /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5CB1FB40AE0001AEB2A /* elephant.wav */; };
+		375DF5CE1FB40AF9001AEB2A /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5CC1FB40AE0001AEB2A /* tiger.wav */; };
 		3766114F1E187F23009DC840 /* DetailsCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766114D1E187F23009DC840 /* DetailsCardTableViewCell.swift */; };
 		376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */; };
 		376611531E188620009DC840 /* DetailsAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */; };
@@ -124,6 +126,8 @@
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		375DF5C91FB3B77F001AEB2A /* DemoDetails_KM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoDetails_KM.storyboard; sourceTree = "<group>"; };
+		375DF5CB1FB40AE0001AEB2A /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
+		375DF5CC1FB40AE0001AEB2A /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
 		3766114D1E187F23009DC840 /* DetailsCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCardTableViewCell.swift; sourceTree = "<group>"; };
 		3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCardTableViewCell.xib; sourceTree = "<group>"; };
 		376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutTableViewCell.swift; sourceTree = "<group>"; };
@@ -326,15 +330,17 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		37233DFB1FB2B9DB005A79DF /* Music */ = {
+		37233DFB1FB2B9DB005A79DF /* Sound Effects */ = {
 			isa = PBXGroup;
 			children = (
+				375DF5CB1FB40AE0001AEB2A /* elephant.wav */,
+				375DF5CC1FB40AE0001AEB2A /* tiger.wav */,
 				37233E021FB2DC3F005A79DF /* music_marimba.wav */,
 				37233E001FB2CC8F005A79DF /* digi_plink.wav */,
 				37233DFE1FB2CB20005A79DF /* pop_drip.wav */,
 				37233DFC1FB2B9F8005A79DF /* themeSong.mp3 */,
 			);
-			path = Music;
+			path = "Sound Effects";
 			sourceTree = "<group>";
 		};
 		37A033B21F8C868600C4AA86 = {
@@ -360,7 +366,7 @@
 		37A033BD1F8C868600C4AA86 /* AnimalKingdom */ = {
 			isa = PBXGroup;
 			children = (
-				37233DFB1FB2B9DB005A79DF /* Music */,
+				37233DFB1FB2B9DB005A79DF /* Sound Effects */,
 				37029F3B1F92116200F55A30 /* Data */,
 				370B999B1F8C909400BFFEA6 /* Models */,
 				370B999E1F8C90BA00BFFEA6 /* View Controllers */,
@@ -453,6 +459,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375DF5CD1FB40AF9001AEB2A /* elephant.wav in Resources */,
+				375DF5CE1FB40AF9001AEB2A /* tiger.wav in Resources */,
 				37233E031FB2DC48005A79DF /* music_marimba.wav in Resources */,
 				37233E011FB2CC99005A79DF /* digi_plink.wav in Resources */,
 				37233DFF1FB2CB34005A79DF /* pop_drip.wav in Resources */,

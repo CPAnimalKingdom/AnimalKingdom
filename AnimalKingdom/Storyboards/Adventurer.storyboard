@@ -39,7 +39,6 @@
                                                         <state key="normal" backgroundImage="blur"/>
                                                         <connections>
                                                             <action selector="onBigButton:" destination="vbh-fu-4hX" eventType="touchUpInside" id="4F2-ZZ-aUk"/>
-                                                            <segue destination="lrC-26-U1c" kind="show" id="8LA-t6-LcW"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -157,6 +156,8 @@
                         <outlet property="animationView" destination="ypX-Hl-6bt" id="Epb-dx-7QI"/>
                         <outlet property="backgroundImageView" destination="xOw-OK-0Tg" id="4JY-FQ-LIF"/>
                         <outlet property="buttonView" destination="SRi-1j-KTw" id="DvQ-E2-s8s"/>
+                        <segue destination="lrC-26-U1c" kind="show" identifier="ShowDemoDetails" id="K2m-0C-NvP"/>
+                        <segue destination="w2e-FC-3tu" kind="show" identifier="ShowDemoDetails_KM" id="6VJ-Hb-Acn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Rr-8kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +170,15 @@
                 <viewControllerPlaceholder storyboardName="DemoDetails" id="lrC-26-U1c" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swl-IW-mVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="-803"/>
+            <point key="canvasLocation" x="2297" y="-850"/>
+        </scene>
+        <!--DemoDetails_KM-->
+        <scene sceneID="jhO-BG-H3b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DemoDetails_KM" id="w2e-FC-3tu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xY4-wS-HaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="-748"/>
         </scene>
     </scenes>
     <resources>

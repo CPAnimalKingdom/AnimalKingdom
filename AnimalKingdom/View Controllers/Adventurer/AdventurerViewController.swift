@@ -59,11 +59,25 @@ class AdventurerViewController: UIViewController {
                 self.animalName.text = "THE BENGAL TIGER"
                 let image = UIImage(named: "tiger-adventurer") as UIImage?
                 self.animalImage.setImage(image, for: .normal)
+                
+                if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+                    let delay = DispatchTime.now() + 0.4
+                    DispatchQueue.main.asyncAfter(deadline: delay) {
+                        self.playSound(named: "tiger")
+                    }
+                }
+                
             } else {
                 self.playSound(named: "music_marimba")
                 self.animalName.text = "THE AFRICAN ELEPHANT"
                 let image = UIImage(named: "african-elephant-adventurer") as UIImage?
                 self.animalImage.setImage(image, for: .normal)
+                if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+                    let delay = DispatchTime.now() + 0.4
+                    DispatchQueue.main.asyncAfter(deadline: delay) {
+                        self.playSound(named: "elephant")
+                    }
+                }
             }
         }
         self.dummyAdventurerCounter = self.dummyAdventurerCounter + 1
@@ -80,6 +94,13 @@ class AdventurerViewController: UIViewController {
 
     @IBAction func onBigButton(_ sender: Any) {
         self.playSound(named: "pop_drip")
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            performSegue(withIdentifier: "ShowDemoDetails_KM", sender: nil)
+        } else {
+            performSegue(withIdentifier: "ShowDemoDetails", sender: nil)
+
+        }
+
     }
     @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
         let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")

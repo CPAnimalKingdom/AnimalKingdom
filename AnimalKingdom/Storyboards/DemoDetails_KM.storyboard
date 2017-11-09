@@ -21,17 +21,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zw-pK-3ju">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoHeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="4vB-bL-tmU">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="4vB-bL-tmU" secondAttribute="height" multiplier="414:289" id="qlB-s9-3fR"/>
-                                        </constraints>
-                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-rB-9sn">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
                                         <subviews>
                                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTk-Aj-qcI">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </webView>
                                         </subviews>
@@ -46,14 +40,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.87880607290000001" green="0.96877354380000003" blue="0.43749394520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="X5n-rB-9sn" secondAttribute="bottom" constant="52" id="0jQ-45-g5k"/>
+                                    <constraint firstAttribute="bottom" secondItem="X5n-rB-9sn" secondAttribute="bottom" id="0jQ-45-g5k"/>
                                     <constraint firstAttribute="trailing" secondItem="X5n-rB-9sn" secondAttribute="trailing" id="4qb-vO-w7T"/>
-                                    <constraint firstAttribute="trailing" secondItem="4vB-bL-tmU" secondAttribute="trailing" id="7NP-iZ-tXx"/>
                                     <constraint firstItem="X5n-rB-9sn" firstAttribute="leading" secondItem="1zw-pK-3ju" secondAttribute="leading" id="Nyt-KH-oFE"/>
                                     <constraint firstAttribute="width" secondItem="1zw-pK-3ju" secondAttribute="height" multiplier="414:289" id="aHI-gi-1pA"/>
                                     <constraint firstItem="X5n-rB-9sn" firstAttribute="top" secondItem="1zw-pK-3ju" secondAttribute="top" id="avh-ry-B0E"/>
-                                    <constraint firstItem="4vB-bL-tmU" firstAttribute="leading" secondItem="1zw-pK-3ju" secondAttribute="leading" id="dfh-m6-e9a"/>
-                                    <constraint firstItem="4vB-bL-tmU" firstAttribute="top" secondItem="1zw-pK-3ju" secondAttribute="top" id="s9p-VJ-Rjq"/>
                                 </constraints>
                             </view>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRo-s7-lQA" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
@@ -158,8 +149,8 @@
                     </view>
                     <size key="freeformSize" width="375" height="2600"/>
                     <connections>
-                        <outlet property="videoContainer" destination="X5n-rB-9sn" id="L5z-oi-fr8"/>
                         <outlet property="videoView" destination="CTk-Aj-qcI" id="Fyc-NP-vDw"/>
+                        <outlet property="viewContainer" destination="1zw-pK-3ju" id="EUL-FS-qRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFi-dO-XyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -195,7 +186,6 @@
         <image name="ar-button" width="30" height="30"/>
         <image name="create-button" width="30" height="30"/>
         <image name="demoDetails" width="399" height="2443"/>
-        <image name="demoHeaderImage" width="414" height="289"/>
         <image name="sound-button" width="30" height="30"/>
         <image name="video-button" width="30" height="30"/>
     </resources>

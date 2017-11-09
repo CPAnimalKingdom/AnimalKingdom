@@ -16,7 +16,7 @@ class VideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        videoView_1.loadHTMLString("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/mlOiXMvMaZo\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+        videoView_1.loadHTMLString("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/mlOiXMvMaZo?&playsinline=1\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
         videoView_2.loadHTMLString("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/2bpICIClAIg\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
         videoView_3.loadHTMLString("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/SNggmeilXDQ\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
 

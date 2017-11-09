@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
             UserDefaults.standard.set(false, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background")
             if audioPlayer.isPlaying == true {
-                fadeVolumeAndStop()
+                fadeVolumeAndStop(0.05)
             }
         }
         
@@ -76,13 +76,12 @@ class HomeViewController: UIViewController {
         return player
     }
     
-    func fadeVolumeAndStop(){
+    func fadeVolumeAndStop(_ speed: Float){
         if self.audioPlayer.volume > 0.1 {
-            self.audioPlayer.volume = self.audioPlayer.volume - 0.05
-            
+            self.audioPlayer.volume = self.audioPlayer.volume - speed
             let delay = DispatchTime.now() + 0.1
             DispatchQueue.main.asyncAfter(deadline: delay) {
-                self.fadeVolumeAndStop()
+                self.fadeVolumeAndStop(speed)
             }
             
         } else {
@@ -93,6 +92,9 @@ class HomeViewController: UIViewController {
     
     @IBAction func onBigButton(_ sender: Any) {
         playSound(named: "pop_drip")
+        if audioPlayer.isPlaying == true {
+            fadeVolumeAndStop(0.02)
+        }
     }
     
     /*

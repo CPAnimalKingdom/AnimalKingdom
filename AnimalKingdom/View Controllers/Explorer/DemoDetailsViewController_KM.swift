@@ -10,17 +10,17 @@ import UIKit
 
 class DemoDetailsViewController_KM: UIViewController {
     
-    @IBOutlet var videoContainer: UIView!
+    @IBOutlet var viewContainer: UIView!
     @IBOutlet var videoView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         videoView.allowsInlineMediaPlayback = true
-        videoView.loadHTMLString("<iframe width=\"\(videoContainer.frame.width)\" height=\"\(videoContainer.frame.height)\" src=\"https://www.youtube.com/embed/qZrXDlmX0FY?rel=0&amp;showinfo=0&amp;start=11&amp;playsinline=1\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+        videoView.loadHTMLString("<div align=\"center\"><iframe width=\"\(viewContainer.frame.width + 20)\" height=\"\(viewContainer.frame.height - 40)\" src=\"https://www.youtube.com/embed/qZrXDlmX0FY?rel=0&amp;showinfo=0&amp;start=11&amp;playsinline=1\" frameborder=\"0\" allowfullscreen></iframe></div>", baseURL: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
@@ -48,3 +48,4 @@ class DemoDetailsViewController_KM: UIViewController {
      */
     
 }
+

@@ -9,9 +9,12 @@
 import UIKit
 
 class DemoDetailsViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        scrollView.contentInsetAdjustmentBehavior = .never
     }
     
     override func viewWillAppear(_ animated: Bool) {

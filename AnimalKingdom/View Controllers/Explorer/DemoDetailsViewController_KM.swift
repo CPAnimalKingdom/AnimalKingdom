@@ -12,11 +12,19 @@ class DemoDetailsViewController_KM: UIViewController {
     
     @IBOutlet var viewContainer: UIView!
     @IBOutlet var videoView: UIWebView!
+
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         videoView.allowsInlineMediaPlayback = true
         videoView.loadHTMLString("<div align=\"center\"><iframe width=\"\(viewContainer.frame.width + 20)\" height=\"\(viewContainer.frame.height - 40)\" src=\"https://www.youtube.com/embed/qZrXDlmX0FY?rel=0&amp;showinfo=0&amp;start=11&amp;playsinline=1\" frameborder=\"0\" allowfullscreen></iframe></div>", baseURL: nil)
+
+        scrollView.contentInsetAdjustmentBehavior = .never
+
+        videoView.scrollView.contentInsetAdjustmentBehavior = .never
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +35,13 @@ class DemoDetailsViewController_KM: UIViewController {
         let myHomeButton = UIImage(named: "home-icon")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
-    
+
+    override func viewDidAppear(_ animated: Bool) {
+        let offsetY = -1 * ((navigationController?.toolbar.frame.height)! + 20)
+        videoView.scrollView.setContentOffset(CGPoint(x:0, y: offsetY), animated: false)
+        videoView.scrollView.isScrollEnabled = false
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

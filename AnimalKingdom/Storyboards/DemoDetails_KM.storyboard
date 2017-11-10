@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWT-7O-xKw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWT-7O-xKw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -132,6 +132,9 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAh-Sr-FMZ">
                                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="179.5"/>
+                                                                <connections>
+                                                                    <segue destination="WLE-Hc-T4n" kind="show" id="tCv-Us-NoZ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -252,7 +255,7 @@
                 <viewControllerPlaceholder storyboardName="AR" id="YS5-F8-lRN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yv5-V0-KHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="-150"/>
+            <point key="canvasLocation" x="734" y="-175"/>
         </scene>
         <!--Creator-->
         <scene sceneID="LuY-Gt-w6m">
@@ -260,7 +263,7 @@
                 <viewControllerPlaceholder storyboardName="Creator" id="3L2-av-PcA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aly-MO-Vrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="-85"/>
+            <point key="canvasLocation" x="757" y="-61"/>
         </scene>
         <!--Video-->
         <scene sceneID="d3u-9q-UCE">
@@ -268,10 +271,94 @@
                 <viewControllerPlaceholder storyboardName="Video" id="zZf-B6-oSS" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIP-UE-DCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-15"/>
+            <point key="canvasLocation" x="748" y="9"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6VQ-2T-CxM">
+            <objects>
+                <viewController storyboardIdentifier="DemoDetails_KM_Details" id="WLE-Hc-T4n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9QA-Fv-msl">
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RR2-6S-3j2">
+                                <rect key="frame" x="0.0" y="67" width="359" height="933"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oP-Se-mtH">
+                                        <rect key="frame" x="8" y="0.0" width="343" height="925"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_k" translatesAutoresizingMaskIntoConstraints="NO" id="TYb-HP-Lv8">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="925"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TYb-HP-Lv8" firstAttribute="top" secondItem="8oP-Se-mtH" secondAttribute="top" id="EVZ-QH-BpK"/>
+                                            <constraint firstAttribute="bottom" secondItem="TYb-HP-Lv8" secondAttribute="bottom" id="XgX-Lo-kvM"/>
+                                            <constraint firstItem="TYb-HP-Lv8" firstAttribute="centerX" secondItem="8oP-Se-mtH" secondAttribute="centerX" id="fXy-l9-D0b"/>
+                                            <constraint firstAttribute="trailing" secondItem="TYb-HP-Lv8" secondAttribute="trailing" id="qHI-i5-7hV"/>
+                                            <constraint firstItem="TYb-HP-Lv8" firstAttribute="leading" secondItem="8oP-Se-mtH" secondAttribute="leading" id="uj3-aj-R15"/>
+                                            <constraint firstItem="TYb-HP-Lv8" firstAttribute="centerY" secondItem="8oP-Se-mtH" secondAttribute="centerY" id="vob-dc-70Y"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8oP-Se-mtH" secondAttribute="trailing" constant="8" id="NiK-v0-elc"/>
+                                    <constraint firstItem="8oP-Se-mtH" firstAttribute="top" secondItem="RR2-6S-3j2" secondAttribute="top" id="QRx-vh-Srv"/>
+                                    <constraint firstAttribute="bottom" secondItem="8oP-Se-mtH" secondAttribute="bottom" constant="8" id="be5-a8-4MH"/>
+                                    <constraint firstItem="8oP-Se-mtH" firstAttribute="leading" secondItem="RR2-6S-3j2" secondAttribute="leading" constant="8" id="pFK-5q-z4N"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4id-al-tOm" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="343" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELEPHANT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHD-pH-n9p">
+                                        <rect key="frame" x="69" y="1" width="206.5" height="49.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mHD-pH-n9p" firstAttribute="centerX" secondItem="4id-al-tOm" secondAttribute="centerX" id="BkY-mg-FCV"/>
+                                    <constraint firstAttribute="width" secondItem="4id-al-tOm" secondAttribute="height" multiplier="344:51" id="FKe-zf-Zsn"/>
+                                    <constraint firstItem="mHD-pH-n9p" firstAttribute="centerY" secondItem="4id-al-tOm" secondAttribute="centerY" id="JXz-bU-1NT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oTg-4D-w9e" firstAttribute="trailing" secondItem="4id-al-tOm" secondAttribute="trailing" constant="8" id="G24-0h-ztr"/>
+                            <constraint firstItem="RR2-6S-3j2" firstAttribute="leading" secondItem="oTg-4D-w9e" secondAttribute="leading" id="MB5-2M-9xW"/>
+                            <constraint firstItem="RR2-6S-3j2" firstAttribute="bottom" secondItem="oTg-4D-w9e" secondAttribute="bottom" id="NVn-Qj-qUL"/>
+                            <constraint firstItem="RR2-6S-3j2" firstAttribute="top" secondItem="4id-al-tOm" secondAttribute="bottom" constant="8" id="OsL-Yq-qia"/>
+                            <constraint firstItem="4id-al-tOm" firstAttribute="leading" secondItem="oTg-4D-w9e" secondAttribute="leading" constant="8" id="ZRV-Nz-eSZ"/>
+                            <constraint firstItem="RR2-6S-3j2" firstAttribute="trailing" secondItem="oTg-4D-w9e" secondAttribute="trailing" id="hbZ-zJ-O7k"/>
+                            <constraint firstItem="4id-al-tOm" firstAttribute="top" secondItem="9QA-Fv-msl" secondAttribute="top" constant="8" id="yph-kq-FxX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oTg-4D-w9e"/>
+                    </view>
+                    <size key="freeformSize" width="359" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lx-74-XlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="-130"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background_k" width="505" height="748"/>
         <image name="background_k-1" width="505" height="748"/>
         <image name="kids-mode-panel" width="432" height="648"/>
     </resources>

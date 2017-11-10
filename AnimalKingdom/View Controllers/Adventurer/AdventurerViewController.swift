@@ -53,10 +53,10 @@ class AdventurerViewController: UIViewController {
     func setImage() {
         let delay = DispatchTime.now() + 0.4
         DispatchQueue.main.asyncAfter(deadline: delay) {
-            if (self.dummyAdventurerCounter < 2)
+            if (self.dummyAdventurerCounter == 1 )
             {
                 self.playSound(named: "music_marimba")
-                self.animalName.text = "THE BENGAL TIGER"
+                self.animalName.text = "TIGER"
                 let image = UIImage(named: "tiger-adventurer") as UIImage?
                 self.animalImage.setImage(image, for: .normal)
                 
@@ -67,9 +67,51 @@ class AdventurerViewController: UIViewController {
                     }
                 }
                 
+            } else if (self.dummyAdventurerCounter == 2)
+            {
+                self.playSound(named: "music_marimba")
+                self.animalName.text = "POLAR BEAR"
+                let image = UIImage(named: "bear") as UIImage?
+                self.animalImage.setImage(image, for: .normal)
+                
+                if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+                    let delay = DispatchTime.now() + 0.4
+                    DispatchQueue.main.asyncAfter(deadline: delay) {
+                        self.playSound(named: "polar-bear")
+                    }
+                }
+                
+            } else if (self.dummyAdventurerCounter == 3)
+            {
+                self.playSound(named: "music_marimba")
+                self.animalName.text = "SEA LION"
+                let image = UIImage(named: "sea-lion") as UIImage?
+                self.animalImage.setImage(image, for: .normal)
+                
+                if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+                    let delay = DispatchTime.now() + 0.4
+                    DispatchQueue.main.asyncAfter(deadline: delay) {
+                        self.playSound(named: "sea-lion")
+                    }
+                }
+                
+            } else if (self.dummyAdventurerCounter == 4)
+            {
+                self.playSound(named: "music_marimba")
+                self.animalName.text = "PANDA"
+                let image = UIImage(named: "panda") as UIImage?
+                self.animalImage.setImage(image, for: .normal)
+                
+                if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+                    let delay = DispatchTime.now() + 0.4
+                    DispatchQueue.main.asyncAfter(deadline: delay) {
+                        self.playSound(named: "panda")
+                    }
+                }
+                
             } else {
                 self.playSound(named: "music_marimba")
-                self.animalName.text = "THE AFRICAN ELEPHANT"
+                self.animalName.text = "AFRICAN ELEPHANT"
                 let image = UIImage(named: "african-elephant-adventurer") as UIImage?
                 self.animalImage.setImage(image, for: .normal)
                 if UserDefaults.standard.bool(forKey: "kidsMode") == true {

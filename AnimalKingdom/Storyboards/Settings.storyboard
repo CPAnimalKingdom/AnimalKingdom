@@ -73,7 +73,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-2Y-UyC">
-                                                    <rect key="frame" x="314" y="7" width="53" height="30"/>
+                                                    <rect key="frame" x="310" y="7" width="57" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Jim Lee"/>
                                                 </button>
                                             </subviews>
@@ -101,6 +102,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-Y5-aG8">
                                                     <rect key="frame" x="318" y="7" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.96877354380000003" green="0.42994654840000002" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -125,9 +127,10 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nk7-35-0hp">
                                                     <rect key="frame" x="318" y="6.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.96877354380000003" green="0.42994654840000002" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-fu-LCI">
-                                                    <rect key="frame" x="8" y="13" width="52" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator / Social" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-fu-LCI">
+                                                    <rect key="frame" x="8" y="13" width="106" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -157,6 +160,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZM-3R-G8z">
                                                     <rect key="frame" x="318" y="6.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.96877354380000003" green="0.42994654840000002" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -183,14 +187,15 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wl4-fB-a1e">
                                                     <rect key="frame" x="318" y="6.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.96877354380000003" green="0.42994654840000002" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="onKidsModeSwitch:" destination="Bza-pF-tO7" eventType="valueChanged" id="Byg-Ra-Q87"/>
                                                     </connections>
                                                 </switch>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids-icon" translatesAutoresizingMaskIntoConstraints="NO" id="j0y-la-T9y">
-                                                    <rect key="frame" x="89" y="6" width="30" height="30"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child-icon" translatesAutoresizingMaskIntoConstraints="NO" id="j0y-la-T9y">
+                                                    <rect key="frame" x="88" y="6" width="53" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="K64-b3-pvG"/>
+                                                        <constraint firstAttribute="width" constant="53" id="K64-b3-pvG"/>
                                                         <constraint firstAttribute="height" constant="30" id="V3m-iX-D7w"/>
                                                     </constraints>
                                                 </imageView>
@@ -199,7 +204,7 @@
                                                 <constraint firstItem="tf5-J3-0PM" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" id="2qM-IQ-tNX"/>
                                                 <constraint firstAttribute="trailing" secondItem="Wl4-fB-a1e" secondAttribute="trailing" constant="8" id="4gt-Kr-aGT"/>
                                                 <constraint firstItem="Wl4-fB-a1e" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" id="EsB-bo-hZc"/>
-                                                <constraint firstItem="j0y-la-T9y" firstAttribute="leading" secondItem="tf5-J3-0PM" secondAttribute="trailing" constant="8" id="b9z-q1-ts2"/>
+                                                <constraint firstItem="j0y-la-T9y" firstAttribute="leading" secondItem="tf5-J3-0PM" secondAttribute="trailing" constant="7" id="b9z-q1-ts2"/>
                                                 <constraint firstItem="tf5-J3-0PM" firstAttribute="leading" secondItem="wc2-i1-Qjl" secondAttribute="leadingMargin" id="g8y-fM-6Qm"/>
                                                 <constraint firstItem="j0y-la-T9y" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" constant="-1" id="o2r-D2-WpZ"/>
                                             </constraints>
@@ -219,9 +224,10 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-DC-62U">
                                                     <rect key="frame" x="318" y="6.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.96877354380000003" green="0.42994654840000002" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parent Control" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-Qb-2WK">
-                                                    <rect key="frame" x="8" y="13" width="99" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parental Control" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-Qb-2WK">
+                                                    <rect key="frame" x="8" y="13" width="111" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -254,7 +260,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="child-icon" width="300" height="170"/>
         <image name="ex-icon" width="50" height="50"/>
-        <image name="kids-icon" width="144" height="144"/>
     </resources>
 </document>

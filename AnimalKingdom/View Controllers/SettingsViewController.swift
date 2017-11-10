@@ -15,7 +15,6 @@ class SettingsViewController: UITableViewController {
     var player = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     

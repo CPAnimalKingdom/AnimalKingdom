@@ -48,12 +48,6 @@
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
 		375DF5CA1FB3B77F001AEB2A /* DemoDetails_KM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5C91FB3B77F001AEB2A /* DemoDetails_KM.storyboard */; };
-		375DF5CD1FB40AF9001AEB2A /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5CB1FB40AE0001AEB2A /* elephant.wav */; };
-		375DF5CE1FB40AF9001AEB2A /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5CC1FB40AE0001AEB2A /* tiger.wav */; };
-		375DF5DB1FB52B19001AEB2A /* lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5D91FB52B0B001AEB2A /* lion.wav */; };
-		375DF5DC1FB52B19001AEB2A /* panda.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5DA1FB52B0B001AEB2A /* panda.wav */; };
-		375DF5DD1FB52B19001AEB2A /* polar-bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5D71FB52B0B001AEB2A /* polar-bear.wav */; };
-		375DF5DE1FB52B19001AEB2A /* sea-lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5D81FB52B0B001AEB2A /* sea-lion.wav */; };
 		3766114F1E187F23009DC840 /* DetailsCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766114D1E187F23009DC840 /* DetailsCardTableViewCell.swift */; };
 		376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */; };
 		376611531E188620009DC840 /* DetailsAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */; };
@@ -70,6 +64,11 @@
 		37A033BF1F8C868600C4AA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A033BE1F8C868600C4AA86 /* AppDelegate.swift */; };
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
+		37D1B8E81FB5C5D00077A37A /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37D1B8E31FB5C5C10077A37A /* elephant.wav */; };
+		37D1B8E91FB5C5D00077A37A /* panda.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37D1B8E61FB5C5C10077A37A /* panda.wav */; };
+		37D1B8EA1FB5C5D00077A37A /* polar-bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37D1B8E41FB5C5C10077A37A /* polar-bear.wav */; };
+		37D1B8EB1FB5C5D00077A37A /* sea-lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37D1B8E51FB5C5C10077A37A /* sea-lion.wav */; };
+		37D1B8EC1FB5C5D00077A37A /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37D1B8E71FB5C5C10077A37A /* tiger.wav */; };
 		37E0008E1FB1BAB200C3AA05 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */; };
 		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
 		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
@@ -130,12 +129,6 @@
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		375DF5C91FB3B77F001AEB2A /* DemoDetails_KM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoDetails_KM.storyboard; sourceTree = "<group>"; };
-		375DF5CB1FB40AE0001AEB2A /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
-		375DF5CC1FB40AE0001AEB2A /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
-		375DF5D71FB52B0B001AEB2A /* polar-bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "polar-bear.wav"; path = "../../../../Desktop/Animal Kingdom/polar-bear.wav"; sourceTree = "<group>"; };
-		375DF5D81FB52B0B001AEB2A /* sea-lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sea-lion.wav"; path = "../../../../Desktop/Animal Kingdom/sea-lion.wav"; sourceTree = "<group>"; };
-		375DF5D91FB52B0B001AEB2A /* lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lion.wav; path = "../../../../Desktop/Animal Kingdom/lion.wav"; sourceTree = "<group>"; };
-		375DF5DA1FB52B0B001AEB2A /* panda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = panda.wav; path = "../../../../Desktop/Animal Kingdom/panda.wav"; sourceTree = "<group>"; };
 		3766114D1E187F23009DC840 /* DetailsCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCardTableViewCell.swift; sourceTree = "<group>"; };
 		3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCardTableViewCell.xib; sourceTree = "<group>"; };
 		376611511E188620009DC840 /* DetailsAboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutTableViewCell.swift; sourceTree = "<group>"; };
@@ -154,6 +147,11 @@
 		37A033C31F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37A033C81F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A033CA1F8C868600C4AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D1B8E31FB5C5C10077A37A /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = elephant.wav; path = "../../../../Desktop/Animal Kingdom/elephant.wav"; sourceTree = "<group>"; };
+		37D1B8E41FB5C5C10077A37A /* polar-bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "polar-bear.wav"; path = "../../../../Desktop/Animal Kingdom/polar-bear.wav"; sourceTree = "<group>"; };
+		37D1B8E51FB5C5C10077A37A /* sea-lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sea-lion.wav"; path = "../../../../Desktop/Animal Kingdom/sea-lion.wav"; sourceTree = "<group>"; };
+		37D1B8E61FB5C5C10077A37A /* panda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = panda.wav; path = "../../../../Desktop/Animal Kingdom/panda.wav"; sourceTree = "<group>"; };
+		37D1B8E71FB5C5C10077A37A /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = tiger.wav; path = "../../../../Desktop/Animal Kingdom/tiger.wav"; sourceTree = "<group>"; };
 		37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		37FB918D1F8DB06900E88D98 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
@@ -341,12 +339,11 @@
 		37233DFB1FB2B9DB005A79DF /* Sound Effects */ = {
 			isa = PBXGroup;
 			children = (
-				375DF5D91FB52B0B001AEB2A /* lion.wav */,
-				375DF5DA1FB52B0B001AEB2A /* panda.wav */,
-				375DF5D71FB52B0B001AEB2A /* polar-bear.wav */,
-				375DF5D81FB52B0B001AEB2A /* sea-lion.wav */,
-				375DF5CB1FB40AE0001AEB2A /* elephant.wav */,
-				375DF5CC1FB40AE0001AEB2A /* tiger.wav */,
+				37D1B8E31FB5C5C10077A37A /* elephant.wav */,
+				37D1B8E61FB5C5C10077A37A /* panda.wav */,
+				37D1B8E41FB5C5C10077A37A /* polar-bear.wav */,
+				37D1B8E51FB5C5C10077A37A /* sea-lion.wav */,
+				37D1B8E71FB5C5C10077A37A /* tiger.wav */,
 				37233E021FB2DC3F005A79DF /* music_marimba.wav */,
 				37233E001FB2CC8F005A79DF /* digi_plink.wav */,
 				37233DFE1FB2CB20005A79DF /* pop_drip.wav */,
@@ -471,12 +468,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375DF5DB1FB52B19001AEB2A /* lion.wav in Resources */,
-				375DF5DC1FB52B19001AEB2A /* panda.wav in Resources */,
-				375DF5DD1FB52B19001AEB2A /* polar-bear.wav in Resources */,
-				375DF5DE1FB52B19001AEB2A /* sea-lion.wav in Resources */,
-				375DF5CD1FB40AF9001AEB2A /* elephant.wav in Resources */,
-				375DF5CE1FB40AF9001AEB2A /* tiger.wav in Resources */,
+				37D1B8E81FB5C5D00077A37A /* elephant.wav in Resources */,
+				37D1B8E91FB5C5D00077A37A /* panda.wav in Resources */,
+				37D1B8EA1FB5C5D00077A37A /* polar-bear.wav in Resources */,
+				37D1B8EB1FB5C5D00077A37A /* sea-lion.wav in Resources */,
+				37D1B8EC1FB5C5D00077A37A /* tiger.wav in Resources */,
 				37233E031FB2DC48005A79DF /* music_marimba.wav in Resources */,
 				37233E011FB2CC99005A79DF /* digi_plink.wav in Resources */,
 				37233DFF1FB2CB34005A79DF /* pop_drip.wav in Resources */,

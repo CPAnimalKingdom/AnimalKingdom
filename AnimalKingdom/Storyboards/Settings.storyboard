@@ -192,24 +192,24 @@
                                                         <action selector="onKidsModeSwitch:" destination="Bza-pF-tO7" eventType="valueChanged" id="Byg-Ra-Q87"/>
                                                     </connections>
                                                 </switch>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child-icon" translatesAutoresizingMaskIntoConstraints="NO" id="j0y-la-T9y">
-                                                    <rect key="frame" x="88" y="6" width="53" height="30"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids-mode-banner" translatesAutoresizingMaskIntoConstraints="NO" id="j0y-la-T9y">
+                                                    <rect key="frame" x="84" y="0.0" width="66" height="44"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="53" id="K64-b3-pvG"/>
-                                                        <constraint firstAttribute="height" constant="30" id="V3m-iX-D7w"/>
+                                                        <constraint firstAttribute="width" constant="66" id="K64-b3-pvG"/>
+                                                        <constraint firstAttribute="height" constant="44" id="V3m-iX-D7w"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="tf5-J3-0PM" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" id="2qM-IQ-tNX"/>
                                                 <constraint firstAttribute="trailing" secondItem="Wl4-fB-a1e" secondAttribute="trailing" constant="8" id="4gt-Kr-aGT"/>
+                                                <constraint firstItem="j0y-la-T9y" firstAttribute="leading" secondItem="tf5-J3-0PM" secondAttribute="trailing" constant="3" id="7VY-Rt-c55"/>
                                                 <constraint firstItem="Wl4-fB-a1e" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" id="EsB-bo-hZc"/>
-                                                <constraint firstItem="j0y-la-T9y" firstAttribute="leading" secondItem="tf5-J3-0PM" secondAttribute="trailing" constant="7" id="b9z-q1-ts2"/>
                                                 <constraint firstItem="tf5-J3-0PM" firstAttribute="leading" secondItem="wc2-i1-Qjl" secondAttribute="leadingMargin" id="g8y-fM-6Qm"/>
-                                                <constraint firstItem="j0y-la-T9y" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" constant="-1" id="o2r-D2-WpZ"/>
+                                                <constraint firstItem="j0y-la-T9y" firstAttribute="centerY" secondItem="wc2-i1-Qjl" secondAttribute="centerY" id="o2r-D2-WpZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96877354380000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.69809503424657537" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -242,6 +242,34 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hhv-Qi-4DE">
+                                        <rect key="frame" x="0.0" y="502" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hhv-Qi-4DE" id="EBD-Vm-lGX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change passcode ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50r-EI-Gy6">
+                                                    <rect key="frame" x="8" y="13" width="140" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="******" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-23-Q9Y">
+                                                    <rect key="frame" x="322" y="10" width="45" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="50r-EI-Gy6" firstAttribute="leading" secondItem="EBD-Vm-lGX" secondAttribute="leadingMargin" id="1gZ-eP-8hc"/>
+                                                <constraint firstItem="50r-EI-Gy6" firstAttribute="centerY" secondItem="EBD-Vm-lGX" secondAttribute="centerY" id="hGi-1B-ABw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.70384520289999997" blue="0.23409247399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -260,7 +288,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="child-icon" width="300" height="170"/>
         <image name="ex-icon" width="50" height="50"/>
+        <image name="kids-mode-banner" width="100" height="54"/>
     </resources>
 </document>

@@ -58,10 +58,10 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = myBackButton
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
-        let statusBarWindow = UIApplication.shared.value(forKey: "statusBarWindow") as? UIWindow
-        UIView.animate(withDuration: 3) {
-            statusBarWindow?.alpha = 0
-        }
+//        let statusBarWindow = UIApplication.shared.value(forKey: "statusBarWindow") as? UIWindow
+//        UIView.animate(withDuration: 3) {
+//            statusBarWindow?.alpha = 0
+//        }
 
     }
     override func didReceiveMemoryWarning() {

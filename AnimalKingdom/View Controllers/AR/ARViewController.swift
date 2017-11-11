@@ -34,6 +34,7 @@ class ARViewController: UIViewController {
     let chewKey = "chew"
     let comboAttackKey = "comboAttackKey"
     let cameraFlashView = UIView()
+    var player = AVAudioPlayer()
 
     var modelNotPlaced = true
 
@@ -226,6 +227,13 @@ class ARViewController: UIViewController {
         modelNode.removeAnimation(forKey: key, blendOutDuration: CGFloat(0.5))
     }
 
+    func playSound(named soundName: String) -> AVAudioPlayer {
+        let audioPath = Bundle.main.path(forResource: soundName, ofType: "wav")
+        player = try! AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        player.play()
+        return player
+    }
+
     // MARK: Animation and Action
 
     func startIdle() {
@@ -272,6 +280,8 @@ class ARViewController: UIViewController {
         stopIdle()
 
         playAnimation(key: comboAttackKey)
+
+        playSound(named: "arelephantsound")
 
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1) + .milliseconds(500), execute: {
             self.stopAnimation(key: self.comboAttackKey)

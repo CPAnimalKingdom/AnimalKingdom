@@ -11,6 +11,7 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController {
+    var audioPlayer = AVAudioPlayer()
 
     @IBOutlet var sceneView: VirtualObjectARView!
     @IBOutlet weak var cameraButton: UIButton!
@@ -43,6 +44,16 @@ class ARViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Sound effect: background noise.
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ambience", ofType: "wav")!))
+            audioPlayer.prepareToPlay()
+            audioPlayer.volume = 0.1
+            audioPlayer.play()
+        } catch {
+            print(error)
+        }
+        
         // SCNScene
         sceneView.scene = SCNScene()
         sceneView.delegate = self
@@ -83,7 +94,21 @@ class ARViewController: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = true
         loadAnimations()
     }
-
+    
+    func fadeVolumeAndStop(_ speed: Float){
+        if self.audioPlayer.volume > 0.1 {
+            self.audioPlayer.volume = self.audioPlayer.volume - speed
+            let delay = DispatchTime.now() + 0.1
+            DispatchQueue.main.asyncAfter(deadline: delay) {
+                self.fadeVolumeAndStop(speed)
+            }
+            
+        } else {
+            self.audioPlayer.stop()
+            self.audioPlayer.volume = 1.0
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -111,6 +136,10 @@ class ARViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        if audioPlayer.isPlaying == true {
+            fadeVolumeAndStop(0.02)
+        }
+
         self.navigationController?.navigationBar.alpha = 0
         let delay = DispatchTime.now() + 0.5
         DispatchQueue.main.asyncAfter(deadline: delay) {

@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
                     print(error)
                 }
             }
-
+            
         } else {
             UserDefaults.standard.set(false, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background")

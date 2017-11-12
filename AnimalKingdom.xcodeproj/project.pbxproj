@@ -48,6 +48,12 @@
 		3735419C1F91C0E300BEE34F /* AnimalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419B1F91C0E300BEE34F /* AnimalBundle.swift */; };
 		3735419E1F91C38100BEE34F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3735419D1F91C38100BEE34F /* Settings.swift */; };
 		37460A9E1F91AB6A0098171A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37460A9D1F91AB6A0098171A /* Animal.swift */; };
+		3752000E1FB8622F00FFBD2E /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375200091FB8622E00FFBD2E /* elephant.wav */; };
+		3752000F1FB8622F00FFBD2E /* polar-bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3752000A1FB8622E00FFBD2E /* polar-bear.wav */; };
+		375200101FB8622F00FFBD2E /* sea-lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3752000B1FB8622E00FFBD2E /* sea-lion.wav */; };
+		375200111FB8622F00FFBD2E /* panda.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3752000C1FB8622F00FFBD2E /* panda.wav */; };
+		375200121FB8622F00FFBD2E /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3752000D1FB8622F00FFBD2E /* tiger.wav */; };
+		375200141FB865DF00FFBD2E /* ambience.wav in Resources */ = {isa = PBXBuildFile; fileRef = 375200131FB865DF00FFBD2E /* ambience.wav */; };
 		375DF5CA1FB3B77F001AEB2A /* DemoDetails_KM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375DF5C91FB3B77F001AEB2A /* DemoDetails_KM.storyboard */; };
 		3766114F1E187F23009DC840 /* DetailsCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766114D1E187F23009DC840 /* DetailsCardTableViewCell.swift */; };
 		376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */; };
@@ -66,12 +72,6 @@
 		37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C21F8C868600C4AA86 /* Main.storyboard */; };
 		37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A033C71F8C868600C4AA86 /* LaunchScreen.storyboard */; };
 		37E0008E1FB1BAB200C3AA05 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */; };
-		37E6E4431FB63FD000767364 /* panda.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E43D1FB63FCF00767364 /* panda.wav */; };
-		37E6E4441FB63FD000767364 /* sea-lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E43E1FB63FCF00767364 /* sea-lion.wav */; };
-		37E6E4451FB63FD000767364 /* elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E43F1FB63FCF00767364 /* elephant.wav */; };
-		37E6E4461FB63FD000767364 /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E4401FB63FCF00767364 /* tiger.wav */; };
-		37E6E4471FB63FD000767364 /* lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E4411FB63FD000767364 /* lion.wav */; };
-		37E6E4481FB63FD000767364 /* polar-bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E4421FB63FD000767364 /* polar-bear.wav */; };
 		37E6E44A1FB7D17400767364 /* DemoKidsTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E6E4491FB7D17400767364 /* DemoKidsTextViewController.swift */; };
 		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
 		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
@@ -132,6 +132,12 @@
 		3735419B1F91C0E300BEE34F /* AnimalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalBundle.swift; sourceTree = "<group>"; };
 		3735419D1F91C38100BEE34F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		37460A9D1F91AB6A0098171A /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		375200091FB8622E00FFBD2E /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
+		3752000A1FB8622E00FFBD2E /* polar-bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "polar-bear.wav"; sourceTree = "<group>"; };
+		3752000B1FB8622E00FFBD2E /* sea-lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sea-lion.wav"; sourceTree = "<group>"; };
+		3752000C1FB8622F00FFBD2E /* panda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = panda.wav; sourceTree = "<group>"; };
+		3752000D1FB8622F00FFBD2E /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
+		375200131FB865DF00FFBD2E /* ambience.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ambience.wav; sourceTree = "<group>"; };
 		375DF5C91FB3B77F001AEB2A /* DemoDetails_KM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoDetails_KM.storyboard; sourceTree = "<group>"; };
 		3766114D1E187F23009DC840 /* DetailsCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCardTableViewCell.swift; sourceTree = "<group>"; };
 		3766114E1E187F23009DC840 /* DetailsCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCardTableViewCell.xib; sourceTree = "<group>"; };
@@ -152,12 +158,6 @@
 		37A033C81F8C868600C4AA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A033CA1F8C868600C4AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E0008D1FB1BAB200C3AA05 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
-		37E6E43D1FB63FCF00767364 /* panda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = panda.wav; sourceTree = "<group>"; };
-		37E6E43E1FB63FCF00767364 /* sea-lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sea-lion.wav"; sourceTree = "<group>"; };
-		37E6E43F1FB63FCF00767364 /* elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = elephant.wav; sourceTree = "<group>"; };
-		37E6E4401FB63FCF00767364 /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
-		37E6E4411FB63FD000767364 /* lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lion.wav; sourceTree = "<group>"; };
-		37E6E4421FB63FD000767364 /* polar-bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "polar-bear.wav"; sourceTree = "<group>"; };
 		37E6E4491FB7D17400767364 /* DemoKidsTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKidsTextViewController.swift; sourceTree = "<group>"; };
 		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		37FB918D1F8DB06900E88D98 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
@@ -346,13 +346,13 @@
 		37233DFB1FB2B9DB005A79DF /* Sound Effects */ = {
 			isa = PBXGroup;
 			children = (
+				375200131FB865DF00FFBD2E /* ambience.wav */,
+				375200091FB8622E00FFBD2E /* elephant.wav */,
+				3752000C1FB8622F00FFBD2E /* panda.wav */,
+				3752000A1FB8622E00FFBD2E /* polar-bear.wav */,
+				3752000B1FB8622E00FFBD2E /* sea-lion.wav */,
+				3752000D1FB8622F00FFBD2E /* tiger.wav */,
 				12B056C01FB6831700D482BB /* arelephantsound.wav */,
-				37E6E43F1FB63FCF00767364 /* elephant.wav */,
-				37E6E4411FB63FD000767364 /* lion.wav */,
-				37E6E43D1FB63FCF00767364 /* panda.wav */,
-				37E6E4421FB63FD000767364 /* polar-bear.wav */,
-				37E6E43E1FB63FCF00767364 /* sea-lion.wav */,
-				37E6E4401FB63FCF00767364 /* tiger.wav */,
 				37233E021FB2DC3F005A79DF /* music_marimba.wav */,
 				37233E001FB2CC8F005A79DF /* digi_plink.wav */,
 				37233DFE1FB2CB20005A79DF /* pop_drip.wav */,
@@ -477,11 +477,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375200121FB8622F00FFBD2E /* tiger.wav in Resources */,
 				37233E031FB2DC48005A79DF /* music_marimba.wav in Resources */,
 				37233E011FB2CC99005A79DF /* digi_plink.wav in Resources */,
 				37233DFF1FB2CB34005A79DF /* pop_drip.wav in Resources */,
 				37233DFD1FB2BD2D005A79DF /* themeSong.mp3 in Resources */,
-				37E6E4441FB63FD000767364 /* sea-lion.wav in Resources */,
+				375200141FB865DF00FFBD2E /* ambience.wav in Resources */,
 				766CF2E71F93CD7E000821BB /* GoogleService-Info.plist in Resources */,
 				37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */,
 				12B60E371FA18319003423F5 /* african-elephant-main.jpg in Resources */,
@@ -492,24 +493,23 @@
 				12B26CD11F9723AA00B3D73D /* art.scnassets in Resources */,
 				37029F3A1F920D9200F55A30 /* Logout.storyboard in Resources */,
 				37A033C91F8C868600C4AA86 /* LaunchScreen.storyboard in Resources */,
-				37E6E4461FB63FD000767364 /* tiger.wav in Resources */,
-				37E6E4481FB63FD000767364 /* polar-bear.wav in Resources */,
 				37FB91941F8DB12F00E88D98 /* Adventurer.storyboard in Resources */,
 				376611501E187F23009DC840 /* DetailsCardTableViewCell.xib in Resources */,
 				379B2C931F9982E000060D3B /* DetailsTitleTableViewCell.xib in Resources */,
+				3752000E1FB8622F00FFBD2E /* elephant.wav in Resources */,
 				37FB91921F8DB10700E88D98 /* Explorer.storyboard in Resources */,
 				37FB91961F8DB15400E88D98 /* Settings.storyboard in Resources */,
 				376611541E188620009DC840 /* DetailsAboutTableViewCell.xib in Resources */,
 				375DF5CA1FB3B77F001AEB2A /* DemoDetails_KM.storyboard in Resources */,
+				375200111FB8622F00FFBD2E /* panda.wav in Resources */,
 				37FB91981F8DB18E00E88D98 /* Creator.storyboard in Resources */,
 				379B2C991F9985B400060D3B /* DetailsActionsPanelTableViewCell.xib in Resources */,
-				37E6E4471FB63FD000767364 /* lion.wav in Resources */,
+				3752000F1FB8622F00FFBD2E /* polar-bear.wav in Resources */,
 				37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */,
-				37E6E4431FB63FD000767364 /* panda.wav in Resources */,
 				37A033C41F8C868600C4AA86 /* Main.storyboard in Resources */,
 				379BDAE61FA7FD69007E96C4 /* DemoDetails.storyboard in Resources */,
+				375200101FB8622F00FFBD2E /* sea-lion.wav in Resources */,
 				37029F341F920C3800F55A30 /* Login.storyboard in Resources */,
-				37E6E4451FB63FD000767364 /* elephant.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

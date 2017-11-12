@@ -19,7 +19,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FZ4-av-LUK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-48-Nib">
                                 <rect key="frame" x="56" y="0.0" width="262" height="667"/>
@@ -97,6 +96,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nfx-81-sFu"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="FZ4-av-LUK" id="Sbl-LS-ywQ"/>
                         <outlet property="bundleTableView" destination="RMp-48-Nib" id="lak-Ua-ln5"/>
@@ -187,6 +187,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjR-eW-iSb"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="animalTableView" destination="gMC-ZW-9U8" id="mBZ-yV-KKf"/>
                         <outlet property="backgroundImageView" destination="6hT-HS-cTF" id="BuB-2K-jWa"/>

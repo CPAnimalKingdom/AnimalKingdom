@@ -36,11 +36,11 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
             UserDefaults.standard.set(false, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background")
         }
-        self.navigationController?.navigationBar.alpha = 0
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        self.navigationController?.navigationBar.alpha = 0
         let delay = DispatchTime.now() + 0.5
         DispatchQueue.main.asyncAfter(deadline: delay) {
             UIView.animate(withDuration: 0.3, animations: {

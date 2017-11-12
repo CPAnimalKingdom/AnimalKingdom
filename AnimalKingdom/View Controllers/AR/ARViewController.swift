@@ -93,10 +93,31 @@ class ARViewController: UIViewController {
         configuration.planeDetection = .horizontal
 //        configuration.isLightEstimationEnabled = true
         sceneView.session.run(configuration)
+
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        self.navigationController?.navigationBar.alpha = 0
+        let delay = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.navigationController?.navigationBar.alpha = 1
+            }, completion: nil)
+            
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        self.navigationController?.navigationBar.alpha = 0
+        let delay = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.navigationController?.navigationBar.alpha = 1
+            }, completion: nil)
+        }
 
         sceneView.session.pause()
         UIApplication.shared.isIdleTimerDisabled = false

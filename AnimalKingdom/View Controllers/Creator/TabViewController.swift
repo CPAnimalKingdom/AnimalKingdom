@@ -25,10 +25,6 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myHomeButton = UIImage(named: "home-icon")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
-        
-        
         // Do any additional setup after loading the view.
         let storyboard = UIStoryboard(name: "Creator", bundle: nil)
         photosFeedViewController = storyboard.instantiateViewController(withIdentifier: "PhotosFeedViewController")
@@ -45,6 +41,17 @@ class TabViewController: UIViewController, UIImagePickerControllerDelegate, UINa
             performSegue(withIdentifier: "signedOutSegue", sender: nil);
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        let myHomeButton = UIImage(named: "home-icon-1")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
+        self.navigationController?.navigationBar.alpha = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.navigationController?.navigationBar.alpha = 1
+        }, completion: nil)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

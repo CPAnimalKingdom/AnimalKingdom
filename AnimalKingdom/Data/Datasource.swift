@@ -217,62 +217,6 @@ class Datasource: NSObject {
                         [
                     ],
                     "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
-                ],
-                [
-                    "name": "Add New",
-                    "image": "add-bundle-image",
-                    "animals":
-                        [
-                    ],
-                    "enabled": true
                 ]
         ]
     }

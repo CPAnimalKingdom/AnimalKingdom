@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         } catch {
             print(error)
         }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,16 +48,17 @@ class HomeViewController: UIViewController {
                 fadeVolumeAndStop(0.05)
             }
         }
-        
+        self.navigationController?.navigationBar.alpha = 0
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
-        
-        let myBackButton = UIImage(named: "back-icon")
-
-        self.navigationController?.navigationBar.backIndicatorImage = myBackButton
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = myBackButton
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        let delay = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.navigationController?.navigationBar.alpha = 1
+            }, completion: nil)
+        }
         
 //        let statusBarWindow = UIApplication.shared.value(forKey: "statusBarWindow") as? UIWindow
 //        UIView.animate(withDuration: 3) {

@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-wc-a9a">
-                                <rect key="frame" x="0.0" y="64" width="375" height="836"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zw-pK-3ju">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
@@ -55,7 +55,7 @@
                                             <constraint firstAttribute="height" constant="222" id="anL-v2-uK0"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRo-s7-lQA" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRo-s7-lQA" customClass="DesignBundleView" customModule="AnimalKingdom" customModuleProvider="target">
                                         <rect key="frame" x="7" y="230" width="360" height="54"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELEPHANT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCE-pZ-h6k">
@@ -235,11 +235,12 @@
                             <constraint firstItem="eyi-yH-ryH" firstAttribute="width" secondItem="wRW-P7-ddp" secondAttribute="width" constant="-16" id="ErV-v6-ITu"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="trailing" secondItem="JvR-v2-gNf" secondAttribute="trailing" id="F2S-Ym-bDP"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="bottom" secondItem="JvR-v2-gNf" secondAttribute="bottom" id="N5i-Ir-8PD"/>
-                            <constraint firstItem="9Rp-wc-a9a" firstAttribute="top" secondItem="wRW-P7-ddp" secondAttribute="top" constant="64" id="QKa-xk-2KI"/>
+                            <constraint firstItem="9Rp-wc-a9a" firstAttribute="top" secondItem="wRW-P7-ddp" secondAttribute="top" id="QKa-xk-2KI"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="leading" secondItem="JvR-v2-gNf" secondAttribute="leading" id="UKX-M7-kxV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JvR-v2-gNf"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
                         <outlet property="videoView" destination="CTk-Aj-qcI" id="Fyc-NP-vDw"/>
@@ -274,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="9"/>
         </scene>
-        <!--View Controller-->
+        <!--Demo Kids Text View Controller-->
         <scene sceneID="6VQ-2T-CxM">
             <objects>
-                <viewController storyboardIdentifier="DemoDetails_KM_Details" id="WLE-Hc-T4n" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoDetails_KM_Details" id="WLE-Hc-T4n" customClass="DemoKidsTextViewController" customModule="AnimalKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9QA-Fv-msl">
                         <rect key="frame" x="0.0" y="0.0" width="359" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,6 +352,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oTg-4D-w9e"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <size key="freeformSize" width="359" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lx-74-XlE" userLabel="First Responder" sceneMemberID="firstResponder"/>

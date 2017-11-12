@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-wc-a9a">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-yH-ryH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2600"/>
@@ -156,10 +156,11 @@
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="bottom" secondItem="JvR-v2-gNf" secondAttribute="bottom" id="LSA-Wq-E5X"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="trailing" secondItem="JvR-v2-gNf" secondAttribute="trailing" id="WbK-C5-QVi"/>
                             <constraint firstItem="9Rp-wc-a9a" firstAttribute="leading" secondItem="JvR-v2-gNf" secondAttribute="leading" id="Xl2-w8-gmq"/>
-                            <constraint firstItem="9Rp-wc-a9a" firstAttribute="top" secondItem="wRW-P7-ddp" secondAttribute="top" constant="64" id="tQ4-eA-jdc"/>
+                            <constraint firstItem="9Rp-wc-a9a" firstAttribute="top" secondItem="wRW-P7-ddp" secondAttribute="top" id="tQ4-eA-jdc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JvR-v2-gNf"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <size key="freeformSize" width="375" height="2600"/>
                     <connections>
                         <outlet property="scrollView" destination="9Rp-wc-a9a" id="JwP-nG-rYK"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGE-pw-ekJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGE-pw-ekJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -137,14 +137,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="bFR-Js-sgn">
-                        <barButtonItem key="leftBarButtonItem" title="Account" image="user-icon" springLoaded="YES" id="ife-MU-A1W">
-                            <color key="tintColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" title="Account" image="user-icon-3" springLoaded="YES" id="ife-MU-A1W">
+                            <color key="tintColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="4P1-2m-PvK" kind="showDetail" id="9QT-rW-vqY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="settingsButton" style="plain" id="yXS-t8-Lri">
-                            <color key="tintColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings-icon" style="plain" id="yXS-t8-Lri">
+                            <color key="tintColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="95R-PG-0Y8" kind="popoverPresentation" popoverAnchorBarButtonItem="yXS-t8-Lri" id="hRc-Ab-ahx">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -164,12 +164,12 @@
         <scene sceneID="nJP-dp-03f">
             <objects>
                 <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="EGE-pw-ekJ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="navigationController" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="back-icon" id="9q4-iO-zri">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -233,7 +233,7 @@
         <image name="background" width="505" height="748"/>
         <image name="creator-button" width="180" height="180"/>
         <image name="explorer-button" width="180" height="180"/>
-        <image name="settingsButton" width="50" height="50"/>
-        <image name="user-icon" width="50" height="50"/>
+        <image name="settings-icon" width="50" height="50"/>
+        <image name="user-icon-3" width="50" height="50"/>
     </resources>
 </document>

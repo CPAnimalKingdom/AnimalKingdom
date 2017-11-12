@@ -169,7 +169,6 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="animalImageView" destination="3gP-7y-eKr" id="HyA-9u-sa3"/>
-                                            <segue destination="lrC-26-U1c" kind="show" id="pAE-bi-MW4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -191,6 +190,8 @@
                     <connections>
                         <outlet property="animalTableView" destination="gMC-ZW-9U8" id="mBZ-yV-KKf"/>
                         <outlet property="backgroundImageView" destination="6hT-HS-cTF" id="BuB-2K-jWa"/>
+                        <segue destination="lrC-26-U1c" kind="show" identifier="ShowDemoDetails" id="jS7-jG-QEZ"/>
+                        <segue destination="E48-xe-3FV" kind="show" identifier="ShowDemoDetails_KM" id="S7t-36-t3l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwt-qq-fp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,7 +204,15 @@
                 <viewControllerPlaceholder storyboardName="DemoDetails" id="lrC-26-U1c" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swl-IW-mVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2707" y="80"/>
+            <point key="canvasLocation" x="2730" y="14"/>
+        </scene>
+        <!--DemoDetails_KM-->
+        <scene sceneID="h8b-Nz-W9X">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DemoDetails_KM" id="E48-xe-3FV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfh-sc-hia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="136"/>
         </scene>
     </scenes>
     <resources>

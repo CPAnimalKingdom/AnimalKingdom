@@ -72,6 +72,7 @@
 		37E6E4461FB63FD000767364 /* tiger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E4401FB63FCF00767364 /* tiger.wav */; };
 		37E6E4471FB63FD000767364 /* lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E4411FB63FD000767364 /* lion.wav */; };
 		37E6E4481FB63FD000767364 /* polar-bear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37E6E4421FB63FD000767364 /* polar-bear.wav */; };
+		37E6E44A1FB7D17400767364 /* DemoKidsTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E6E4491FB7D17400767364 /* DemoKidsTextViewController.swift */; };
 		37FB918C1F8DB01600E88D98 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918B1F8DB01600E88D98 /* Video.storyboard */; };
 		37FB918E1F8DB06900E88D98 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918D1F8DB06900E88D98 /* AR.storyboard */; };
 		37FB91901F8DB09900E88D98 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FB918F1F8DB09900E88D98 /* Details.storyboard */; };
@@ -157,6 +158,7 @@
 		37E6E4401FB63FCF00767364 /* tiger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tiger.wav; sourceTree = "<group>"; };
 		37E6E4411FB63FD000767364 /* lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lion.wav; sourceTree = "<group>"; };
 		37E6E4421FB63FD000767364 /* polar-bear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "polar-bear.wav"; sourceTree = "<group>"; };
+		37E6E4491FB7D17400767364 /* DemoKidsTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKidsTextViewController.swift; sourceTree = "<group>"; };
 		37FB918B1F8DB01600E88D98 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		37FB918D1F8DB06900E88D98 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		37FB918F1F8DB09900E88D98 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				12335E771FB3D9210049D846 /* DemoDetailsViewController.swift */,
 				12335E781FB3D9210049D846 /* DetailsTableViewController.swift */,
 				12335E761FB3D9210049D846 /* VideoViewController.swift */,
+				37E6E4491FB7D17400767364 /* DemoKidsTextViewController.swift */,
 			);
 			path = Explorer;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				37029F411F92CE6300F55A30 /* AnimalTableViewCell.swift in Sources */,
 				12335E551FB278B20049D846 /* FocusSquare.swift in Sources */,
 				12335E6C1FB3D8EC0049D846 /* PhotosFeedViewController.swift in Sources */,
+				37E6E44A1FB7D17400767364 /* DemoKidsTextViewController.swift in Sources */,
 				12335E621FB3D7F20049D846 /* ARViewController.swift in Sources */,
 				12335E7F1FB3D9220049D846 /* BundleExplorerViewController.swift in Sources */,
 				12335E801FB3D9220049D846 /* DemoDetailsViewController_KM.swift in Sources */,

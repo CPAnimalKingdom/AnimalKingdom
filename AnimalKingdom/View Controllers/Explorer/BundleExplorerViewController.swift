@@ -36,13 +36,17 @@ class BundleExplorerViewController: UIViewController,UITableViewDelegate, UITabl
             UserDefaults.standard.set(false, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background")
         }
-        
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.alpha = 0
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-//        let myHomeButton = UIImage(named: "home-icon")
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
+        let delay = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.navigationController?.navigationBar.alpha = 1
+            }, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

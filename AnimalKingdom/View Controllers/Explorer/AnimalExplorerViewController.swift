@@ -32,10 +32,19 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
             UserDefaults.standard.set(false, forKey: "kidsMode")
             backgroundImageView.image = UIImage(named: "background")
         }
+        self.navigationController?.navigationBar.alpha = 0
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        let delay = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.navigationController?.navigationBar.alpha = 1
+            }, completion: nil)
+        }
+        
+        
 //        let myHomeButton = UIImage(named: "home-icon")
 //        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: myHomeButton, style: .plain, target: self, action: #selector(onHome))
     }
@@ -72,7 +81,13 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        playSound(named: "pop_drip")
+        self.playSound(named: "pop_drip")
+        if UserDefaults.standard.bool(forKey: "kidsMode") == true {
+            performSegue(withIdentifier: "ShowDemoDetails_KM", sender: nil)
+        } else {
+            performSegue(withIdentifier: "ShowDemoDetails", sender: nil)
+            
+        }
     }
     
     @objc func onHome() {
@@ -83,9 +98,9 @@ class AnimalExplorerViewController: UIViewController, UITableViewDelegate, UITab
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! UITableViewCell
-        let indexPath = animalTableView.indexPath(for: cell)
-        let animal: Animal = animals[indexPath!.row]
+        //let cell = sender as! UITableViewCell
+        //let indexPath = animalTableView.indexPath(for: cell)
+        //let animal: Animal = animals[indexPath!.row]
         
         // Pass the selected object to the new view controller.
         //let detailsViewController = segue.destination as! DetailsTableViewController
